@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head>
-        <title>鑫中人物</title>
+        <title>公示类</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta charset="UTF-8" />
@@ -14,85 +14,107 @@
     <meta name="renderer" content="webkit" />
 
    <!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
- <link rel="icon" href="/images/logox.png" type="image/x-icon"/>   
+ <link rel="icon" href="../images/logox.png" type="image/x-icon"/>   
 <!-- bootstrap -->
-  <link rel="stylesheet" href="/static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
   <!-- avg-grid -->
-  <link rel="stylesheet" href="/static/common/css/avg-grid.css" />
+  <link rel="stylesheet" href="../static/common/css/avg-grid.css" />
   <!-- swiper -->
-  <link rel="stylesheet" href="/static/common/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="../static/common/swiper/swiper.min.css" />
   <!-- hover -->
-  <link rel="stylesheet" href="/static/common/css/hover.css" />
+  <link rel="stylesheet" href="../static/common/css/hover.css" />
   <!-- iconfont -->
-  <link rel="stylesheet" href="/static/common/font_1107057_clnilxandsi/iconfont.css" />
+  <link rel="stylesheet" href="../static/common/font_1107057_clnilxandsi/iconfont.css" />
 
-  <link rel="stylesheet" href="/static/css/index.css" />
+  <link rel="stylesheet" href="../static/css/index.css" />
 
-  <script src="/wcm.files/js/jqueryN.js"></script>
-  <script src="/static/common/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
-  <script src="/static/common/swiper/swiper.min.js"></script>
-  <script src="/static/common/js/jquery.SuperSlide.2.1.3.js"></script>
+  <script src="../wcm.files/js/jqueryN.js"></script>
+  <script src="../static/common/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="../static/common/swiper/swiper.min.js"></script>
+  <script src="../static/common/js/jquery.SuperSlide.2.1.3.js"></script>
 
-  <script src="/static/js/index.js"></script>
+  <script src="../static/js/index.js"></script>
 
 <!-- ---- 2022>>--【common】 -- 标签结束 ---- -->
+<script src="../wcm.files/js/jsonrpc.js"></script>
+<script src="../wcm.files/js/member/memberChecked.js"></script>
 
   </head>
 
   <body id="lby">
+    <style>
+  .login {
+    background: #818181;
+    color: #fff;
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .login a {
+    color: #fff;
+  }
+</style>
+<div class="login">
+  <div class="container">
+    <span class="pull-left">欢迎<span id="me_nickname"></span></span>
+    <span  id="me_login_btn"></span>
+     <span  id="me_logout_btn"></span>
+  </div>
+</div>
     <div id="header">
   <!-- ---- 2022>>--【head】 -- 标签开始 ---- -->
 
 <div class="g-top headerPc">
   <div class="container"> 
-    <a class="m-logo" href="/">
-      <img src="/static/img/logo.png" alt="" />
+    <a class="m-logo" href="../qbxd_mhedu_sh_default.html">
+      <img src="../static/img/logo.png" alt="" />
     </a>
    <ul id="nav" class="m-nav clearfix">
       <li class="nLi">
-        <h3><a href="/">首页</a></h3>
+        <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
       </li>
                         <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18043">走进鑫中</a></h3>
+                <h3><a href="iIndex.htm">走进鑫中</a></h3>
                 <ul class="sub" style="display: none;">
-                    <li><a href="/info/iList.jsp?cat_id=18043">学校简介</a></li>
-                   <li><a href="/info/iList.jsp?cat_id=18158">师资队伍</a></li>
-                  <li><a href="/info/iList.jsp?cat_id=18347">荣誉园地</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18045">鑫中人物</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18101">校园风光</a></li>
+                    <li><a href="iList.htm">学校简介</a></li>
+                   <li><a href="iList_3.htm">师资队伍</a></li>
+                  <li><a href="iList_2.htm">荣誉园地</a></li>
+                    <li><a href="iList_4.htm">鑫中人物</a></li>
+                    <li><a href="iList_6.htm">校园风光</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18048">党建工会</a></h3>
+                <h3><a href="iIndex_2.htm">党建工会</a></h3>
                 <ul class="sub" style="display: none;">
-                                                  <li><a href="/info/iList.jsp?cat_id=18048">组织概况</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18049">党建动态</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18050">公示公开</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18051">工会之家</a></li>
+                                                  <li><a href="iList_5.htm">组织概况</a></li>
+                                                  <li><a href="iList_8.htm">党建动态</a></li>
+                                                  <li><a href="iList_9.htm">公示公开</a></li>
+                                                  <li><a href="iList_7.htm">工会之家</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18052">学生发展</a></h3>
+                <h3><a href="iIndex_3.htm">学生发展</a></h3>
                 <ul class="sub" style="display: none;">
                  
-                    <li><a href="/info/iIndex.jsp?cat_id=18054">学生活动</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18055">团、队动态</a></li>
-                   <li><a href="/info/iList.jsp?cat_id=18056">心理健康</a></li>
-                   <li><a href="/info/iIndex.jsp?cat_id=18057">家校共建</a></li>
-                   <li><a href="/info/iIndex.jsp?cat_id=18349">学生荣誉</a></li>
+                    <li><a href="iIndex_4.htm">学生活动</a></li>
+                    <li><a href="iList_10.htm">团、队动态</a></li>
+                   <li><a href="iList_11.htm">心理健康</a></li>
+                   <li><a href="iIndex_6.htm">家校共建</a></li>
+                   <li><a href="iIndex_5.htm">学生荣誉</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18058">教育发展</a></h3>
+                <h3><a href="iIndex_7.htm">教育发展</a></h3>
                 <ul class="sub" style="display: none;">
-                 <li><a href="/info/iIndex.jsp?cat_id=18060">课程教学</a></li>
-                 <li><a href="/info/iIndex.jsp?cat_id=18161">教师培训</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18061">教育科研</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18348">教师荣誉</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18063">后勤服务</a></li>
+                 <li><a href="iIndex_8.htm">课程教学</a></li>
+                 <li><a href="iIndex_9.htm">教师培训</a></li>
+                 <li><a href="iList_13.htm">教育科研</a></li>
+                 <li><a href="iList_14.htm">教师荣誉</a></li>
+                 <li><a href="iList_12.htm">后勤服务</a></li>
                             </ul>
       </li>
       
@@ -101,8 +123,8 @@
 </div>
 <div class="g-top headerSj">
   <div class="container">
-    <a class="m-logo" href="/2023">
-      <img src="/static/img/logo.png" alt="" />
+    <a class="m-logo" href="https://qbxd.mhedu.sh.cn/2023">
+      <img src="../static/img/logo.png" alt="" />
     </a>
     <div class="menu-btn">
       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
@@ -110,25 +132,25 @@
     <div class="g-nav bg-main">
       <ul id="nav" class="nav clearfix">
         <li class="nLi">
-          <h3><a href="/">首页</a></h3>
+          <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
         </li>
                            <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18043">走进鑫中</a></h3>
+                <h3><a href="iList.htm">走进鑫中</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18048">党建工会</a></h3>
+                <h3><a href="iList_5.htm">党建工会</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18054">学生发展</a></h3>
+                <h3><a href="iList_15.htm">学生发展</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18060">教育发展</a></h3>
+                <h3><a href="iList_16.htm">教育发展</a></h3>
                
       </li>
       
@@ -259,16 +281,16 @@
   
     </div>
     <div id="body">
-      <div class="lb-banner" style="">
-        <div class="m-search" style="margin-top: 40px; right: 5%;"><form id="searchform" name="searchform" action="/search/searchResultGJ.jsp" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
-                <img src="/static/img/lb-banner.png" alt="" />
-              </div>
+      <div class="lb-banner">
+        <div class="m-search" style="margin-top: 40px; right: 70px;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
+        <img src="../static/img/lb-banner.png" alt="" />
+      </div>
       <div class="lb-top">
         <div class="container">
-          <div class="name">
-<span>鑫中人物</span> 
+          <div class="name"><span>
+公示类 
 
-</div>
+</span></div>
         </div>
       </div>
 
@@ -277,190 +299,128 @@
           <div class="row">
             <div class="g-sd col-sm-3">
               <div id="column-nav" class="column-nav">
-                <div style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom: -28px !important;">
                 
-<span>走进鑫中</span> 
+                 <div style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom:0px !important;">
+                
+<span><a href="iList_151.htm" style="color:white">校内通知</a></span> 
 
                 </div>
-                
-                <ul class="column-list djgh_list" style="display:none">
-           <li>
-            <a href="/info/iList.jsp?cat_id=18048">组织概况</a>
-          </li>           <li>
-            <a href="/info/iList.jsp?cat_id=18049">党建动态</a>
-          </li>           <li>
-            <a  href="/info/iList.jsp?cat_id=18050">公示公开</a>
-          </li>           <li>
-            <a class="ac"  href="/info/iList.jsp?cat_id=18051">工会之家</a>
-          </li>                  </ul>
-                  <ul class="column-list">
-
+                <ul class="column-list" style="margin-top:1.6rem;">
                                         <li>
-            <a  href="/info/iList.jsp?cat_id=18043">学校简介</a>
+            <a  href="iList_239.htm">研训类</a>
           </li>           <li>
-            <a  href="/info/iList.jsp?cat_id=18158">师资队伍</a>
+            <a  href="iList_238.htm">人事类</a>
           </li>           <li>
-            <a  href="/info/iList.jsp?cat_id=18046">荣誉园地</a>
+            <a class="ac"  href="iList_236.htm">公示类</a>
           </li>           <li>
-            <a class="ac"  href="/info/iList.jsp?cat_id=18045">鑫中人物</a>
-          </li>           <li>
-            <a  href="/info/iList.jsp?cat_id=18101">校园风光</a>
+            <a  href="iList_237.htm">综合类</a>
           </li>                  </ul>
               </div>
             </div>
             <div class="g-mn col-sm-9">
-              
-              <style>
-                .year{height:auto;min-height:40px;display:none;}
-            .year a{color:#337ab7;font-size:20px;padding:10px 20px;}
-               .year a:hover{color: #2098d1;text-shadow: 1px 1px 1px #000;}
-             .year a.ac{color: #2098d1;text-shadow: 1px 1px 1px #000;}
-            </style>
-            
-            <div class="year">
-                                   
-            <a  href="/info/iList.jsp?cat_id=18043">学校简介</a>
-                     
-            <a  href="/info/iList.jsp?cat_id=18158">师资队伍</a>
-                     
-            <a  href="/info/iList.jsp?cat_id=18046">荣誉园地</a>
-                     
-            <a class="ac"  href="/info/iList.jsp?cat_id=18045">鑫中人物</a>
-                     
-            <a  href="/info/iList.jsp?cat_id=18101">校园风光</a>
-                        
-            </div>
-
-              
               <div class="list-1">
-                          <div class="wz" style="width:100%;background:white;padding:5%;font-family: PingFang-SC-Regular;min-height: 34rem;
-    line-height: 2;font-size: 1.6rem;font-weight: normal;font-stretch: normal;letter-spacing: 0rem;color: #6e6e6e;margin-bottom:40px;display:none;border-radius:6px;">${article.info_content}</div>
-                                
-                
-                              
-                <li>
-                  <span class="time"> 2021-05-18</span>
-                  <a href="https://mp.weixin.qq.com/s/Px7T2_OmL44sLa8CScg57A" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-06-17</span>
+                  <a href="../2023/jntz/gql/299297.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >雏鹰展翅！七宝鑫都刘一铭：翩翩君子风 小小少年郎
+                      >关于2023学年七宝鑫都教师业绩考核评选结果的公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-05-14</span>
-                  <a href="https://mp.weixin.qq.com/s/Eq2zrjJTIrH1gTokFIvaRg" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-06-02</span>
+                  <a href="../2023/jntz/gql/298666.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >璞玉初成！七宝鑫都阎圣浩，首届高中学子的“领头雁”
+                      >关于2024年闵行区教育系统“闵教先锋党员”拟推荐名单公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-05-10</span>
-                  <a href="https://mp.weixin.qq.com/s/zvVUEKZqsKUVwu46Y8lhaQ" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-05-17</span>
+                  <a href="../2023/jntz/gql/298054.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >骐骥之跃！七宝鑫都侯君睿：一匹奔腾在科创路上的千里马
+                      >2024年七宝鑫都教书育人优秀园丁交流展示活动推荐人选公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-04-25</span>
-                  <a href="https://mp.weixin.qq.com/s/LaZ3ciqm2VdtGYu1CtsUuQ" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-05-10</span>
+                  <a href="../2023/jntz/gql/298056.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >优秀教师！七宝鑫都蒲林宴：入职两年，从新手到能手
+                      >上海市七宝中学附属鑫都实验中学第一届青工委选举结果公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-04-20</span>
-                  <a href="https://mp.weixin.qq.com/s/XZK6-4Et1qmYnhsxlQFdww" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-05-10</span>
+                  <a href="../2023/jntz/gql/298055.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >祝贺！七宝鑫都在第36届上海市青创赛中荣获佳绩
+                      >中国教育工会上海市七宝中学附属鑫都实验中学委员会公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-01-25</span>
-                  <a href="https://mp.weixin.qq.com/s/Z-3TIi-6cZRa-lDUwlHXLg" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-03-28</span>
+                  <a href="../2023/jntz/gql/297053.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >群英荟萃展风采——七宝鑫都首届“教坛杯”教学评比结果揭晓
+                      >关于2024年七宝鑫都你推荐“希望之星”教师的公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-01-11</span>
-                  <a href="https://mp.weixin.qq.com/s/bcVBUsi0F3-kReca7qUI8Q" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-03-12</span>
+                  <a href="../2023/jntz/gql/293541.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >实力非凡！七宝鑫都参赛队在“ENJOY AI” 中国总决赛中悉数获奖！
+                      >关于2023年七宝鑫都申请岗位调整人员的公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2021-01-05</span>
-                  <a href="https://mp.weixin.qq.com/s/FUtSpJ7bZgffZcUPkeY-sQ" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-03-06</span>
+                  <a href="../2023/jntz/gql/293564.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >七宝鑫都在古诗文大赛中喜获丰收
+                      >上海市七宝中学附属鑫都实验中学少工委拟推荐2023-2024学年红领巾争章”三星章“”四星章“候选对象公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2020-12-25</span>
-                  <a href="https://mp.weixin.qq.com/s/dlvjXPStJkl1wzMv7X6rJA" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2024-02-23</span>
+                  <a href="../2023/jntz/gql/293540.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >五月的花海，七月的风——七宝鑫都第一届团支部、学生会掠影
+                      >关于入党积极分子公示
                     </span></a
                   >
                 </li>
-              
-                             
-                <li>
-                  <span class="time"> 2020-11-30</span>
-                  <a href="https://mp.weixin.qq.com/s/dtX618a77Pi1OKPgh3w-7g" target="_blank" class="text-overflow"
-                    ><span class="sort" style="display:none">【鑫中人物】</span>
+                                 <li>
+                  <span class="time"> 2023-12-12</span>
+                  <a href="../2023/jntz/gql/291477.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【公示类】</span>
                     <span class="title"
-                      >七宝鑫都科创特色受媒体关注
+                      >闵行区教育系统基层党建工作述职评议
                     </span></a
                   >
                 </li>
-              
-                              </div>
-                            
-              <div class="fy">
-                <span>共有107条</span>
-                <span>当前第9/11页</span>
+                               </div>
+                             <div class="fy">
+                <span>共有33条</span>
+                <span>当前第1/4页</span>
                 <!-- <div class=""></div> -->
                 <br class="hidden-lg hidden-md">
 
-               <span><a href="?site_id=CMSxdsyzx&cat_id=18045&cur_page=1">首页</a></span>
-<span><a href="?cat_id=18045&cur_page=8">上一页</a></span>
-<span><a href="iList_155.htm">下一页</a></span>
-<span><a href="iList_40.htm">末页</a></span>
+               <span><a href="iList_291.htm">首页</a></span>
+<span><a href="iList_292.htm">上一页</a></span>
+<span><a href="iList_293.htm">下一页</a></span>
+<span><a href="iList_294.htm">末页</a></span>
               </div>
-           
             </div>
           </div>
         </div>
@@ -483,7 +443,7 @@
       </div>
       <div class="flex code">
         <div class="text-center">
-          <img src="/static/img/code2.png" alt="" />
+          <img src="../static/img/code2.png" alt="" />
           <p>七宝鑫都官方公众号</p>
         </div>
         <div class="text-center">
@@ -507,25 +467,7 @@
 <!-- ---- 2022>>--【tail】 -- 标签结束 ---- -->
 
     </div>
-    <script>
-    $(function(){
-     var ss = $(".name span").text();
-      if(ss == "组织概况" || ss == "学校简介")
-        {
-          $(".wz").show();
-        $(".fy,#lby .g-mn .list-1 li").hide();
-        }
-      else if(ss == "学生活动"|| ss == "家校共建" || ss == "课程教学"){
-          $(".sort").show();     
-        }
-       else if(ss == "工会之家" || ss == "组织建设" || ss == "民主管理" || ss == "宣教文体" ){
-          $(".year").show();   
-        $(".column-list").hide();
-         $(".djgh_list").show();
-        }
-
-    })
-    </script>
   </body>
 </html>
+  
 
