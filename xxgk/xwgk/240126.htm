@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都中学生校内一日常规</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都中学生校内一日常规
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-08-08</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal">
+	基本规范：
+</p>
+<p class="MsoNormal">
+	1、坐：入座时要轻而缓，搬动椅子不发出声音。坐下后，上身保持挺直，头部端正，目光平视前方交谈对象，腰部稍靠椅背，两脚平落地面。做到自然放松，面带微笑，显示一个人的谦虚、沉着、待人亲切。
+</p>
+<p class="MsoNormal">
+	2、站：头正颈直，两眼平视，神情专注，不左顾右盼；嘴要闭，下颚微收；肩平，两臂自然下垂，中指贴于裤缝；挺胸收腹，腿要合并挺直。
+</p>
+<p class="MsoNormal">
+	3、行：抬头挺胸，两眼平视前方，颈正腰挺，步幅适中。做到自然大方，协调稳健，树立举止优雅的形象。
+</p>
+<p class="MsoNormal">
+	一、文明礼仪规范：
+</p>
+<p class="MsoNormal" style="margin-left:18.0500pt;text-indent:-18.0000pt;">
+	1、统一穿着校服（全套）到校，衣着整洁，外衣不敞开。少先队员佩戴好红领巾，共青团员佩戴团徽，团（队）长佩戴好标志。
+</p>
+<p class="MsoNormal">
+	2、不化妆、不配戴首饰、不留长指甲；不烫发、不染发、额前留发不过眉；女生头发过<span>肩须束发，男生头发旁不遮耳、后不过颈，不留怪发型；女生不穿高跟鞋。</span> 
+</p>
+<p class="MsoNormal">
+	3、保持健康阳光形象，做到“坐有坐相，站有站姿，行有行样”。
+</p>
+<p class="MsoNormal">
+	4、维护校园环境整洁，校内不吃零食、不乱丢纸屑、不随地吐痰、严禁向窗外抛物。
+</p>
+<p class="MsoNormal">
+	5、课间文明休息，不大声喧哗，保持教室及教学大楼安静；不在教学楼内奔跑，上下楼<span>梯靠右行走；不在教学楼内玩球类或危险游戏；不做攀爬栏杆、围墙等危险动作。</span> 
+</p>
+<p class="MsoNormal">
+	6、与他人相处应尊重宽容。做到热情礼貌、举止文明。如与他人产生矛盾，要尽量克<span>己，冷静以待，顾全大局。</span> 
+</p>
+<p class="MsoNormal">
+	7、尊敬师长，进老师办公室要轻轻敲门并喊报告，与老师道别时主动说再见。老师递<span>给的物品要双手接过。</span> 
+</p>
+<p class="MsoNormal">
+	8、对来校客人要主动问候，微笑致意。如在教室遇到听课老师或来宾，要起立欢迎，<span>礼貌送行。</span> 
+</p>
+<p class="MsoNormal">
+	9、爱护公物和花草树木，节约水电。不在墙壁、黑板、桌椅、讲台等处乱画乱刻，不<span>在教室、走廊和绿化区里打球。</span> 
+</p>
+<p class="MsoNormal">
+	10、自觉遵守图书馆、实验室、体育馆等专用教室制订的各项制度公约。
+</p>
+<p class="MsoNormal">
+	二、到校离校规范：
+</p>
+<p class="MsoNormal">
+	1、按时到校，不迟到、不早退、不旷课，因病因事需请假者，必须由家长以书面形式<span>向班主任提出请假。</span> 
+</p>
+<p class="MsoNormal">
+	2、不准携带手机、IPAD、扑克、球类等娱乐用品、贵重物品进入校园。
+</p>
+<p class="MsoNormal">
+	3、进校仪表规范，精神饱满，主动向值日教师及同学问好。离校时遇见老师主动道别。
+</p>
+<p class="MsoNormal">
+	4、早晨到校后不在操场和走廊上嬉戏闲逛；自觉快速地完成劳动任务，主动上交作业，<span>然后安静自修。</span> 
+</p>
+<p class="MsoNormal">
+	5、不得擅自出校门，因事中途离校，必须持有由班主任或年级组长签字的专用出门证，<span>并向校保安说明情况。</span> 
+</p>
+<p class="MsoNormal">
+	6、离校后直接回家，不在校门口聚集、停留。不准进入网吧、游戏厅等不适合学生进入<span>的娱乐场所。</span> 
+</p>
+<p class="MsoNormal">
+	三、做操规范：
+</p>
+<p class="MsoNormal" style="margin-left:12.0000pt;text-indent:-12.0000pt;">
+	1、广播操音乐响起时，班主任及时组织学生排队到达指定位置候场，做到队伍安静整齐，动作迅速，精神饱满。
+</p>
+<p class="MsoNormal">
+	2、在体育老师指挥下，快速进场，到位后原地踏步。姿势正确、有力度，队伍保持安<span>静整齐。</span> 
+</p>
+<p class="MsoNormal">
+	3、做操时，动作规范、到位，合节拍，充满朝气，真正达到锻炼目的。
+</p>
+<p class="MsoNormal">
+	4、广播操结束后，在体育老师的组织下有序快速退场，进入教学楼。
+</p>
+<p class="MsoNormal">
+	5、在班干部带领下认真完成眼保健操。教室内保持安静，做操态度端正、动作规范。
+</p>
+<p class="MsoNormal">
+	6、没有特殊原因不得缺席做操，如需请假必须征得班主任同意。
+</p>
+<p class="MsoNormal">
+	四、学习规范：
+</p>
+<p class="MsoNormal">
+	1、对待学习态度端正、勤奋刻苦、有进取心。
+</p>
+<p class="MsoNormal">
+	2、预备铃响前必须准备好下节课所需书本和文具，桌面保持干净整齐；预备铃响后在<span>自己的座位上安静就坐，等待老师。值日生清理好讲台，擦净黑板。</span> 
+</p>
+<p class="MsoNormal" style="margin-left:18.0000pt;text-indent:-18.0000pt;">
+	3、上课迟到者在教室前门口立正喊“报告”，经老师同意后再进入。中途有急事外出者，须举手报告经老师允许。
+</p>
+<p class="MsoNormal">
+	4、上课时自觉遵守课堂纪律。上课不得吃东西、喝水，看杂书，不做与上课无关之事。坐姿端正，专心听讲，认真记笔记，积极举手发言。练习、测试要按老师要求进行，独立完成，不违规作弊。
+</p>
+<p class="MsoNormal">
+	5、上课回答问题或向老师发问时，要先举手，老师允许后方可发话，回答问题时要立<span>正站好，声音洪亮，讲普通话。未发言的学生须仔细倾听。</span> 
+</p>
+<p class="MsoNormal">
+	6、老师宣布“下课”时，班长喊“起立”示敬，待老师回礼后，让老师先行，然后有秩序地离开教室。若遇来宾参观或听课，待来宾离开教室后，再离开教室。
+</p>
+<p class="MsoNormal">
+	7、如需到室外或公用教室上课，必须在预备铃响时，由指定班干部组织快速安静地排<span>队并按指定线路前往，不影响其他班级。离开教室时，桌面保持干净，椅子推进桌肚，</span><span>各类电器关闭。</span> 
+</p>
+<p class="MsoNormal">
+	8、自修课上保持安静，认真自学，班干部要管理好班级秩序。
+</p>
+<p class="MsoNormal">
+	9、作业书写规范、字迹端正、独立完成；自觉检查，有错必须订正；努力做到课前认真预习，自觉培养自学能力，提高听课质量，课后认真独立完成作业。
+</p>
+<p class="MsoNormal">
+	10、考试要认真对待，仔细严谨，卷面整洁，严禁作弊。
+</p>
+<p class="MsoNormal">
+	五、用餐规范：
+</p>
+<p class="MsoNormal" style="margin-left:6.0000pt;text-indent:-6.0000pt;">
+	1、养成良好卫生和饮食习惯，饭前洗手、清洁餐具；餐后及时清洁桌面和地面。
+</p>
+<p class="MsoNormal">
+	2、学生排队领餐，不争抢；双手端餐盒；领餐后坐在自己座位上，不得随意离开座位。
+</p>
+<p class="MsoNormal">
+	3、进餐时注意安静文明，做到不讲话、细嚼慢咽、速度适中。
+</p>
+<p class="MsoNormal">
+	4、用餐结束后，有序地将餐盒轻轻放在饭箱内，摆放整齐。保持地面、墙面、走廊干净<span>整洁。</span> 
+</p>
+<p class="MsoNormal">
+	5、注意节约不浪费，有意见或建议及时向班主任反映。
+</p>
+<p class="MsoNormal">
+	六、集会规范：
+</p>
+<p class="MsoNormal">
+	（一）室外集会
+</p>
+<p class="MsoNormal">
+	1、准时参加，因病因事需请假者要得到班主任批准。
+</p>
+<p class="MsoNormal">
+	2、在指定地点集合，进出场队伍做到快、静、齐。
+</p>
+<p class="MsoNormal">
+	3、集会过程中，站姿正确，精神饱满，注意力集中。
+</p>
+<p class="MsoNormal">
+	4、领导讲话，认真聆听，不走神、不议论；宣布获奖班级或同学时要鼓掌。
+</p>
+<p class="MsoNormal">
+	5、周一升旗仪式上，原地立正，神情庄重。升旗时行注目礼，唱国歌时，声音响亮。<span>如遇升降旗时，正在走路，应马上原地立正，等待升降旗结束后方可行动。</span> 
+</p>
+<p class="MsoNormal">
+	（二）室内集会
+</p>
+<p class="MsoNormal">
+	1、准时到场，保持安静，有序进出场。
+</p>
+<p class="MsoNormal">
+	2、集会过程中，尊重发言人，认真聆听；适时鼓掌；如有需要，积极互动。
+</p>
+<p class="MsoNormal">
+	3、集会过程中，始终保持坐姿端正，不私下交谈，不随便走动发出响声，举止要文明。
+</p>
+<p class="MsoNormal">
+	4、如遇比赛，自觉维持赛场秩序；服从评委裁决；不攻击其他比赛选手、班级。
+</p>
+<p class="MsoNormal">
+	5、收听集体校会广播时，不允许做和听广播无关的事情。
+</p>
+<p class="MsoNormal">
+	七、住宿要求：按时起床和就寝；听从生辅老师的建议和安排，认真完成个人卫生及值日工作，及时参加早上体育锻炼。
+</p>
+<p class="MsoNormal">
+	<b>本细则解释权归学生发展中心。</b> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	2019年8月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="240126.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="240126.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="240126.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="240126.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

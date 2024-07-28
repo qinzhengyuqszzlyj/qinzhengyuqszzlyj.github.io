@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>第四周区教研活动通知</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
+    <script src="../../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../../qbxd_mhedu_sh_default.html"><img src="../../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../../index.htm">首页</a> >
+        <a href="../../../info/iIndex_12.htm">通知公告</a> >
+        <a href="../../../info/iList_58.htm">研训通知</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 第四周区教研活动通知
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-09-27</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<table class="MsoNormalTable ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;background:white;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<td width="3%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">编号</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="9%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">时间</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="6%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">学科</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="8%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">年级</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="8%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">地点</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="34%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">内容</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#686868;">出席与附言</span><span style="font-size:9.0pt;font-family:&quot;color:#686868;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-26 12:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">语文</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">初中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">莘城学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中语文青年教师读书班活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">活动主题：读书报告交流</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">活动内容：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1.</span><span style="font-size:9.0pt;color:#010101;">教学研讨课（殷秀德）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2.</span><span style="font-size:9.0pt;color:#010101;">读书报告点评（张莹</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">缪娴）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">3.</span><span style="font-size:9.0pt;color:#010101;">学业交流</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">参加对象：闵行区第四期读书班全体成员</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">2</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-26 13:10</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">历史</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">初中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">文绮教学楼六楼录播教室</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中历史教研活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">主题：初中历史日常教学中的选材与设问</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">内容：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">、听课</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">）下午</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;color:#010101;">10-13</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;color:#010101;">50 &nbsp;</span><span style="font-size:9.0pt;color:#010101;">课题《动荡的春秋时期》，执教者：陈胜蕾</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2</span><span style="font-size:9.0pt;color:#010101;">）下午</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">14</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;color:#010101;">05-14</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;color:#010101;">45 &nbsp;</span><span style="font-size:9.0pt;color:#010101;">课题《夏商周的更替》，执教者：张雅琴</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2</span><span style="font-size:9.0pt;color:#010101;">、教学研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">学校地址：上海市民办文绮中学，江川东路</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">980</span><span style="font-size:9.0pt;color:#010101;">号。交通：地铁</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;color:#010101;">号线江川路站，公交</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">816</span><span style="font-size:9.0pt;color:#010101;">路、徐闵线江川路站。（因校内没有停车位，请听课老师尽量选择绿色出行）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">3</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-26 11:18</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">语文</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">八年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上海师范大学康城实验学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">新闻单元教学研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">——</span><span style="font-size:9.0pt;color:#010101;">八年级语文教研活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">13</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">00&nbsp; </span><span style="font-size:9.0pt;color:#010101;">公开课</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">消息阅读</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">执教</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">康城学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp; </span><span style="font-size:9.0pt;color:#010101;">崔妍</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">13</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">40 </span><span style="font-size:9.0pt;color:#010101;">公开课</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp; </span><span style="font-size:9.0pt;color:#010101;">消息写作</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">执教</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">康城学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; </span><span style="font-size:9.0pt;color:#010101;">曾丽</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">14</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">30&nbsp; </span><span style="font-size:9.0pt;color:#010101;">评课和教学研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp; &nbsp;</span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">（地点：远程教室）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">、全体八年级语文教师出席；</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> 2</span><span style="font-size:9.0pt;color:#010101;">、浦江块、老闵行块、华漕块学校可以通过云录播平台网上听课（具体操作下周发教研组长群）。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">4</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-26 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">道德与法治</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">九年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">七宝二中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;color:#010101;">号楼二楼影音室</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中道德与法治教学研讨活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">一、九年级教材分析与研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">二、九年级各课知识点梳理</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">三、九年级第一、二单元教学案例的撰写</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">四、八年级第一单元教学设计研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">请九年级任课教师安排好工作准时出席研讨活动；请周洁、刘丹、高溪泓、徐枢清、王艺儒打印八年级第一单元教学设计（每篇</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">8</span><span style="font-size:9.0pt;color:#010101;">份）参与研讨。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-25 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">化学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">九年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">莘光学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中化学中心组活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中化学中心组活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">——</span><span style="font-size:9.0pt;color:#010101;">市评优课磨课</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">出席对象：初中化学中心组老师</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">6</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-26 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">美术</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">高三、高二、高一、九年级、八年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上闵外</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="64%" colspan="2" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">春华秋实，我们</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">‘</span><span style="font-size:9.0pt;color:#010101;">艺</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">’</span><span style="font-size:9.0pt;color:#010101;">起来</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”—— </span><span style="font-size:9.0pt;color:#010101;">上海市第四期</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">双名工程</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”</span><span style="font-size:9.0pt;color:#010101;">施红莲艺术攻关基地教研通知</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<b><span style="font-size:9.0pt;font-family:华文中宋;color:#010101;">会<span>&nbsp; </span>议<span>&nbsp; </span>通<span>&nbsp; </span>知</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:#010101;">各初、高中教导处：</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<span style="font-size:9.0pt;color:#010101;">转发市教研室通知：兹定于</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019</span><span style="font-size:9.0pt;color:#010101;">年</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">9</span><span style="font-size:9.0pt;color:#010101;">月</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">26</span><span style="font-size:9.0pt;color:#010101;">日（周四）下午</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">30</span><span style="font-size:9.0pt;color:#010101;">，在上海外国语大学闵行外国语中学（闵行区华翔路</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3260</span><span style="font-size:9.0pt;color:#010101;">号）举行</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">春华秋实，我们</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">‘</span><span style="font-size:9.0pt;color:#010101;">艺</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">’</span><span style="font-size:9.0pt;color:#010101;">起来</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”—— </span><span style="font-size:9.0pt;color:#010101;">上海市第四期</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">双名工程</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”</span><span style="font-size:9.0pt;color:#010101;">施红莲艺术攻关基地教研交流活动。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:#010101;">主要内容：</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">活动致辞</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">微电影</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">MV</span></b><b><span style="font-size:9.0pt;color:#010101;">发布</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">基地主持人主旨发言</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">基地学员展示交流</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">领导讲话、专家点评</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">参加对象：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<span style="font-size:9.0pt;color:#010101;">请区全体中学艺术学科中心组教师，安排好工作准时参加活动；</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;">
+					<span style="font-size:9.0pt;color:#010101;">欢迎本区初、高中艺术教师安排好工作，参加本次市级活动。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">交通：私家车听从保安指挥可停校门口小路上。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">7</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-24 13:15</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">英语</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">九年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上海师范大学康城实验学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">九年级英语学科教研活动通知</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"><br />
+</span><span style="font-size:9.0pt;color:#010101;">活动流程：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"><br />
+1. 1</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">15-1</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">55 </span><span style="font-size:9.0pt;color:#010101;">康城实验学校万芳老师执教</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">If</span><span style="font-size:9.0pt;color:#010101;">条件状语从句</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"><br />
+2. 1</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">55-2</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">15</span><span style="font-size:9.0pt;color:#010101;">说课评课活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"><br />
+3. 2</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">15-2</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">45 </span><span style="font-size:9.0pt;color:#010101;">康城实验学校九年级微论坛</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">以读促写，提高学生读写能力</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”<br />
+4. 2</span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">45- 3: 45 </span><span style="font-size:9.0pt;color:#010101;">课例分析等</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">请九年级全体英语教师准时参加活动；康城学校停车位有限，请大家尽量公交或校车出行。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">8</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-24 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">英语</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">八年级、六年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上海闵行文来中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019</span><span style="font-size:9.0pt;color:#010101;">学年第一学期第四周周二初中英语六</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">、八年级英语教研活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">专家报告：牛津教材修订主编、上海市特级教师施志红老师主题讲座。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">活动非常重要</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">,</span><span style="font-size:9.0pt;color:#010101;">请全区六、八年级英语教师带好</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">6A</span><span style="font-size:9.0pt;color:#010101;">、</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">8A</span><span style="font-size:9.0pt;color:#010101;">教材，安排好工作</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">,</span><span style="font-size:9.0pt;color:#010101;">准时出席</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">,</span><span style="font-size:9.0pt;color:#010101;">没有特殊原因</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">,</span><span style="font-size:9.0pt;color:#010101;">请勿请假</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">; </span><span style="font-size:9.0pt;color:#010101;">学校不提供停车场地，请绿色出行，谢谢大家的配合</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">!</span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">9</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-25 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">体育</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">初高中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上海市师资培训中心实验基地附属中学（中春路</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">4949</span><span style="font-size:9.0pt;color:#010101;">号）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019</span><span style="font-size:9.0pt;color:#010101;">闵行区中学体育教师专业技能（基本功）展示活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;font-family:&quot;color:black;">13:00——14:00</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">足球</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:black;">康城学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">刘彤宇</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">莘松中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">张育青</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">友爱中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">赵晴</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">文来中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">韩波</span><span style="font-size:9.0pt;font-family:&quot;color:black;"> </span><span style="font-size:9.0pt;color:black;">曹行中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">许华</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">浦航二中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">周斌</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;&nbsp;</span><span style="font-size:9.0pt;color:black;">华理科高</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">俞昭彬</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;&nbsp;</span><span style="font-size:9.0pt;color:black;">闵行中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">吴政</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;font-family:&quot;color:black;">14:00——15:00</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">田径</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;color:black;">华二初中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">史玮</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">基地附中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">董佳杰</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;&nbsp;</span><span style="font-size:9.0pt;color:black;">文来高中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">郭凯</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">篮球</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;color:black;">文绮中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">郑立坤</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">吴泾中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">陶源</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;&nbsp;</span><span style="font-size:9.0pt;color:black;">上外初中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">陈健</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">航华二中臧坤</span><span style="font-size:9.0pt;font-family:&quot;color:black;"> </span><span style="font-size:9.0pt;color:black;">星河湾</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">费晓俊</span><span style="font-size:9.0pt;font-family:&quot;color:black;"> </span><span style="font-size:9.0pt;color:black;">七宝中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">郑旻</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;font-family:&quot;color:black;">15:00——16:00</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">武术</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;color:black;">闵行五中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">张雁鸿</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;&nbsp;</span><span style="font-size:9.0pt;color:black;">莘城学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:black;">张寅</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">体操</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;color:black;">上宝中学顾奎员</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">闵行四中汤建卫</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">七宝二中朱凤佳</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">七宝三中柯萍</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:black;">七宝实验魏澜</span><span style="font-size:9.0pt;font-family:&quot;color:black;">&nbsp;</span><span style="font-size:9.0pt;color:black;">实验西校卞文文</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:black;">排球</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:black;">:</span></b><span style="font-size:9.0pt;color:black;">交大二附中冯郁文</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:black;">说明：提前</span><span style="font-size:9.0pt;font-family:&quot;color:black;">30</span><span style="font-size:9.0pt;color:black;">分钟到，每人只有一次机会</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">出席对象：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1.</span><span style="font-size:9.0pt;color:#010101;">参赛人员</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2.</span><span style="font-size:9.0pt;color:#010101;">田园高中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">李达</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">龙茗中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">潘秀霞</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">莘光学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">彭水富</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">⒊</span><span style="font-size:9.0pt;color:#010101;">莘松中学倪婷</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">华理科高刘双</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">莘庄中学黄龙</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">莘松曹雪芹</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">七宝二中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">胡多阳</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-family:&quot;color:#010101;">10</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-25 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">物理</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">九年级、八年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">鹤北初级中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">初中物理区教研活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;font-family:黑体;color:#010101;">暨闵行区<span>2019</span>年初中物理教师实验能力评选决赛</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">一、决赛前的准备工作（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13:10—13:20<br />
+&nbsp;</span><b><span style="font-size:9.0pt;color:#010101;">内容：（</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span></b><b><span style="font-size:9.0pt;color:#010101;">）参赛选手将说课</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">PPT</span></b><b><span style="font-size:9.0pt;color:#010101;">拷好；</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"><br />
+&nbsp; &nbsp; &nbsp; &nbsp;</span></b><b><span style="font-size:9.0pt;color:#010101;">（</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2</span></b><b><span style="font-size:9.0pt;color:#010101;">）上交一式五份实验教学设计方案；</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:48.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">（</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3</span></b><b><span style="font-size:9.0pt;color:#010101;">）抽签发言顺序。</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:12.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">负责人：学科指导团成员</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></b><b><span style="font-size:9.0pt;color:#010101;">陶海娟</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">二、初中物理教师实验能力评选（决赛）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:#010101;">（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13:30—14:45</span><span style="font-size:9.0pt;color:#010101;">）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:12.0pt;">
+					<b><span style="font-size:9.0pt;color:blue;">考勤负责：俞文萍、徐军</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:12.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">记时员：陈佳乐</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:12.0pt;">
+					<b><span style="font-size:9.0pt;color:blue;">主持：陶海娟</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:12.0pt;">
+					<b><span style="font-size:9.0pt;color:#010101;">内容：</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1.</span></b><b><span style="font-size:9.0pt;color:#010101;">完成现场说课，并用自行携带实验器材进行相关操作。（</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">10</span></b><b><span style="font-size:9.0pt;color:#010101;">分钟内）</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:48.0pt;">
+					<b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2.</span></b><b><span style="font-size:9.0pt;color:#010101;">专家提问与答辩。（</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span></b><b><span style="font-size:9.0pt;color:#010101;">分钟）</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;text-indent:48.0pt;">
+					<b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3.</span></b><b><span style="font-size:9.0pt;color:#010101;">五位选手说课完成后，全体教师扫描二维码进行现场投票，只能投两位。</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span><span style="font-size:9.0pt;color:#010101;">三、专题讲座：对数字化教学极简应用的探索与实践（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">14:55—15:35</span><span style="font-size:9.0pt;color:#010101;">）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<b><span style="font-size:9.0pt;color:#010101;">主讲：</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;</span></b><b><span style="font-size:9.0pt;color:#010101;">吴泾中学</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;</span></b><b><span style="font-size:9.0pt;color:#010101;">向仕宏</span></b><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></b><b><span style="font-size:9.0pt;color:#010101;">老师</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">地点：<b>鹤北初中</b></span><b><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;2</span></b><b><span style="font-size:9.0pt;color:#010101;">号楼五楼会议室</span></b><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">地址：闵行区瑞丽</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">385</span><span style="font-size:9.0pt;color:#010101;">号鹤北初级中学（瑞丽路近东川路）。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">公交：江川</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">路，闵行</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">16</span><span style="font-size:9.0pt;color:#010101;">路，闵行</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">21</span><span style="font-size:9.0pt;color:#010101;">路，近地铁</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;color:#010101;">号线金平路站。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">出席：区初中物理全体教师。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span class="f14"><span style="font-family:&quot;color:#010101;">11</span></span><span style="font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-25 13:10</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">生命科学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">高中、初中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">上海师范大学附属中学闵行分校（闵行区浦佳路</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">91</span><span style="font-size:9.0pt;color:#010101;">号）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">第</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">4</span><span style="font-size:9.0pt;color:#010101;">周生命科学初高中教研</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">活动主题：开拓学科视野，提升教师素养</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">活动时间：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">9</span><span style="font-size:9.0pt;color:#010101;">月</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">25</span><span style="font-size:9.0pt;color:#010101;">日（周三）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13:10</span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">活动地点：上海师范大学附属中学闵行分校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; &nbsp;</span><span style="font-size:9.0pt;color:#010101;">连廊</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3</span><span style="font-size:9.0pt;color:#010101;">楼</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">321</span><span style="font-size:9.0pt;color:#010101;">室</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">活动内容：专家讲座</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; &nbsp;</span><span style="font-size:9.0pt;color:#010101;">主题：基于单元设计，关注学科素养</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; &nbsp;</span><span style="font-size:9.0pt;color:#010101;">主讲专家：周韧刚</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">活动安排：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1.</span><span style="font-size:9.0pt;color:#010101;">讲座</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp; 2.</span><span style="font-size:9.0pt;color:#010101;">互动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">参加人员：请闵行区全体初、高中生命科学教师准时出席。（特殊情况不能出席的老师，请提供学校教导处盖章假条）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">附言：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> 1.</span><span style="font-size:9.0pt;color:#010101;">请随身带好教师进修编号用于签到。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> 2.</span><span style="font-size:9.0pt;color:#010101;">公共交通：上海地铁</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">8</span><span style="font-size:9.0pt;color:#010101;">号线联航路站或闵行</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">12</span><span style="font-size:9.0pt;color:#010101;">路浦星公路联航路站（校园内停车条件有限，建议绿色出行）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span class="f14"><span style="font-family:&quot;color:#010101;">12</span></span><span style="font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-25 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">数学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">七年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">康城实验学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">初中数学七年级第二次教研活动</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">一、研讨主题：<strong><span style="font-family:等线;font-weight:normal;">《因式分解》单元设计研讨</span></strong></span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">二、研讨时间</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;font-weight:normal;">&nbsp;&nbsp;&nbsp; 2019</span></strong><strong><span style="font-size:9.0pt;font-family:等线;color:#010101;font-weight:normal;">年</span></strong><strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;font-weight:normal;">9</span></strong><strong><span style="font-size:9.0pt;font-family:等线;color:#010101;font-weight:normal;">月</span></strong><strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;font-weight:normal;">25</span></strong><strong><span style="font-size:9.0pt;font-family:等线;color:#010101;font-weight:normal;">日（第四周周三）下午</span></strong><strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;font-weight:normal;">13:30</span></strong><strong><span style="font-size:9.0pt;font-family:等线;color:#010101;font-weight:normal;">开始</span></strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">三、研讨内容</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp; 1</span><span style="font-size:9.0pt;color:#010101;">．《因式分解》单元设计，执教：航华二中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp;</span><span style="font-size:9.0pt;color:#010101;">陈程</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp; 2</span><span style="font-size:9.0pt;color:#010101;">．说课：《因式分解</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">——</span><span style="font-size:9.0pt;color:#010101;">提公因式法》，执教：金汇实验学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp;</span><span style="font-size:9.0pt;color:#010101;">杨娟</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp; 3</span><span style="font-size:9.0pt;color:#010101;">．说课：《因式分解</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">——</span><span style="font-size:9.0pt;color:#010101;">十字相乘法》，执教：闵行四中</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp;</span><span style="font-size:9.0pt;color:#010101;">杨晓敏</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp; 4</span><span style="font-size:9.0pt;color:#010101;">．说课：《因式分解</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">——</span><span style="font-size:9.0pt;color:#010101;">分组分解法》，执教：华漕学校</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> &nbsp;</span><span style="font-size:9.0pt;color:#010101;">胡潇</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp; 5</span><span style="font-size:9.0pt;color:#010101;">．分组研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">四、研讨地点</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;&nbsp;&nbsp;<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">地点：上海师范大学康城实验学校云录播教室</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">地址：莘松路</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">958</span><span style="font-size:9.0pt;color:#010101;">弄瀑布湾道</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">18</span><span style="font-size:9.0pt;color:#010101;">号</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">交通：①从康城学校南门进出，停车免费（康城学校南门地址：春九路近莘松路往北，右转）；②从康城小区正门进入康城学校，务必哪个门进哪个门出，小区收</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;color:#010101;">元停车费；③不要从康城小区进入，但从康城学校南门出。否则会累计计算时间，再次进入小区会产生大额停车费。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">五、参加对象</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">．闵行区所有初中七年级数学备课组长参加现场活动；</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2</span><span style="font-size:9.0pt;color:#010101;">．闵行区所有初中七年级数学老师（除备课组长外）云录播网上教研。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<strong><span style="font-size:9.0pt;font-family:等线;color:#010101;font-weight:normal;">注：因学校停车位有限，请参会老师尽量绿色出行。</span></strong><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">．闵行区所有初中七年级数学备课组长参加现场活动；</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> 2</span><span style="font-size:9.0pt;color:#010101;">．闵行区所有初中七年级数学老师（除备课组长外）云录播网上教研。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">注：因学校停车位有限，请参会老师尽量绿色出行。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span class="f14"><span style="font-family:&quot;color:#010101;">13</span></span><span style="font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2019-09-23 13:45</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">物理</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">九年级、八年级</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="center" style="text-align:center;">
+					<span style="font-size:9.0pt;color:#010101;">娄山中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">长宁区名师培育工作室第</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3</span><span style="font-size:9.0pt;color:#010101;">项目组</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">---</span><span style="font-size:9.0pt;color:#010101;">物理学科展示活动通知</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">1.<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">研讨课：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">“</span><span style="font-size:9.0pt;color:#010101;">电学玩中学</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">”---</span><span style="font-size:9.0pt;color:#010101;">预备年级社会实践课</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">时间</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">13:50---14:30</span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">地点：</span><span class="apple-converted-space"><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">号楼</span><span class="apple-converted-space"><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">楼录播教室</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;color:#010101;">执教：</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"> </span><span style="font-size:9.0pt;color:#010101;">宣爱东老师</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">2.<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">汇报交流</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">:<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">（</span><span class="apple-converted-space"><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">号楼</span><span class="apple-converted-space"><span style="font-size:9.0pt;font-family:&quot;color:#010101;">&nbsp;</span></span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">楼第一会议室）</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">(1) </span><span style="font-size:9.0pt;color:#010101;">课后研讨</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">(2) </span><span style="font-size:9.0pt;color:#010101;">杨小知老师和王霞老师汇报交流</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">3.<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">导师顾世文老师总结</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+				<p class="MsoNormal">
+					<span style="font-size:9.0pt;font-family:&quot;color:#010101;">4.<span class="apple-converted-space">&nbsp;</span></span><span style="font-size:9.0pt;color:#010101;">领导讲话等</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+			<td width="29%" style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" align="left" style="text-align:left;">
+					<span style="font-size:9.0pt;color:#010101;">（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">1</span><span style="font-size:9.0pt;color:#010101;">）初中物理名师工作室全体学员。（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">2</span><span style="font-size:9.0pt;color:#010101;">）初中物理青师</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">5</span><span style="font-size:9.0pt;color:#010101;">期全体成员。（</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;">3</span><span style="font-size:9.0pt;color:#010101;">）初中物理学科指导团成员。</span><span style="font-size:9.0pt;font-family:&quot;color:#010101;"></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="222280.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="222280.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="222280.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="222280.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都承办闵行区主题教育（班会）课研讨活动</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_2.htm">综合动态</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都承办闵行区主题教育（班会）课研讨活动
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-11-03</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091052039.png" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style="font-size:12pt;">&nbsp; &nbsp; &nbsp; &nbsp;2019年11月2日下午，闵行区主题教育（班会）课研讨活动在七宝鑫都举行。活动的主题是内化学生行规，唤醒生命自觉。参加活动的人员有上海市师资培训中心德育与师德研究部副主任俞慧文老师，闵行区教育学院德研部班主任教研员陈耀清老师。此外，还有闵行区班主任中心组成员，闵行区第四期孙小芬班主任工作室全体成员、七宝鑫都的班主任团队和北桥中学骨干班主任团队成员等。</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size:12pt;">活动分为两大部分。第一部分是主题教育展示活动。首先，我校戴佳敏老师执教了《责任在心，幸福在“鑫”》的主题班会课。戴老师结合中队发展计划，从学生实际出发，聚集课堂，引导学生思考责任和幸福之间的关系，促进学生内化行规，引领学生生命自觉发展。随后，全体成员共同观看了北桥中学常祎辰老师的录像课《了解自己，做更好的自己》。常老师通过活动设计，引入性格特质苹果树和周哈里窗，引导学生了解自我，探索自我特质，从而开启自我探索之旅。</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091138036.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091138046.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091139002.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091139011.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091140020.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;">&nbsp; &nbsp; &nbsp; 活动的第二部分为点评环节。活动会议由教研员陈耀清老师主持。我校党支部书记、常务副校长黄岳辉致欢迎词。黄校长介绍了七宝鑫都的基本概况和学校班主任专业发展方面的设想。随后，两位执教老师说课。戴老师介绍了专家磨课的前后过程，以及自己思路的转变。常老师则主要介绍了如何以经典理论为基础，在主题教育课中引入专业工具和途径，引导学生探寻自我的过程。</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091152049.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091153001.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091153016.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091153025.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091153048.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091154006.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;">&nbsp; &nbsp; &nbsp; &nbsp;在随后的专家点评中，两位老师都得到了极大的肯定和赞扬。闵行区班主任中心组杨梦玫老师作为戴老师的指导专家，认为戴老师的课堂呈现出很多亮点。如教师视角的转化，学生细节的真实，教育话题的内化等。区班主任工作室主持人孙小芬老师则主要点评了常老师在教育活动设计上具有长程性和科学性。</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091154051.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091155006.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;">&nbsp; &nbsp; &nbsp; 闵行区德研室班主任教研员陈耀清老师在总结时，特别提出了主题教育要有长程化设计，在活动中，教师要处理好预设和生成的关系，以及如何引导学生进行自我认知，树立目标，解决自我同一性问题。最后，上海市师资培训中心德育与师德研究部俞慧文副主任给大家带来了讲座《走进学生心灵的主题班会课设计与实施》。<br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091155043.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style="font-size:12pt;">&nbsp; &nbsp; &nbsp; &nbsp;本次活动圆满结束，得到了领导专家的一致肯定。这对我校班主任队伍专业化发展、主题教育活动设计等方面，都带来了极大的启发和鼓励。我们将继续努力探索，在主题教育的序列性，适切性和多样性等方面研习实践，切实提高班主任专业发展素养，引领学生全面发展。</span><span style="font-size:12pt;"></span> 
+</p>
+<p>
+	<span style="font-size:12pt;"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911091156034.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="224916.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="224916.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="224916.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="224916.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

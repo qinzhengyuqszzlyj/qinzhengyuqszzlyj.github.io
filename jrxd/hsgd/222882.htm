@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>壮丽70年，我与祖国共奋进</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 壮丽70年，我与祖国共奋进
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-10-08</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" align="center" style="text-align:center;font-size:12pt;">
+	——七宝鑫都举行庆祝新<a target="_blank" href="222882.htm">中国</a>成立70周年特别升旗仪式活动
+</p>
+<p class="MsoNormal" align="center" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	2019年9月30日，恰逢祖国母亲70华诞之际，七宝鑫都邀请到北桥部队的四位官兵来校开展了“壮丽70年，我与祖国共奋进”——庆祝新<a target="_blank" href="222882.htm">中国</a>成立70周年特别升旗仪式活动。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	在升旗仪式上，官兵战士矫健的步伐，飒爽的英姿，标准的动作、庄严规范的升旗步骤，让全校师生有一种深深的震撼，同学们对国旗的尊重之心油然而生。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910131254038.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910131254057.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:11pt;line-height:1.5;">来自北桥部队的官兵代表在国旗下发表讲话，号召同学们要爱国、爱党、爱军，努力奋进，为祖国的蓬勃发展贡献自己的一份力量。</span> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910131256015.jpg" alt="" /> 
+</p>
+<p style="font-weight:bold;text-align:center;font-size:11pt;">
+	树立远大理想，做新时代少年
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	尊敬的各位领导和老师，亲爱的同学们：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	大家上午好！很荣幸受邀参加鑫都中学的庆祝建国70周年活动的升国旗仪式并代表我们部队官兵在此发言。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	今天，我们在这里举行隆重而庄严的升国旗仪式，庆祝伟大祖国70周年华诞。100多年来，多少革命先辈抛头颅、撒热血，用生命换来新<a target="_blank" href="222882.htm">中国</a>的成立。70年前的10月1日，毛主席在天安门城楼第一次把五星红旗升起，多少年来，一直指引我们奋勇前进。作为一名共和国军人，我向同学们提几点希望。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	希望你们从小树立远大的理想，培养高尚的道德情操。理想是人生的太阳，是催人奋进的动力。少年有志，未来有望，少年强则<a target="_blank" href="222882.htm">中国</a>强。大家要明确自己的历史责任，把个人的奋斗志向同国家的前途命运紧紧联系在一起，把祖国富强、民族振兴作为自己的崇高追求。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	努力成长为有理想、有道德、有文化、有纪律的社会主义事业的合格接班人。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	希望你们掌握丰富的知识，培养用于创新的精神。少壮不努力，老大徒伤悲。当前，学习是你们第一任务。希望你们要有强烈的求知欲和上进心，发奋读书，勤奋学习，努力掌握科学文化知识。增强创新精神和能力，为今后的发展打好基础。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	希望你们锻炼强健的体魄，培养良好的心理素质。当代少年不应该是温室的花朵，而应是敢于搏击风雨的雄鹰。要坚持体育锻炼，不断增强体质，以适应完成学习任务和将来担负繁重工作的要求。要养成乐观向上、知难而进、不怕挫折的心理素质，塑造勇于探索、富于想象、善于创造、团结协作的心理品格，以积极进取的精神状态迎接未来的挑战。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	同学们，你们是新世纪的主人，你们是幸运的一代，也是肩负重任的一代。希望你们要切实肩负起这样的神圣使命，把自己锻炼成为适应现代化建设需求的优秀人才。我相信，今天天真烂漫的你们，明天将成为祖国的栋梁，中华民族的伟大复兴要靠你们去奋斗！
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	最后，祝愿伟大祖国繁荣昌盛，也祝老师们工作顺利，同学们学习进步，鑫都中学越来越好！
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	学生代表六（7）班阙昊谦、六（8）班黄阅迪、六（7）班王一龙分别用书法作品来表达自己对祖国的热爱之情，并表示个人要与国家一起奋斗前行。最后，师生共唱《我和我的祖国》，以此表达与祖国母亲心连心，不分离的深厚情感。
+</p>
+<p>
+	<span><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910131256036.jpg" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	阙昊谦:<span style="font-size:11pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:11pt;">明天就是祖国母亲七十岁的生日了，我要用我的书法作品“志存高远，胸怀祖国”来为祖国母亲献礼。我们是祖国未来的建设者和接班人，应当努力成为新时代的有为少年，待将来学业有成，为祖国的繁荣昌盛增光添彩！</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	谢谢大家！
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	老师们，同学们，让我们一同向祖国母亲致敬，祝福祖国生日快乐、繁荣富强！
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:10pt;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	黄悦迪:
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:11pt;">我为祖国生日献上的作品是“辉煌七十年，领巾心向党”。七十年辉煌的背后，是七十年的风雨兼程。“筑梦航天”的讲座让我记忆犹新，一代又一代航天人的坚持和付出，筑就了我们祖国伟大的航天梦!</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:10pt;">谢谢大家！</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:10pt;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	王一龙:
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:11pt;">我为祖国生日献上的作品是“不忘初心  牢记使命”。党是一面飘扬的旗帜，一盏指路的明灯，指引着我们，给我们万般呵护。我们是祖国未来的希望，万水千山不忘<a target="_blank" href="222882.htm">中国</a>的道路，无惧风雨迎来新的日出。我以我心爱祖国，我以我行报祖国！</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;font-size:11pt;">
+	<span style="font-size:11pt;">谢谢大家！</span> 
+</p>
+<p>
+	<span><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910130100009.jpg" alt="" /><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="222882.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="222882.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="222882.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="222882.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

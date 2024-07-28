@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都校园意外伤害应急处理方案</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都校园意外伤害应急处理方案
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-07-22</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="15" style="margin-left:24pt;text-indent:-24pt;">
+	一、&nbsp;基本理念
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	学校高度重视师生在校安全，坚持以人为本，安全第一，落实各项安全措施，着重进行防水、防电、防火、防毒、等知识宣传，以及开展交通法规、卫生知识、心理健康、安全常规等知识教育。
+</p>
+<p class="15" style="margin-left:24pt;text-indent:-24pt;">
+	二、&nbsp;组织领导：学校成立校园意外伤害应急处理小组，由副校长任组长
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	组&nbsp;&nbsp;&nbsp;&nbsp;长：黄岳辉
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	协&nbsp;&nbsp;&nbsp;&nbsp;调：杨勇、周嘉
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	人员救护：王霜亮、肖汪萍
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	疏散引导：杨勇、沈静峰
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	通讯联络：陶生惠
+</p>
+<p class="15" style="margin-left:24pt;text-indent:-24pt;">
+	三、&nbsp;职责分工
+</p>
+<p class="MsoNormal">
+	1、第一发现人
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	第一时间给予基本救助，通知相关老师，并在交接后及时就该事故的发现情况向分管领导提供书面报告。
+</p>
+<p class="15">
+	2、卫生老师
+</p>
+<p class="MsoNormal" style="margin-left:0.05pt;text-indent:24pt;">
+	<span>卫生室应保证工作时间（至少一名）校医不离岗；卫生室应保证</span>24小时均处于可联系状态。接诊校医在诊断或处理后，应当及时就处理情况进行书面记录，并抄报分管领导。
+</p>
+<p class="15">
+	3、班主任
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	<span>班主任老师负责学生伤害事故的具体处理。班主任老师应保证</span>24小时均处于可联系状态。班主任老师在得知事故发生后，应立刻介入具体处理。班主任在学生伤害事故和后续处理中，负责与家长联系，统筹安排受伤学生病假期间补课和家访等工作，协助家校在处理学生伤害事故中积极沟通。班主任对于学生伤害事故的处理情况应制作书面记录，并定期通报分管领导。在非工作时间，班主任的职责由年级值班老师代理。
+</p>
+<p class="15">
+	4、分管领导
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	分管领导负责在处置过程中起到桥梁作用，在校长不能及时到位的情况下代表学校履行职责、指导医务室和班主任在救护、处置、善后过程中的工作。
+</p>
+<p class="MsoNormal">
+	四、处置原则：以人为本、健康第一。及时采取相应救护措施，不致使损害扩大。
+</p>
+<p class="MsoNormal">
+	五、处置流程和办法
+</p>
+<p class="MsoNormal" style="text-indent:24pt;">
+	对于在校发生的学生安全事故，按其严重和紧急程度，分为三类情况进行处置：
+</p>
+<p class="MsoNormal">
+	第一类：学生伤（病）势严重，出现危及生命的迹象。
+</p>
+<p class="MsoNormal" style="text-indent:23.5000pt;">
+	该类情况包括：晕厥、神志不清、四肢发冷、抽搐、口吐白沫、呼吸困难、脉搏微弱、流血较多、严重骨折等症状。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>处置流程：第一发现人（任何一位教职工）有责任立即拨打</span>“120”呼救，然后通知学校校医马上赶到现场对受伤的学生进行应急处理。在可判断班级和年级的情况下，立刻联系班主任老师或年级组长介入具体处理，并向校长、学校卫生工作的分管领导进行汇报。在无法确定班级和年级的情况下，立刻联系分管领导，由分管领导，由分管领导通知班主任（或年级组长）介入具体处理。班主任、校医一起陪同学生到医院治疗。直至学生的监护人赶到医院，做好交接工作。
+</p>
+<p class="MsoNormal">
+	第二类：学生伤（病）势一般，没有出现危及生命的症状。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	处置流程：作为第一发现人（任何一位教职工）都有责任将学生护送至学校卫生室或通知学校校医马上赶到现场对受伤的学生进行应急处理。第一发现人或校医应及时通知班主任事件情况，班主任立刻介入具体处理，并通知学生家长。受伤学生经接诊的校医判断后，分以下两种情况处置：
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	1、需要马上送医院的。如：较明显的骨折或其他症状（由校医具体判断）。处置流程：接诊校医和班主任直接向校长、学校卫生工作的分管领导进行工作请示。最后由班主任或学校指派老师、校医一起将学生送到医院治疗。直至学生的监护人赶到医院，做好交接工作。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	2、不需要马上送医院的。处置流程：接诊的校医和班主任及时联系并向学生家长告知学生的伤（病）情况，讨论处置的具体办法；如有进一步的要求，接诊校医和班主任应请示校长、学校卫生工作的分管领导，再作出相应的处理。
+</p>
+<p class="MsoNormal">
+	第三类：学生伤（病）势轻微的。如轻微的外伤或身体不适等。处置流程：第一发现人应指导学生去校医室进行检查，接诊的校医依据伤（病）情况进行处理，将情况向伤（病）的学生本人作明确说明，提醒学生如有病情变化，要及时就诊。接诊校医应及时将学生就诊情况通知班主任，提醒班主任给予关心和照顾。班主任根据情况可以通知学生家长。
+</p>
+<p class="MsoNormal">
+	六、补充说明
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	1、本校的对接医院为颛桥卫生院和闵行区中心医院（二级甲等），特殊情况除外。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	2、教师应当注意向学生宣传意外事故处理流程，提高学生积极配合和协助处理的意识。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	3、<span>学校设立</span>“学生校内意外伤害应急处置资金”，仅用于送医院就诊时垫付急症的诊疗费用和路费，由校医通知财务室启用，事后必须归还。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	4、当学生在课堂发生第一类和第二类的情况时，任课老师在得知情况后应及时停课、马上对受伤（发病）学生进行处置，并通知备课组长或年级组长安排临时代课（或改为自习），参与对学生的救治（包括送医院就诊）。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	5、学生在课堂发生第三类情况时，应安排其他学生或老师陪同到医务室就诊，下课后主动与校医联系，了解情况。
+</p>
+<p class="MsoNormal" style="text-indent:12.0000pt;">
+	6、校园内的意外伤害发生后，相关人员要做好现场证据的保全和确认，学校将对照教育部颁布的《学生伤害事故处理办法》或者《上海市中小学校学生伤害事故处理条例》的有关规定进行善后处理。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-indent:24.0000pt;text-align:right;">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-indent:288.0000pt;text-align:right;">
+	2019年7月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="240048.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="240048.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="240048.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="240048.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

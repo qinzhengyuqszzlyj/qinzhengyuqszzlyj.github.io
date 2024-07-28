@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>责任在心，养成劳动好习惯</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 责任在心，养成劳动好习惯
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-11-25</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" style="text-align:center;font-size:13pt;font-weight:bold;">
+	七宝鑫都2019学年第一学期第十三周升旗仪式
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261133035.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	主持人：六（9）班 &nbsp; &nbsp;冯秋博 &nbsp; &nbsp;&nbsp; &nbsp; 六（7）班 &nbsp; 沈肖泰来
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261134001.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	荣誉升旗手：六（2）班&nbsp; &nbsp;尤思悦&nbsp; &nbsp;刘镇铭
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261134032.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261134011.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261134021.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	六（7）的周墨同学分享她对责任的理解。
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261134042.jpg" alt="" /> 
+</p>
+<p class="15" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	责任在心 &nbsp;付诸于行
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 尊敬的各位老师，亲爱的同学：
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 大家早上好，我是来自六（7）班的周墨。前不久，我们班举行了一次关于“责任在心，幸福在鑫”的主题班会。我想问问同学们，大家觉得什么是幸福？经历了上次的主题班会，我听到了很多关于幸福的定义：幸福是与同学们穿梭在美丽的校园，在食堂里一起吃着喷香的饭菜。幸福是伴着老师的声音晨读，聆听老师的教诲。幸福更是坐在整洁、温馨的教室，开始一天充实而又快乐的学习生活&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 我常常会想，为什么我们从踏入鑫都校园的第一步起，就有这么强烈的幸福感。从我们轮到的值日那周的辛苦汗水里，到老师每一节课上反复叮咛的嘱咐声中，以及食堂叔叔阿姨仔细烹饪的饭菜里，我看到了大家的努力，我逐渐明白幸福是来自于所有人的辛苦付出，同时我也意识到，在这美好幸福校园生活的背后，隐藏着的是一份沉甸甸的责任。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 原来，幸福是你我用责任来灌溉所开出的绚烂的花朵，它需要每个人来呵护。而“责任”付诸于行动，并不难。我们在课堂上遵守纪律，认真完成每一次作业，课间不追逐打闹等，每一次遵守的那些班级公约，实则就是对自己负责；在家尊重父母、主动承担家务劳动，就是对家庭负责；我们遵守学校纪律、认真做好值日工作，积极协助老师管理班级，维护班级的荣誉，就是对班集体负责；我们勤俭节约、不乱丢垃圾，积极参与公益活动是对学校和社会负责。责任心，不是遥不可及，它就体现在我们日常的学习生活中。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 我们把信念播种下去，会收获行动；把行动播种下去，会收获习惯；把习惯播种下去，会收获性格；具有了责任心的性格播种下去，就会收获一个金色的人生。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 谢谢大家！
+</p>
+<span></span> 
+<p>
+	<br />
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	经过推荐与笔试，我校评出了十佳“劳动小能手”。
+</p>
+<p style="font-size:13pt;text-align:center;">
+	六（9）班的张昊阳同学作为代表发言。
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261135005.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	责任在心 &nbsp; 劳动在行
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 敬爱的老师，亲爱的同学们：&nbsp;
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 我是六（9）班的 张昊阳，很荣幸能入选校十佳“劳动小能手”。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 当我还在幼儿园的时候，老师就教导我们：“自己的的事情自己做，他人的事情帮着做”。我从洗自己的小毛巾、擦自己的小水壶做起。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;后来，我知道了这段话是源于习近平主席在北京市少年宫参加“快乐童年放飞希望”主题队日活动时的讲话：“生活靠劳动创造，人生也靠劳动创造。你们从小就要树立劳动光荣的观念，自己的事自己做，他人的事帮着做，公益的事争着做。”在学校，我是班级的劳动委员，我根据同学的特点分配不同的值日任务给他们，擦黑板，扫地，拖地和室外清洁……我带领同学们清理卫生死角，班级的值日工作井井有条，，看到同学们在窗明几净的教室内学习，我的责任感更强了。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 课余时间，我会和妈妈一同参加小区里面的垃圾分类志愿者和清洁家园志愿者等公益活动。做垃圾分类志愿者时我们用湿抹布擦小区垃圾分类站的标识牌和垃圾桶，为来倒垃圾的居民创造洁净的环境，当他们有疑问不确定手里的垃圾应该放在那个垃圾桶的时候我会耐心帮他们答疑解惑；做清洁家园志愿者时，我们捡拾小区道路上的塑料瓶、烟头或绿化草坪中的纸屑。看到我们清洁后的每一条道路都干干净净没有杂物时我的心里别提有多自豪、多高兴啦！
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 劳动使我们快乐，也让我们体会到劳动是一种责任。我们要从身边做起，从今天做起，让劳动变成一种习惯，肩负起对学校，对社会的责任！
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;谢谢大家！
+</p>
+<p>
+	<br />
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261135027.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="font-size:13pt;font-weight:bold;text-align:center;">
+	第一排从左至右：
+</p>
+<p class="MsoNormal" style="font-size:13pt;text-align:center;">
+	六（4）班 罗婧欣 &nbsp; &nbsp;&nbsp;六（1）班 朱奕冉 &nbsp;&nbsp; &nbsp;六（8）班 聂子钧 &nbsp; &nbsp;&nbsp;六（3）班 高颢成 &nbsp; &nbsp;&nbsp;六（9）班 张昊阳 &nbsp; &nbsp;&nbsp;六（10）班 陆子寒
+</p>
+<p class="MsoNormal" style="font-size:13pt;font-weight:bold;text-align:center;">
+	第二排从左至右：
+</p>
+<p class="MsoNormal" style="font-size:13pt;text-align:center;">
+	六（6）班 高琪佳 &nbsp;&nbsp; &nbsp;六（7）班 何思问 &nbsp;&nbsp; &nbsp;六（2）班 范远哲 &nbsp; &nbsp;&nbsp;六（5）班 计云航
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	六（五）班班主任黄璐佳老师作为教师代表发言。
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261135017.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	责任成就灿烂人生
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 尊敬的领导、老师，亲爱的同学们：&nbsp;
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 今天我演讲的题目是《责任成就灿烂人生》。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 在我们的人生道路上，有很多东西一直陪伴我们前行，其中有快乐，有悲伤，有喜悦，也有忧愁。但是，还有一样东西，我们有时感觉不到它的存在，但是它会在不知不觉中落在我们的身上，并且随着年龄的增长它的分量越来越重。它，我们称之为责任。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;在我们刚入学时的军训会操表演到运动会赛场上的精彩比拼，再到刚刚结束的广播操评比，以及每一天的清晨、大课间、放学的卫生劳动。我看到了我们每一个七宝鑫都学子为了班级的荣誉、为了身边的环境、为了肩上的责任而为之奋斗的身影。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 责任有时候很小，小到黄香温席、孔融让梨；责任有时候又很大，大到“天下兴亡，匹夫有责”、“先天下之忧而忧，后天下之乐而乐”。大连市有位普通的公交车司机，他在行车途中心脏病突发，在生命的最后一分钟里，他做了三件事：1.把车缓缓停在路边，用最后的力气提起手动车闸：2.把车门打开让乘客安全下车：3.将发动机熄火，确保车辆与乘客的安全。做完了这三件事，他安详地趴在方向盘上，停止了呼吸。他是一个平凡到了底，却伟大到了极限的普通百姓，责任心是一面能让你看到自己心灵的明镜，能折射出你的灵魂，当教室里有脏东西时，你是捡起来，还是不屑一顾？当你有一大堆作业时，你是认真完成，还是敷衍了事？或许你的偷懒，不认真会给你带来一时的舒适，但是你却背叛了你的责任心。你所丢掉的，将是极其宝贵的品质。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 责任是我们人生中不可缺少的一课，肩负责任，是我们对待自己人生的一种态度，有了责任心，我们就能够养成劳动的好习惯，便能在四年的学习生活中寻找到正确的方向。有了责任心为我们保驾护航，那么我们将会赢得我们的灿烂人生。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;谢谢大家！
+</p>
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="226489.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="226489.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="226489.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="226489.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

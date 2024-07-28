@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>拒绝校园欺凌，争做文明少年</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 拒绝校园欺凌，争做文明少年
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-11-11</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" style="text-align:center;font-size:13pt;font-weight:bold;">
+	七宝鑫都2019学年第一学期第十一周升旗仪式
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912111024037.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	主持人：六（9）班 &nbsp; &nbsp;冯秋博 &nbsp; &nbsp;&nbsp; &nbsp; 六（7）班 &nbsp; 沈肖泰来
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261105014.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	荣誉升旗手：六（10）班&nbsp; &nbsp;李思睿&nbsp; &nbsp;郑智译
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261106004.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261105035.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	学生发展中心主任周嘉老师为鑫都学子作国旗下讲话
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261106028.jpg" alt="" /> 
+</p>
+<p class="15" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	拒绝校园欺凌，争做文明少年
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 老师、同学们：
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 近期一部电影《少年的你》非常的火爆，随着它的上映，也把校园欺凌的话题带入了公众视野。我们都知道，校园是一个供我们读书和掌握知识的<a target="_blank" href="https://qbxd.mhedu.sh.cn/jrxd/hsgd/1">地方</a>，这里承载着我们的梦想，但是，如果这片圣洁的土地上充斥着欺凌，将是何等的悲哀！ 因此，周老师想说：面对校园欺凌，我们不仅要有零容忍的态度，更要有切实有力的自我保护的行动。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 那么首先让我们来了解一下，什么是校园欺凌。校园欺凌是指带有敌意地使用攻击、威胁、强制等手段令他人感到恐惧，从而达到控制他人的目的。欺凌的形式有以下几种，第一类：言语欺凌。具体表现为：给同学起带有侮辱性的外号，或使用侮辱性的话语；嘲笑讽刺（阴阳怪气的语调、语言）；散播关于他人的谣言；威胁、恐吓、强迫他人做他不想做的事情；敲诈勒索，干涉他人的个人财物，这一类欺凌不易被察觉；第二类：社交欺凌。具体表现为：在群体中故意忽视他人，或在他人试图与你交流时进行打扰中断，集结他人一起排挤、孤立某位同学。这类欺凌也不易被察觉；第三类：肢体欺凌。具体表现为：使用暴力行为、肢体攻击被欺凌者。第四类：网络言语欺凌。具体表现为：在社交网络上言语攻击、发送威胁恐吓的邮件或短信，发布信息、照片令他人难堪等。后两类比较容易察觉。有的时候，校园欺凌不一定在校园内发生，放学后同学间的欺负行为也算在内。其主要表现是身体强壮的学生欺负弱小的学生，令其在心灵及肉体上感到痛苦。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 任何形式的欺凌行为都是不可接受的。因为欺凌对被欺凌者造成伤害外，对欺凌者和旁观者同样造成伤害。“校园欺凌”对于被欺凌学生造成的伤害通常是身体上和心灵上受到双重创伤，并且容易留下阴影长期难以平复，也使部分受欺凌者发生恶逆变化，由受欺凌者转化为欺凌者或者欺凌者的帮凶。同时对于目睹欺凌现象的旁观者来言，也往往会因为帮不到受害者而感到内疚、不安，甚至惶恐，或明哲保身，或不自觉的加入欺凌行列。同时对于欺凌者来言，危害也显而易见，欺凌者长期欺负别人，会很自我中心，最终导致欺凌者道德滑坡、人格扭曲，甚至走上犯罪道路，受到刑事追究。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 校园欺凌会影响到学校的整体纪律和风气。所以，学校十分重视，会一直予以关注，做好预防宣传工作，同时也不会姑息任何校园欺凌行为。在此，周老师也向同学们发出呼吁：
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 1、从自身做起，加强思想道德修养，营造一个温馨有爱的七宝鑫都校园，铲除校园暴力滋生的土壤。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 如果我们让阳光普照校园，那么参与暴力者就不敢出现。阳光是什么，阳光就是学校的正气，就是全校每一位同学的正气。希望七宝鑫都学子能够树立积极进取、乐观向上的人生观，努力学习科学文化知识，培养良好的兴趣爱好陶冶情操，立志做社会的栋梁之材。同时，伙伴间能够增强友爱互助意识。如果同学之间发生矛盾，也要互谦互让，理性应对。并积极与老师和家长沟通，通过正当途径解决，不对同学动武、动粗。（不健康的游戏）
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 2、养成良好的生活习惯，不进网吧、电子游戏厅等未成年入不宜进入的场所。谨慎交友，拒绝与校外不良青年交往。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 3、在发现校园暴力、欺凌事件时，要加强自我保护意识，学会用法律保护自己。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;在受人欺侮，遇到危险或可能发生危险时，要主动、及时地和老师、家长取得联系，积极争取学校和家庭的保护和帮助。同学们可以及时告知班主任、周老师，也要在第一时间告知家长。一定要勇敢的说出来，而不要一味忍让。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;同学们让我们一起行动起来，从你我做起，从大家做起，从现在做起，预防、反对校园欺凌，远离校园暴力，争做文明学生。
+</p>
+<p class="15" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;今天下午的校会课，我们还将邀请道法的魏锦老师继续就网络上可能发生的欺凌行为和大家做进一步的知识普及，最后也向全校师生和家长朋友们一起发起“暖人心田言语”征集活动，让温暖的言语围绕你我，让我们一起创建阳光和谐的七宝鑫都校园。
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	六（6）班家委会代表宋妮娜女士发表关于校园欺凌家长们的想法
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261106040.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	六（1）班张馥麟同学作为学生代表发言
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261106050.jpg" alt="" /> 
+</p>
+<p class="MsoNormal">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911261106059.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	拒绝校园欺凌，从我做起
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 敬爱的老师，亲爱的同学们：&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 大家早上好！
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 我发言的题目是《拒绝校园欺凌，从我做起》。
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 校园是我们少年学习成长的家园，在这里我们不仅收获知识不断进步，也让我们收获了弥足珍贵的友谊。然而，近段时间以来关于校园欺凌的新闻屡见不鲜，这些事件的发生让本该纯真的校园生活蒙上了一层阴影。
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; <a target="_blank" href="226485.htm">中国</a>是有五千年文明的礼仪之邦，作为中学生，如果我们都能以“与人为善”的态度去处理日常学习、生活中的关系，我们的生活将会充满阳光。如何做到“与人为善”呢？首先，要学会宽容。宽容就是人与人之间相处时能理解他人、体谅他人，站在他人的角度思考问题，拥有宽阔的胸怀。其次，多用礼貌语：如“对不起”，“谢谢”等。同学们在一起相处，产生摩擦是很正常的，应积极沟通及时化解矛盾，俗话说“一笑泯恩仇”，让微笑时常挂在你我的脸上，做一个人见人爱的小天使！
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 但宽容和友善也不是无原则的饶恕和纵容，当你发现自己或别人受到欺凌时，应该及时寻求老师、家长的帮助。校园欺凌不是同学间、朋友间的小摩擦，小矛盾，任何形式的欺凌行为都是不可接受的。因为“校园欺凌”不但对“受害者”造成伤害，而对“欺凌者”自身同样造成伤害。“欺凌者”由于长期欺负别人，内心得到极大满足，以自我为中心，对同学缺少同情心，如不及时反省及改正，难免会误入歧途。对“受害者”的伤害更是不可小视，受欺凌的同学通常在身体上和心灵上受到双重创伤，并且容易留下阴影，长期难以平复。
+</p>
+<p class="MsoNormal" style="text-indent:0px;font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;因此，我倡议：严格遵守法律法规，严格遵守中学生守则，严格遵守学校制度，团结同学，互帮互助，共同进步。不欺凌同学，不打架斗殴，拒绝校园暴力，争做一名文明少年。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 谢谢大家！ 
+</p>
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="226485.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="226485.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="226485.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="226485.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

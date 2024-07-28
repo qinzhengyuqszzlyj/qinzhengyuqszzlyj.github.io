@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>一缕书香，一片真情</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 一缕书香，一片真情
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-09-16</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" style="text-align:center;font-size:13pt;font-weight:bold;">
+	七宝鑫都2019年第一学期第三周升旗仪式
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span>&nbsp;<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912100145026.jpg" alt="" /></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	主持人：六（9）班 &nbsp;&nbsp;冯秋博
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060935008.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	荣誉升旗手：六（3）班 &nbsp;&nbsp;张茗哲 &nbsp;&nbsp;张梓宁
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060945019.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060945047.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060935022.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	学生发展中心主任周嘉老师为鑫都学子作国旗下讲话
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060935033.jpg" alt="" /> 
+</p>
+<p style="text-indent:2em;text-align:center;font-weight:bold;font-size:13pt;">
+	拥有爱心 懂得感恩
+</p>
+<p style="text-indent:2em;font-size:13pt;">
+	今天的升旗仪式上，周老师想先和大家分享一个故事，故事的主人公是刚刚卸任阿里巴巴集团董事局主席一职的马云。马云在年少时，也有一段人生低谷。而对他发展有很大影响的则是1980年的那次相遇。1980年，15岁的马云在西湖边找外国人练习英语的时候，遇到了来杭州旅游的澳大利亚莫里夫妇一家，他们热情的邀请马云做他们的导游，教他学习英语。回国后还热情的邀请马云去他们家玩。可以说马云年少时的出国经历，对他以后有至关重要的影响。不仅如此，马云读大学时期，这对夫妇还每个月给予马云一些经济上的帮助，马云结婚，他们也赞助了2.2万澳元。马云也是一个懂得感恩的人。成名以后，他没有与这对夫妇断绝联系，而且友谊没有一点点变质。为了报答这对夫妇，马云拿出2000万澳元，和这对夫妇一起成立了一个慈善基金，帮助更多需要帮助的人。
+</p>
+<p style="text-indent:2em;font-size:13pt;">
+	莫里夫妇当时的一个小小善举成就了马云的现在。马云也在用他实际行动回馈社会，帮助有需要的人。周老师认为，我们每个人，无论大人、小孩，富有或者条件一般，都可以做一些自己力所能及的事情，去帮助身边的人，去回馈这个社会，尽一份公民的义务。上周，由大队部倡议发起了向云南省迪庆、保山等地区开展的“献爱心，图书捐赠”活动，各个班级也积极响应，发动学生捐出一本好书，同时还在书签上写下了自己美好的赠言。相信我们一个小小的善举，对于云南的同学来说就是一笔宝贵的财富。
+</p>
+<p style="text-indent:2em;font-size:13pt;">
+	其实，我们可以开展的爱心公益活动还有很多很多。比如，在我们的学校，就有这样的一支队伍，他们就是年级自主管理委员会，由每个班级的若干名同学组成，他们主要担任学校两操和卫生的检查员。为了学校的发展，他们贡献自己的力量，为大家服务。接下来大队部还要召开少代会，希望同学们积极参与，纳言献策，看看学校还可以设立哪些岗位，邀请同学们一起参与管理，为学校的发展贡献一份力量。除了学校的公益岗位之外，周老师认为，同学们还可以走进社会，去参与更多有意义的活动。据我所知，七宝鑫都有一批同学已经在父母的带领下，参与了许多公益爱心活动。比如，担任暑期爱心暑托班的故事志愿者，比如走进贫困地区为当地孩子献出一份爱心。希望在学校首届感恩节期间，各个班级能够在班主任老师的组织下，开展“爱心义举”的故事会，分享更多爱心公益的小故事。希望富有爱心，懂得感恩，能够成为七宝鑫都每一位学子的精神内核和形象标签。未来，让我们持之以恒，付诸行动，让爱、感恩，这些正能量能够在七宝鑫都的校园涌动和传递。
+</p>
+<p>
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	六（7）班刘心予同学介绍自己的公益之旅
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060935045.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-weight:bold;font-size:13pt;">
+	公益宣讲
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 老师们，同学们，大家好！我是六（7）班的刘心予。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 首先想问大家一个问题，早上我们是怎么来上学的？我想，大多数都是爸爸或者妈妈开车陪伴来的吧？你们有没有独自走几里的山路再搭几十里的公交车去学校过呢？肯定是没有的。然而，在遥远的青海，就有很多这样的孩子。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 去年，我们全家去青海捐资助学。坐火车、租汽车、翻高山、绕悬崖，跋山涉水最后到达了草原。这里没有高楼大厦、没有汽车鸣笛，甚至没有电子屏幕，只有一望无际的草原、简陋的活动教室和孩子们黝黑的皮肤。当我们把书包和本子送给他们时，他们的眼神充满了喜悦与感激；我为孩子们和藏民表演了小提琴演奏，这应该是他们第一次看到和听到小提琴；在更远的山上，我第一次见到央金。她是个漂亮的藏族小女孩，和我一样大，就已经学会做饭、帮妈妈干农活。爸爸去世了，妈妈拉扯着她和&nbsp;4 岁的妹妹生活。央金平时住校，每周独自往返 40 里山路回家。央金双手捧着她们家仅有的馒头，小心翼翼地不舍得吃，这一幕给我留下了深刻的印象。我们全家商量以后，决定每年给央金资助&nbsp;1500 元学费，直到她和我一起迈入大学校门。这些钱对我们来讲，虽然可能就是上几节课、吃几顿饭，但是这可以帮助她整整一年。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 这次一次助学，改变了我对贫穷和富裕的看法。因为每个人的出生环境不同，造成每个人拥有的资源不同，但我们可以通过自己的努力帮助更多的人。如果大家都能够行动起来，积少成多、汇流成河，他们也会成为我们，明天也一定会更美好。
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	六（5）班付斯咏同学分享对这次捐书活动的心得体会
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060935055.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:13pt;font-weight:bold;">
+	捐书感想
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp;&nbsp;尊敬的老师们，亲爱的同学们，大家好，我是六（五）班的付斯咏。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 老师一直教导我们要做一个“赠人玫瑰，手留余香”，有无私奉献精神的人。这次，学校组织为云南贫困山区的孩子捐书。一回到家，我就迫不及待的翻箱倒柜，寻找我看过有趣的，且喜爱的书籍。一阵精挑细选后，我终于找到了两本比较满意的书，都是关于数学知识的。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 一本是《古罗马人的数字》，这本书讲了古罗马数字的由来，以及它的改变，简洁的汉字配上精美的图片，会使人情不自禁地被书中的内容所吸引，加上它是硬纸板的外壳，光滑又坚硬，不易损坏。另一本是《分数是分出来的》，这本书生动形象地解释了分数的意义。我热爱数学，每当我在阅读这类书籍的时候，都仿佛置身于数学知识的海洋，自由的遨游。因此，我希望这两本书也能让云南山区的小伙伴体会到学习数学的无穷乐趣。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 我抱着书，纵然有些不舍，但想到山区小朋友那一双双清澈的求知的眼睛时，我便坚定了自己的想法。于是在我工工整整地写上“祝你看完后有新的收获”的寄语后，便把书整整齐齐地装进书包。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 一缕书香，一片真情，我们捐出的每一本小小的书就能为贫困山区的同学们增添一份关怀和温暖。以书会友，与书为伴，书籍带我们探索更广阔的天地，也连结了我们最真挚的友谊。通过这次的书籍分享，我也感受到，原来，爱心传递，只要一本书的距离。
+</p>
+<p class="MsoNormal" style="font-size:13pt;">
+	&nbsp; &nbsp; &nbsp; 谢谢大家！
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:center;font-size:13pt;">
+	六（9）班谌则灵同学分享对这次捐书活动的心得体会
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060936006.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-weight:bold;font-size:13pt;">
+	公益宣讲&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	老师们，同学们：
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	大家早上好！我是六（9）班的 谌则灵。
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	古今中外，很多名人都谈论过读书之重要性。比如，高尔基曾说：“书，是人类进步的阶梯。”冰心也说过：“读书好，好读书，读好书。”因此，我们应该珍视书籍，广泛涉猎，扩大自己的知识面。
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	上周，我们七宝鑫都发起了募集图书的活动，准备捐赠给云南山区的孩子们，希望他们能通过图书看到外面的世界，触摸到外部的脉搏，从而对光明和梦想充满期待，并怀揣着一颗炽热的心去拥抱生活。
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	我捐赠的是一本名为《一千零一夜》的名著，这本书讲述了许多国外的故事。我想通过这本书，让云南地区的孩子们多去了解了解国外的故事，也能借助这本书里面的一个个故事看到人心中最珍贵的品质：善良、诚实、守信……当然，也一定要快乐地生活，用一颗真心去对待他人，去顽强地面对世界上的不公平，并用自己的实际行动来证明自己，突出重围，品味各种奇妙的风光，看到世间的人情温暖，用自己独特的思考，去打破平凡与冷淡！
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	当然，每件事都不可能一帆风顺，每件小事都要积土成山，不可能一蹴而就。尤其是阅读，必须得通过一点一滴的积累，日日夜夜的濡染，积小流成江海，积跬步至千里。
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	最后，我寄祝福与书籍，随之直到云贵山区：你们条件虽然不是很好，但只要有坚定的信念和顽强的意志，得意时不孤芳自赏，失意时不顾影自怜，做一名永远的读者，读懂世界，更读懂自己。愿你们不畏艰苦，砥砺奋进，向着阳光不馁地奔跑。
+</p>
+<p class="MsoNormal" style="text-indent:21pt;font-size:13pt;">
+	谢谢大家！
+</p>
+<p class="MsoNormal" style="text-indent:21pt;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<br />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060936017.jpg" alt="" /> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201911/201911060936027.jpg" alt="" /> 
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="224292.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="224292.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="224292.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="224292.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

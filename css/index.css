@@ -1,0 +1,435 @@
+html,body{margin:0;padding:0;width: 100%;color: #4a4a4a;}
+body,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,input,select,form{
+    margin:0;padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+}
+.btn{
+	border: 0px;
+	height: 30px;
+	width:40px;
+	position: absolute;
+	top: 1px;right: 0px;
+	background-color: #a43239;
+	color: white;
+}
+.table  a:hover{
+	color: #A43239 !important;
+}
+.btn:focus,#q:focus{outline:0;} 
+ul{
+    list-style:none;
+}
+img{
+	border: 0px;
+}
+*{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #666666;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+.nav{
+	width: 100%;
+}
+.nn{
+	width: 100%;
+	margin: auto;
+	position: relative;
+	height: 30px;
+	background-color: #f5f5f5;
+}
+.head{
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	height: 30px;
+	background-color: #f5f5f5;
+}
+.head-nav{
+	float: right;
+	padding-top: 6px;
+	margin-right: 22px;
+}
+.logo{
+	width: 1200px;
+	margin: auto;
+	margin-top: 10px;
+}
+.first{
+	margin-top: 20px;
+}
+.menu{
+	margin-top: 10px;
+	width: 100%;
+	background-color: #a43239;
+}
+.nav-nav{
+	width: 1200px;
+	margin: auto;
+}
+.nav-nav a{
+	color: white;
+	font-size: 16px;
+}
+.nav-nav > ul li{
+	display: inline-block;
+	margin-left: 63px;
+	padding: 18px 0 18px 0px;
+}
+.nav-nav a:hover{
+	color: #f5d41f;
+}
+.main{
+	width: 1200px;
+	margin: auto;
+}
+.lunbo,.xinwen{
+	display: inline-block;
+	vertical-align: top;
+}
+.lunbo{
+	width: 650px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #A43239;
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.swiper-active-switch {
+  background:#A43239;
+  border: 1px solid #A43239;
+}
+.swiper-container{
+	cursor: inherit !important;
+}
+.pagination{
+	position: absolute;
+    text-align: center;
+    z-index: 100;
+    width: 650px;
+}
+.ok{
+	background:rgba(103,103,101,0.3) ;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4f000000,endColorstr=#4f000000); 
+}
+.xinwen{
+	width: 520px;
+	margin-left: 25px;
+}
+
+.xw-title{
+	font-size: 16px;
+	display: inline-block;
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0;
+}
+.more{
+	float: right;
+	padding: 10px 0;
+	margin-top: 6px;
+	color: #ccc;
+}
+.con{
+	display: inline-block;height: 100px;position: relative;
+	margin-top: 8px;
+	border: 1px solid white;
+}
+.con:hover{
+	border-top: 1px solid #A43239;
+	border-bottom: 1px solid #A43239;
+}
+.tz{
+	
+	margin-top: 20px;
+	width: 380px;
+}
+.tz-con{
+	display: none;
+}
+.tz-con > ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.tz-con > ul li a{
+	color: #333;
+}
+.time{
+	float: right;
+	color: #ccc;
+}
+.tz-con > ul {
+	list-style-type: disc;
+	margin-top: 5px;
+	width: 390px;
+}
+.tz-con > ul li{
+	color: #ccc;
+	padding: 10px;
+	padding: 10px 14px 4px 2px;
+}
+.tz-con > ul li:hover{
+	color: #A43239;
+}
+.tz-con > ul li:hover a{
+	text-decoration: underline;
+}
+.hd,.tz{
+	display: inline-block;
+	vertical-align: top;
+}
+.hd{
+	width: 790px;
+	margin-top: 20px;
+	margin-left: 26px;
+}
+
+.tu>div {
+	display: inline-block;
+}
+
+
+.tu .tu-two {
+	vertical-align: top;
+}
+
+.tu-two .t-text {
+}
+
+.footer{
+	width: 100%;
+	height: 300px;
+	background-color: #2f2f2f;
+}
+.link a{
+	font-size: 14px;
+	color: #c3c3c3;
+	line-height: 35px;
+}
+.link-tab td{
+	width: 270px;
+}
+.link-tab,.lx-tab{
+	margin-top: 15px;
+}
+.st-left,.st-right,.jr-left{
+	display: inline-block;
+	vertical-align: top;
+}
+.st-left,.jr-left{
+	width: 250px;
+	
+}
+.st-right{
+	width:945px;
+}
+.st-left ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+.st-left > ul li{
+	color: #ccc;
+	padding: 5px;
+	font-size: 14px;
+}
+.st-left > ul li a{
+	font-size: 14px;
+	color: #333;
+}
+.st-left > ul li:hover,.st-left > ul li:hover a{
+	color: #A43239;
+}
+.address{
+	margin-top: 30px;
+}
+.list{
+	margin-top: 30px;
+}
+.usual{
+	list-style-type: square !important; 
+}
+.bt{
+	border-bottom: 1px solid lightgray;
+	padding: 5px;
+}
+.bt span{
+	
+	font-size: 16px;
+}
+.st-con > ul li{
+	line-height: 34px;
+}
+.st-con .time{
+	margin-right: 10px;
+}
+.st-con > ul > li a:hover{
+	text-decoration: underline;
+}
+.page{
+	margin: 40px;
+	font-size: 13px;
+	text-align: center;
+}font-size: 12px;	
+}
+
+.jr-left ul li{
+	list-style-type: square;
+	list-style-position: inside;
+}
+.jr-left > ul li{
+	color: #ccc;
+	padding: 5px;
+	font-size: 14px;
+}
+.jr-left > ul li a{
+	font-size: 14px;
+	color: #333;
+}
+.jr-left > ul li:hover,.jr-left > ul li:hover .aa{
+	color: #A43239;
+}
+
+
+.con-left,.con-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.wz{
+	border-color: #A43239;
+}
+.con-left{
+	width: 750px;
+}
+.con-right{
+	width: 380px;
+	margin-left: 60px;
+}
+	
+.content-twoo{
+	background-color: white;
+	padding-top: 20px;
+}
+.head-title,.head-footer{
+	color: #333;
+	text-align: center;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.head-footer{
+	font-size: 12px;
+	color: #666;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.page-head-address a{
+	font-family: "微软雅黑";
+	color: #4A4A4A;
+	text-decoration: none;
+	font-size: 13px;
+}
+.connt-con{
+	padding-bottom: 15px;
+}
+.fx{
+	display: inline-block;
+	width: 240px;	
+	margin-top: 20px;
+	text-align: center;
+}
+.con-right ul li{
+	color: #ccc;
+}
+.con-right ul li a{
+	color: #666;
+}
+.con-right ul li:hover{
+	color: #a43239;
+}
+.con-right ul li:hover a{
+	color: #666;
+	text-decoration: underline;
+}
+.con-right ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+.con-right ul li{
+	line-height: 30px;
+}
+
+.thr-one,.thr-two,.thr-three{
+	display: inline-block;
+	vertical-align: top;
+}
+.thr-one,.thr-two{
+	width: 380px;
+}
+.thr-con> ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.thr-con > ul li a{
+	color: #333;
+}
+/*.pa:hover{
+	color: #A43239;
+}*/
+.thr-con > ul {
+	list-style-type: disc;
+	margin-top: 5px;
+	width: 390px;
+}
+.thr-con > ul li{
+	color: #ccc;
+	padding: 10px;
+	padding: 10px 14px 4px 2px;
+}
+.thr-con > ul li:hover{
+	color: #A43239;
+}
+.thr-con > ul li:hover a{
+	text-decoration: underline;
+}
+.thr-two{
+	margin-left: 20px;
+}
+.img{
+	margin-top: 15px;
+}
+.img img{
+	width: 182px;
+    height: 122px;
+    margin-left: 5px;
+    margin-top: 3px
+}
+.thirst{
+	padding-bottom: 25px;
+}
+.btnn{
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid lightgray;
+}
+.st-con ul li{
+	list-style-type: square;
+	list-style-position: inside;
+	color: #ccc;
+}
+.st-con ul li a{
+	color: #333;
+}
+.st-con ul li:hover{
+	color: #A43239;
+}

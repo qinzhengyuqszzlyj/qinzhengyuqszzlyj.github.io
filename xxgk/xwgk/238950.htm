@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都文书档案管理制度</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都文书档案管理制度
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-08-08</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" style="text-indent:24.0000pt;">
+	一、文书处理
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、严格执行《国家行政机关公文处理办法》，公文处理必须规范化、制度化。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、公文必须按照公文写作的规则和要求用十六开拟稿纸和钢笔书写。合理应用文种， 格式符合要求，请示应坚持“一文一事”，避免请示报告混杂。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、发文必须按规定审批程序，经领导鉴发、统一编号后行文，并做好发文登记。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、收到外来文件后必须先登记，传阅文件要合理安排，严格管理，做到及时、准确、 安全，并要做好催交、传阅工作，以免积压和散失。组织传阅时，应本着先急后缓、先领导后一般、先主办后协办、先办理后阅知的原则进行。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、凡本校人员外出公务活动中形成、带回的文件，均应交校长办公室收集、登记、归档，任何人不得据为己有拒绝归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	二、立卷归档
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、本校在工作活动中形成的各类文件材料（文书、教学、科技、声像、会计）均应及时收集、立卷归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、立卷工作要做到各年清，不得借故拖延和积压，按时完成每一年度的立卷归档任务。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、坚持平时立卷和专题立卷，每办一件事，每开一个重要会议或每搞一个中心工作， 要及时做好文件材料的收集整理、立卷归档工作。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、立卷归档的基本要求：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>1）卷内文件的排列，必须保持文件之间的历史联系。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>2）归档的文件必须符合要求用16开纸，用钢笔书写，正件、原件要齐全。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>3）卷内文件的排列应坚持先近后远、先重要后次要、先批复后请示的原则。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>4）文书档案的卷内文件应在每页的右上方编页号，科技档案的卷内文件在每页的右下方编页号。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>5）案卷标题要简单确切，符合“三要素”（作者、内容、文种）要求。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、归档时间：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>1）每年五月底前必须完成上一年度的文书材料归档任务。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>2）科研项目文件材料必须经鉴定后即立卷归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>3）基建项目文件材料必须在竣工验收后即立卷归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>4）设备、仪器的随机文件材料必须在设备开箱后即立卷归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>5）会计档案中的报表在第二年的五月底前立卷归档，帐册和凭证必须在隔年的上半年立卷归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	三、档案保密
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、严格执行《保守国家秘密法》和国家工作人员十条保密守则。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>1）不该说的机密，绝对不说。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>2）不该问的机密，绝对不问。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>3）不该看的机密，绝对不看。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>4）不该记录的机密，绝对不记录。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>5）不在非保密本上记录机密。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>6）不在私人通信中涉及机密。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>7）不在公共场所和家属、子女、亲友面前谈论机密。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>8）不在不利于保密的<a target="_blank" href="https://qbxd.mhedu.sh.cn/xxgk/xwgk/1">地方</a>存放机密文件、资料。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>9）不在普通电话、明码电报、普通邮局传达机密事项。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>（</span>10）不携带机密材料游览、参观、探亲、访友和出入公共场所。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、文件、档案、资料要专人专柜保管，离开档案室要随手关灯、关窗、关门，钥匙随身携带，做好完全保卫工作。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、严格执行档案查（借）阅制度，档案内容一律不得外传。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、对内容密级高的档案，要经主管领导批准方可借阅。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、严格执行文件、档案销毁制度，做好销毁记录。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、违反保密规定或泄密者，要按《档案法》有关规定予以处罚。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	四、档案统计
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、档案统计工作的要求：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	要有明确的目的性，要具有准确性，要保持连续性，要保证及时性，要注意分析研究。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、档案统计的内容：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	库藏统计、清查统计、鉴定统计、移交统计、借阅统计、利用效果统计。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、档案统计的方法：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	绝对数的统计、相对数的统计、平均数的统计。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、考虑本档案室基础与档案工作需要，重点抓好库藏统计，鉴定统计、利用效果统计。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、档案统计材料均属归档范围，应加强档案收集、整理归档工作。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	五、档案借阅
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、档案室是本校党政档案集中统一管理部门，并为学校及各教学部门服务。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、查（借）阅档案，必须填写《档案查（借）阅登记簿》，借阅时间一律不得超过二周，如有特殊情况可以续借手续，但重要文件必须当天归还。阅后一律退还本室，不得损坏和遗失。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、严格遵守保密工作条例，档案管理人员和借阅人员均不得泄密，对密级高的档案，要经主管领导批准后方可查（借）阅。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、借阅档案不得擅自转借，不得折叠、剪贴或抽页、拆封档案，严禁在档案上勾画、 涂抹、添加文字等。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、凡要摘抄复制时，必须说明理由，经档案管理人员同意后方可进行。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、档案室要注意收集利用实例，做好档案利用效果登记。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	六、档案库房管理
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、档案库房是保管学校档案的机要重地，必须严格执行档案库房技术保护管理办法，认真做好保密和防盗、防火、防潮、防光、防尘等保护工作。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、非档案管理人员未经允许不得进入库房。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、档案库房内必须配备空调设备、去湿设备和灭火器材，并有专人定期检查其效果。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、档案库房内不得存放易燃物品，严禁吸烟。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、库房门窗必须保持坚固，出入库房应随手关门，以确保库房的安全。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、调阅或出借档案，应严格执行本校制订的档案查（借）阅制度。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	7、适时做好档案库房的通风、除湿工作，并经常打扫，保持清洁卫生。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	8、对库房的档案，每年进行一次检查核对，并做好记录，发现可疑情况应迅速追查。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	七、档案移交
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、严格执行档案材料统一管理的原则，凡在本校工作活动中形成的具有保存价值的文件材料，都应交档案室归档保存。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、各部门在年终时，要按《立卷类目》将文件材料收集齐全向档案室移交。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、移交文件材料时，必须填写《档案材料移交清单》一式二份，双方各执一份。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、档案室应积极配合档案馆的接收工作，做好档案的移交。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、档案管理人员变动时，要做好档案的移交工作，认真办理交接手续。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	八、档案鉴定销毁
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、档案价值鉴定工作应坚持全面、历史、发展的观点，全面地考察档案的价值，正确地制定档案保管期限，确保档案质量。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、销毁失去保存价值的档案应逐页登记造册，由档案鉴定小组核定，经分管领导和区档案局领导会审批准签字后才能进行。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、销毁文件档案须按规定在指定地点进行。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、销毁档案必须有二人以上监销，防止丢失泄密。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、监销人监销后应在销毁档案清册上注明销毁日期和方式，并签字盖章。
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	2019年8月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="238950.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="238950.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="238950.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="238950.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

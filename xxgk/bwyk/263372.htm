@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2021年度七宝中学附属鑫都实验中学艺术教育发展年度报告</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_46.htm">体卫艺科</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2021年度七宝中学附属鑫都实验中学艺术教育发展年度报告
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-11-24</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" style="text-indent:2em;">
+	艺术教育工作是学校教育的重要组成部分，经过学校师生共同的努力，学校艺术教育工作逐年稳步提升。围绕丰富学生的课余生活，从教师到学生，从社会到家长，学校已逐渐形成了校园艺术教育的氛围。学生的艺术水平、艺术鉴赏能力在原来的基础上有了较大的提升。现作报告如下：
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<b><span>一、制定方案，明确目标</span></b><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021<span>年初，我校进一步</span><span>明确了</span>艺术<span>工作的目标</span>、<span>策略</span>、<span>措施</span>，<span>特别是明确了本年度工作的重点是保持学校艺术课程开课率达到</span>100<span>％，加强特色课程建设和艺术教师队伍培养</span>。<span>学校以</span>拓展课、社团课<span>为</span>平台<span>，多种艺术项目并</span>行推<span>进</span>，<span>各项工作有了方向，保障了学校艺术工作正常、有序</span>、高效<span>推进。</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<b><span>二、落实措施，</span></b><b>深化艺术教育</b><b></b> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	1. 加大投入，配备器材
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	为了使学校艺术教育工作更好的开展，为学生提供便捷的学习环境，学校坚持逐步增加艺术投入经费，购置鼓号队乐器数十件，增设音乐教室音响设备一套。及时有效地保证美术活动材料的购置与供应，从而加强了学校的艺术教育的硬件配备，保证了艺术教学工作与活动的顺利开展。
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	2. <span>开足课程，加强教学</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>开齐开足艺术课程。学校艺术教育课程改革的主要任务是推广和实施国家、</span>上海<span>市艺术课程标准。艺术课程以音乐、美术</span>、艺术<span>分别开设为主，按照国家课程计划和课程标准的要求进行。</span>在课堂乐器教学方面，我校实施分层开展，相对较低的六、七年级开展的小乐器是口琴，八年级至高二年级的艺术课程开设的乐器是尤克里里，今后还会加入打击乐器的学习。除了基础型课程以外，<span>强化已有的特色</span>拓展<span>课程建设，包括</span>合唱<span>、</span>纸艺<span>、</span>素描、国画<span>、</span>摄影、<span>舞蹈、</span>鼓号队<span>等</span>艺术<span>特色课程，为更多艺术特长</span>学<span>生提供了</span>更广阔<span>的平台。</span><span>今年我校初中合唱团在建团后首次参加闵行区第七届学生合唱节的比赛荣获初中组一等奖的佳绩；高中部合唱团也在建团不久的时间内参与了东方艺术中心举办的绿孔雀生物多样性保护音乐会活动和上海国际艺术节主题曲《地球是个美丽的圆》的歌曲</span>MV<span>录制。美术方面也在国家级和市区级各项比赛中荣获众多奖项。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>根据艺术教育的规律和学生生理心理发展的特点，结合本校的实际情况创造性地组织教学。</span>我校<span>艺术教师充分利用和开发学校教育资源，重视现代化教育技术和手段的学习和应用，逐步实现教学形式的现代化、多样化，拓展艺术教育的空间，提高艺术教学的质量。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	3.<span>开展活动，陶冶情操</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>校园艺术活动是学校艺术教育的重要组成部分。在活动的内容和形式上，考虑到学校教育及学生的心理的特点，遵循学生的主体性和自主选择性原则，鼓励学生积极参与。在普及的基础上，尽可能满足学生提高的愿望。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>学生社团活动。学校根据学生特点，</span>先后<span>开设了艺术社团</span>多<span>个，</span>合唱团、<a target="_blank" href="263372.htm">中国</a>舞社团、街舞社团（高中部）、主持朗诵社团、话剧社、国画社团、素描社团、“<span>泥</span>”塑节日文化社、摄影艺术社、纸艺社团等，<span>社团活动做到了有计划、有措施、有师资、有</span>保障<span>。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	4.<span>强化</span>师资<span>，</span>强化艺术<span>素养</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>我校现专职艺术教师</span>9<span>名，音乐专职教师</span><span>4</span><span>名美术专职教师</span><span>6</span><span>名，其中研究生比例为</span><span>44%</span><span>，一级职称比例为</span><span>66%</span><span>。在接下来几年中，我校随着办学年级的新增会逐步增加艺术教师的师资。以</span><span>建设一支师德高、技能强的专职艺术教师为主为重点，加强艺术教师队伍建设。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	5.<span>营造氛围，耳濡目染</span> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>构建良好</span>校园<span>文化，利用传统节日和</span>感恩活动<span>、</span>让学生自制宣传海报，录制宣传歌曲，在学校的英语节和体育节中配合学校主题活动完成会徽设计和活动原创歌曲，让学生在享受文化<span>学习氛围的同时，展示学校艺术</span>教育<span>成果。加强班级艺术特色的建设，积极营造良好的班级艺术氛围。</span>每年一届的校园艺术节开展，学生从歌、舞、器乐、戏剧演绎、书法、绘画、纸艺等多方面进行更加全面的展示才艺，借助校园微信公众号的推广让同学们的才艺被更多人关注鼓励，在营造校园艺术氛围的同时也增强了学生参与艺术活动的积极性。
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<b><span>三、建章立制，规范管理</span></b> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<span>建立健全了艺术教育管理机构，不断提高学校艺术教育的管理水平，确保学校艺术教育政策、法规的落实，加大了对学校艺术教育经费的投入和器材配备，保证了学校艺术教育快速、健康发展。学校设置了符合教学需要的音乐、美术</span>、舞蹈<span>专用教室。明确了专用教室管理人员，加强对艺术课程学生用品的管理和专</span>用<span>室卫生的管理，保障了正常的艺术教学的开展。</span>
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	四、<b>本年度学生艺术获奖情况</b><b></b> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	<b>学生团队及个人获奖</b><b></b> 
+</p>
+<p class="MsoNormal" style="text-indent:2em;">
+	2021.6 &nbsp;区级 闵行区第七届学生合唱节 荣获初中组学生合唱 一等奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.3 &nbsp;区级 <span>闵行区第</span>14届学生艺术节舞蹈比赛（初中组）&nbsp;二等奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 获闵行区中小学生古诗词综合艺术展演 三等奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 黄熙宇同学 获2021年闵行区学生艺术单项比赛 打击乐初中组 银奖 &nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 高佑嘉同学 获2021年闵行区学生艺术单项比赛 声乐初中组 银奖 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 李雨璇同学 获2021年闵行区学生艺术单项比赛 打击乐初中组 铜奖 &nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 周文皓同学 获2021年闵行区学生艺术单项比赛 西乐（弦乐）初中组 金奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 马玥淇同学 获2021年闵行区学生艺术单项比赛 声乐初中组 金奖 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 潘奕乐同学 获2021年闵行区学生艺术单项比赛 西乐（键盘）初中组 金奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 王铖杰同学 获2021年闵行区学生艺术单项比赛 打击乐初中组 铜奖 &nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 蒋钰妍同学 获2021年闵行区学生艺术单项比赛 舞蹈初中组 金奖 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 倪悦岚同学 获2021年闵行区学生艺术单项比赛 民乐（弹拨）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 罗婧予同学 获2021年闵行区学生艺术单项比赛 民乐（弦乐）初中组 铜奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 曾子萱同学 获2021年闵行区学生艺术单项比赛 民乐（弹拨）初中组 铜奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 刘赫宸同学 获2021年闵行区学生艺术单项比赛 西乐（键盘）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 周佳萱同学 获2021年闵行区学生艺术单项比赛 西乐（键盘）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 鲍 &nbsp;易同学 获2021年闵行区学生艺术单项比赛 戏剧（朗诵）初中组 铜奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 李文启同学 获2021年闵行区学生艺术单项比赛 西乐（键盘）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 莫一轩同学 获2021年闵行区学生艺术单项比赛 西乐（弦乐）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 王天一同学 获2021年闵行区学生艺术单项比赛 打击乐初中组 铜奖 &nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 张番番同学 获2021年闵行区学生艺术单项比赛 西乐（键盘）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 姚晗森同学 获2021年闵行区学生艺术单项比赛 声乐初中组 银奖 &nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 马懿轩同学 获2021年闵行区学生艺术单项比赛 钢琴初中组 铜奖 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 薛浩然同学 获2021年闵行区学生艺术单项比赛 西乐（弦乐）初中组 银奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 区级 黄睿颖同学 获2021年闵行区学生艺术单项比赛 民乐（弹拨）初中组 银奖 &nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 侯语洲同学 获上海市第七届“海伦希望之星”钢琴展示活动闵行区H组金奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 晏涵卿同学 获上海市第七届“海伦希望之星”钢琴展示活动闵行区D组铜奖
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.4 &nbsp;区级 殳薇茜同学 获闵行区第十八届“信宏·莘松杯”中小学美术比赛（初中低年级组），一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.4 &nbsp;区级 陈奕天同学 获闵行区第十八届“信宏·莘松杯”中小学美术比赛（初中低年级组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.5 &nbsp;区级 陈子璇同学《党的光辉照我心》 获上海市学生绘画书法展赛活动闵行区中学组（绘画），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;市级 钱馨悦同学《我与祖国共成长》 获上海市学生绘画书法摄影作品展，二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.5 &nbsp;区级 钱馨悦同学《我与祖国共成长》 获上海市学生绘画书法展赛活动闵行区中学组（书法），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.5 &nbsp;区级 马玥淇同学《和小苗共成长》 获上海市学生绘画书法展赛活动闵行区中学组（摄影），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;全国 翁嘉宜同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛（Ⅱ组），全国三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;市级 祁米同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛（Ⅱ组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;市级 翁嘉宜同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛（Ⅱ组），一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;全国 许宸宇同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛（Ⅱ组），全国一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;市级 许宸宇同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛（Ⅱ组），一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;市级 孙惜晨同学 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛（Ⅱ组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 周墨同学 获闵行区学生艺术单项比赛（动漫），银奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 袁海菲同学 获闵行区学生艺术单项比赛（动漫），银奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 孙惜晨同学 获闵行区学生艺术单项比赛（动漫），铜奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 陈姝颖同学 获闵行区学生艺术单项比赛（工艺），银奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 马玥淇同学 获闵行区学生艺术单项比赛（陶艺），银奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 袁浩铭同学 获闵行区学生艺术单项比赛（陶艺），银奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 陈思淼同学 获闵行区学生艺术单项比赛（陶艺），铜奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 庄嘉怡同学 获闵行区第五届“我的健康我做主”创意绘画大赛，一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 翁嘉宜同学 获闵行区第五届“我的健康我做主”创意绘画大赛，一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 李昕莹同学 获闵行区第五届“我的健康我做主”创意绘画大赛，一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 许宸宇同学 获闵行区第五届“我的健康我做主”创意绘画大赛，二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 &nbsp;区级 翁淏宸同学 获闵行区第五届“我的健康我做主”创意绘画大赛，三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 钱馨悦同学 获“阳光天使杯”2021年闵行区学生艺术作品展活动，中学组（篆刻），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 徐翊儒同学 获“阳光天使杯”2021年闵行区学生艺术作品展活动，中学组（工艺），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 陆彦伯同学 获“阳光天使杯”2021年闵行区学生艺术作品展活动，中学组（绘画），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 漆钰同学 &nbsp;&nbsp;获“阳光天使杯”2021年闵行区学生艺术作品展活动，中学组（工艺），一等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 连子诚同学 获“阳光天使杯”2021年闵行区学生艺术作品展活动，中学组（书法），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 王博岳同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学硬笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 连子诚同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 黄阅迪同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 葛尧承同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 刘子麦同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学硬笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 吴佳阳同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 胡晚晴同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 张安心同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 曾一一同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 杜昕慕同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学软笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.10 区级 张艺琳同学 获闵行区第六届“黎明杯”中小学生优秀书法作品征集活动（中学硬笔组），三等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.11 区级 马悠婷同学 获闵行区第十届“莘城杯”中小学生现场书法大赛（中学硬笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.11 区级 黄阅迪同学 获闵行区第十届“莘城杯”中小学生现场书法大赛（中学软笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.11 区级 曾一一同学 获闵行区第十届“莘城杯”中小学生现场书法大赛（中学软笔组），二等奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" style="text-indent:20.1pt;">
+	<b>教师获奖：</b><b></b> 
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 市级 杨丽莉老师 获上海市学生绘画书法摄影作品展，优秀指导教师奖；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 市级 杨丽莉老师 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛，优秀辅导教师；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	2021.6 市级 顾曦老师 获第二十三届“飞北”绘画评比活动暨2021国际航联青少年航空绘画大赛上海区选拔赛，优秀辅导教师；
+</p>
+<p class="MsoNormal" style="text-indent:16pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-indent:28.1000pt;text-align:right;">
+	<b>报告撰写人：田奇申</b> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:right;text-indent:28.1pt;">
+	<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>时间：</span>2021.11.21</b><b></b> 
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="263372.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="263372.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="263372.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="263372.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

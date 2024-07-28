@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2020学年第一学期第18周区教研活动通知</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
+    <script src="../../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../../qbxd_mhedu_sh_default.html"><img src="../../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../../index.htm">首页</a> >
+        <a href="../../../info/iIndex_12.htm">通知公告</a> >
+        <a href="../../../info/iList_58.htm">研训通知</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2020学年第一学期第18周区教研活动通知
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2020-12-28</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<table class="MsoNormalTable" style="width:85.34%;border-collapse:collapse;border:none;" width="85%" cellspacing="0" cellpadding="0" border="1">
+	<tbody>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;" width="4%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">编号<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">时间<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">学科<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">年级<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">地点<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">内容<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">出席与附言<span></span></span></b>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">1</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2020-12-31 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">历史<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">高中、初中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">网络钉钉平台，钉钉号：<span>32364700</span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">闵行区第四届教育学术节紫竹讲堂中学历史专场<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">闵行区第四届教育学术节紫竹讲堂中学历史专场<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">专家报告：中学历史学科核心素养的内涵解读与实施要求<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">报告人：上海市教委教研室<span>&nbsp; </span>於以传<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">请全区初高中历史老师提前登录钉钉平台，<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">搜索钉钉号<span>32364700</span>，<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">进入闵行区第四届教育学术节紫竹讲堂中学历史专场；<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2020-12-30 14:21</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">数学<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">七年级<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">网络教研<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">七年级第四次教研活动（网络教研）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">学年第一学期闵行区初中数学七年级第四次教研活动<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">通知<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">一、研讨主题：以问题解决为特征的课堂教学研究<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">二、研讨时间<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>30</span>日（第十八周周三）下午<span>13:00—15:00</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">三、研讨议程<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">．<span>13:00—13:10&nbsp; </span>腾讯会议签到；<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">．<span>13:10—13:50&nbsp; </span>《<span>11.5</span>翻折和轴对称图形》<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:81.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：计昕芸 君莲学校；<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">3</span><span style="font-size:9.0pt;font-family:宋体;">．<span>14:00—14:40&nbsp; </span>《平面镶嵌》<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:81.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教： 张慧 颛桥中学；<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">4</span><span style="font-size:9.0pt;font-family:宋体;">．<span>14:40—15:00&nbsp;</span>上课教师说课及章节教学建议<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">四、研讨地点：腾讯会议室<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">五、参加对象：闵行区七年级数学教师参加网络教研。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:45.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">闵行区教育学院教研中心初中数学组<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:72.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>25</span>日<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">3</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2020-12-29 14:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">研究型课程、探究、拓展<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">高中、初中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">七宝三中（宝南路<span>88</span>号），<span>214</span>会议室<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">区中学拓展型、研究型课程中心组成员学期工作总结会<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">大致议程：<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（<span>1</span>）<span>2020</span>市研究型课程中青年教师教学评选经验总结；<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（<span>2</span>）<span>2020</span>区拓展型课程中青年教师教学评选经验提炼、问题反思及后续系列教研活动规划；<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">备注：<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（<span>1</span>）现阶段为内部反思，仅限区中学两类课程中心组成员参与，具体名单如下（排名不分先后）：<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">北桥中学<span>-</span>宋妮娜、交大二附中<span>-</span>王 艳、梅陇中学<span>-</span>冯 灵、梅陇中学<span>-</span>管文利、明星学校<span>-</span>李文跃、浦江三中<span>-</span>姚秀明、七宝三中<span>-</span>赵晓群、七宝三中<span>-</span>胡洁婷、七宝三中<span>-</span>金若薇、莘光学校<span>-</span>俞志光、文来初中<span>-</span>周 晔、文来初中<span>-</span>葛颖倩、君莲学校<span>-</span>陆晓蕾、龙茗中学<span>-</span>胡继国、华二初中<span>-</span>黄 婕、闵行三中<span>-</span>刘
+  辉、七宝中学<span>-</span>欧维嘉、古美高中<span>-</span>马春华、田园高中<span>-</span>杨 俊、上师闵分<span>-</span>胡亚芬、实践基地<span>-</span>茅天翼<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（<span>2</span>）特殊时期，请各位与会教师配合学校做好疫情防控工作，谢谢！<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">4</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2020-12-29 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">英语<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">高中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">网络<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">高中英语第<span>18</span>周线上教研活动<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">本次网络教研活动时间：<span>2020</span>年<span>12</span>月<span>29</span>日<span>—1</span>月<span>8</span>日<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">具体安排：<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">一、<span>2020</span>年<span>12</span>月<span>29</span>日<span>—31</span>日 观摩教学研讨课视频（云录播平台）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">高三复习：语篇教学<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第一节课：<span>&nbsp;the Geography
+  Lesson&nbsp;&nbsp;</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：黄佳妮（闵行中学）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第二节课：<span>&nbsp;Bridging the Gap
+  &nbsp;&nbsp;</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：韩海坤（闵行中学）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">高一上外版：阅读教学<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第<span>1</span>节课：必修<span>2Unit&nbsp;1 &nbsp;The Natural Garden</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：宋海莲（七宝中学）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第<span>2</span>节课：必修<span>2Unit 1<span>&nbsp; </span>Reading</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：朱思天（七宝中学）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第<span>3</span>节课：必修<span>1Unit 3<span>&nbsp; </span>Travel</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">执教：沈慧莉（七宝中学）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">二、<span>2020</span>年<span>12</span>月<span>29</span>日<span>—1</span>月<span>8</span>日<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">就研讨课进行点评、分享听课感悟。（云录播平台）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">全体 高中英语教师<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;"><span>&nbsp;</span></span><span style="font-size:9.0pt;font-family:宋体;">要求<span>: </span>请每位教师在云录播平台上写下自己的观课感言（不少于<span>50</span>字）。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">第<span>20</span>周周二将公布本次网络教研活动各校的参与情况和课后点评的质量。<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">5</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2020-12-31 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">信息<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="7%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">初中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="11%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">腾讯会议<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="45%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">初中信息科技智慧项目组活动<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">在线伴随视角下的计算思维研讨。<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="15%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">请区智慧项目组成员员参加。<span></span></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="248233.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="248233.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="248233.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="248233.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

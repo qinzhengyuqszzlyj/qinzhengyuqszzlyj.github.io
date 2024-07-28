@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2021学年第一学期第十五周升旗仪式暨七宝鑫都第三届艺术节开幕式</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2021学年第一学期第十五周升旗仪式暨七宝鑫都第三届艺术节开幕式
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-12-06</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914000.jpg" alt="" style="width:80%;" />
+</p>
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	主持人：七(3)班&nbsp;&nbsp;张钰君&nbsp;&nbsp;&nbsp;&nbsp;六(6)班&nbsp;&nbsp;王梓恒
+</p>
+<p style="text-align:center;">
+	<br />
+</p>
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	艺术总指导田奇申老师解读七宝鑫都第三届艺术节方案
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914010.jpg" alt="" style="width:80%;" />
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	大队辅导员、团委书记顾曦老师宣读2021年区级合唱、市、全国航空绘画大赛获奖名单
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914021.jpg" alt="" style="width:80%;" />
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	党总支书记、常务副校长黄岳辉老师为2021年区级合唱、市、全国航空绘画大赛获奖同学颁奖
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914032.jpg" alt="" style="width:80%;" />
+</p>
+<br />
+<p style="text-align:center;">
+	<span style="font-size:17.3333px;font-weight:700;">高中部合唱团学生代表发言</span> 
+</p>
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914043.jpg" alt="" style="width:80%;" />
+</p>
+<p style="text-align:center;font-size:12pt;">
+	高二(3)班&nbsp;&nbsp;&nbsp;&nbsp;朱驰云
+</p>
+<p style="text-align:center;font-size:13px;">
+	<span style="font-size:13px;font-weight:bold;">《合唱带给我们别样的精彩》</span> 
+</p>
+<p style="font-size:13pt;">
+	各位老师、各位同学：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家好。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我是高中部“鑫声合唱团”的一员、高二（3）班朱驰云。我非常荣幸代表“七宝鑫都首届男生合唱团”的全体团员在此发言。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我们合唱团成立于2021年9月，王海波老师将我们这些热爱合唱的同学聚集在一起，以做闵行区、甚至上海市最优秀的合唱团为目标，严格训练，精益求精。短短的三个月中，我们不仅在演唱技巧上突飞猛进，而且自信心与荣誉感更是快速提升，“爱与正直”是我们合唱团的精神追求。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我和我的团员近期参加了几个重要的活动，让我们非常自豪。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	10月31日，我们合唱团，参加了“2021年诺亚方舟绿孔雀生物多样性保护音乐会发布”活动。在崇明东滩湿地公园，我们合唱团首次在公众前亮相，唱响了主题曲《绿孔雀》，向公众传递着保护绿孔雀这一我国独有物种的紧迫性，用音乐与歌声赞美生命的美好，表达我们对保护生物多样性的一份努力。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	11月18日，“2021年诺亚方舟绿孔雀生物多样性保护音乐会”在上海东方艺术中心举行。王海波老师带领我们这支“年幼”的队伍登上了东艺的舞台。这是我们第一次登上这么大舞台，上海爱乐乐团的音乐家们为我们伴奏，面对座无虚席的观众，我们合唱团的每个成员心中都洋溢着难以言表的激动。乐声响起，我们站在聚光灯下，成为全场的焦点；当最后一个音符停止时，热烈的掌声从观众席传来，自豪感与幸福感将我们包围，这一幕，将在我们心中永久的定格、长久珍藏。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	前天，我们鑫声合唱团顺利完成了上海国际艺术节主题曲《地球是个美丽的圆》音乐短片的拍摄。我们在黄浦江边歌唱、我们在东方绿舟的“理想之翔”上歌唱，结束时导演的一声“cut”，大家默默对视，不约而同地鼓起掌。这掌声不仅是献给所有默默付出的工作人员，更是献给我们合唱团的每一个团员以及精心指导我们的海波老师。感谢她带领我们走出校园，走向了专业的大舞台，让我们的学生时代有了一份别样的精彩。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	海波老师常说：“机会，不是总有的，要好好珍惜每一个机会。”的确，机会是留给有准备的人的。为了不错过机会，从合唱团成立以来，我们坚持每周至少一次训练、每个音节、每个表情、每个手势都不断的纠正，不放过每个细节。在海波老师严格的培训下，守时守纪、刻苦坚持、自信正直，正在成为我们每一个团员的共同性格。我相信，这种性格会让我们终身受益。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	再次感谢校领导对我们鑫声合唱团的大力支持，更感谢王海波老师为我们倾注的心血。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家。
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	手风琴小组展示
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210914057.jpg" alt="" style="width:80%;" />
+</p>
+<p style="text-align:center;font-size:12pt;">
+	高二(2)班&nbsp;奚瀚霖、七(4)班&nbsp;刘赫宸、六(8)班&nbsp;杨褚辰
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="266208.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="266208.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="266208.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="266208.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

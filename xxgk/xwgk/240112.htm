@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都家长委员会章程</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都家长委员会章程
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-07-30</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" align="center" style="text-align:center;">
+	<b><span>第一章</span> &nbsp;&nbsp;&nbsp;<span>总则</span></b><b></b> 
+</p>
+<p class="MsoNormal">
+	<b>第一条</b>&nbsp;&nbsp;<span>家长委员会是学校的参谋和咨询机构，是家长学校的常设机构，是民主办学的重要形式。</span> 
+</p>
+<p class="MsoNormal">
+	<b>第二条</b>&nbsp;&nbsp;家长委员会的宗旨是团结全校学生家长，充分发挥家长对学校教育教学工作的参谋、监督作用，把学校教育与家庭教育有机结合起来，促进学校教育改革，提高教育质量。
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b>&nbsp;</b> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b><span>第二章</span> &nbsp;&nbsp;&nbsp;<span>权利与义务</span></b><b></b> 
+</p>
+<p class="MsoNormal">
+	<b>第三条</b>&nbsp;&nbsp;<span>家长委员会全体委员享有以下权利：</span> 
+</p>
+<p class="MsoNormal">
+	1、有权获知学校的办学目标和工作计划，有权提出自己的相应意见。
+</p>
+<p class="MsoNormal">
+	2、有权对学校的教育教学工作和日常管理提出意见和合理化建议，学校应该在合理期限内答复。
+</p>
+<p class="MsoNormal">
+	3、有权作为其他家长的代言人，对学校工作及教职员工给予监督和评议，向学校反馈家长的意见和要求，学校应该在合理期限内答复。
+</p>
+<p class="MsoNormal">
+	4、在本家长委员会换届时，有推举和被推举权。
+</p>
+<p class="MsoNormal">
+	5、有权对委员会工作进行监督。
+</p>
+<p class="MsoNormal">
+	<b>第四条</b>&nbsp;&nbsp;<span>家长委员会的主要义务：</span> 
+</p>
+<p class="MsoNormal">
+	1、广<span>泛搜集家长对学校的意见和要求，定期参加家长学校、家长会，交流家庭教育的情况和经验。</span> 
+</p>
+<p class="MsoNormal">
+	2<span>、关心、了解学校工作，对学校的办学方向、教育质量、教师工作、行政管理等方面提出建设性意见，做出适当的评价，实行必要的监督。</span> 
+</p>
+<p class="MsoNormal">
+	3<span>、大力支持学校工作，为学校开展的重大教育、教学活动提供可能的帮助，做好学校与家长的协调。</span> 
+</p>
+<p class="MsoNormal">
+	4<span>、探讨如何使学校教育与家庭教育结合起来，以解决学生中存在的某些倾向性问题。</span> 
+</p>
+<p class="MsoNormal">
+	5<span>、协助学校调解学校与家庭之间的争议。</span> 
+</p>
+<p class="MsoNormal">
+	6、组织成立家庭教育理论研究小组，开展专题研讨，论文交流，促进家教理论水平的提高。
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b>&nbsp;</b> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b><span>第三章</span> &nbsp;&nbsp;&nbsp;<span>委员</span></b><b></b> 
+</p>
+<p class="MsoNormal">
+	<b>第五条</b>&nbsp;&nbsp;<span>家长委员会成员，必须具备下列条件</span>：
+</p>
+<p class="MsoNormal">
+	1<span>、作风正派，威信较高，有一定的组织能力和文化素养。</span> 
+</p>
+<p class="MsoNormal">
+	2<span>、了解和关心教育，懂得一定的教育规律，关心学校，能为学校工作出主意、提意见。</span> 
+</p>
+<p class="MsoNormal">
+	3<span>、具有比较丰富的家庭教育经验，并有较好的教育效果。</span>
+</p>
+<p class="MsoNormal">
+	<b><span>第六条</span> </b>&nbsp;<span>家长委员会组织办法：家长委员会由各班级根据条件推荐，经学校研究，征求个人意见后确定，并由学校颁发聘书。</span> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b>&nbsp;</b> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b><span>第四章</span> &nbsp;&nbsp;&nbsp;<span>组织机构及职责</span></b><b></b> 
+</p>
+<p class="MsoNormal">
+	<b>第七条</b>&nbsp;&nbsp;<span>家长委员会设主任一名，副主任若干名，秘书长一名，委员若干名。</span> 
+</p>
+<p class="MsoNormal">
+	<span>（一）主任、副主任职责</span> 
+</p>
+<p class="MsoNormal">
+	1<span>、定期与学校保持联系。</span> 
+</p>
+<p class="MsoNormal">
+	2、制定家长委员会工作计划。
+</p>
+<p class="MsoNormal">
+	3、主持家长委员会工作和主持家长会议。
+</p>
+<p class="MsoNormal">
+	4、副主任协助主任工作，完成主任交办的任务。
+</p>
+<p class="MsoNormal">
+	<span>（二）秘书长职责</span> 
+</p>
+<p class="MsoNormal">
+	1<span>、在主任领导下，协助处理委员会的日常事务。</span> 
+</p>
+<p class="MsoNormal">
+	2、负责委员会成员之间的联络。
+</p>
+<p class="MsoNormal">
+	<span>（三）委员职责</span> 
+</p>
+<p class="MsoNormal">
+	1、<span>广泛了解社会各界和家长的意见或建议并及时报告。</span> 
+</p>
+<p class="MsoNormal">
+	2<span>、向家长做好学校管理等方面的解释工作。</span> 
+</p>
+<p class="MsoNormal">
+	3<span>、按时参加委员会的各项活动。</span> 
+</p>
+<p class="MsoNormal">
+	<b>第八条</b>&nbsp;&nbsp;<span>家长委员会活动制度</span>。
+</p>
+<p class="MsoNormal">
+	1、<span>家长委员会按时参加家长会议。</span> 
+</p>
+<p class="MsoNormal">
+	2、家长委员会每学期活动一至二次，讨论工作、了解情况或做出评价等。
+</p>
+<p class="MsoNormal">
+	3、家长委员会定期开展家庭教育课题研讨和论文评选。
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b>&nbsp;</b> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b><span>第五章</span> &nbsp;&nbsp;&nbsp;<span>附则</span></b><b></b> 
+</p>
+<p class="MsoNormal">
+	<b>第九条</b>&nbsp;&nbsp;<span>家长委员会办公室设在七宝鑫都行政楼三楼办公室。</span> 
+</p>
+<p class="MsoNormal">
+	<b>第十条</b>&nbsp;&nbsp;<span>家长委员会通过秘书处或直接与学校领导联系工作。</span> 
+</p>
+<p class="MsoNormal">
+	<b><span>第十一条</span> </b>&nbsp;<span>家长委员会每</span>3年为一届，期间可根据情况进行增减委员。
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	2019年7月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="240112.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="240112.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="240112.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="240112.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

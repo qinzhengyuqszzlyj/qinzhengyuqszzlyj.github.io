@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>祝贺七宝鑫都再添市级优秀小研究员</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 祝贺七宝鑫都再添市级优秀小研究员
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2022-08-22</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);">&nbsp; &nbsp; &nbsp; 近日，七宝鑫都科创捷报频传。</span><span style="font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);color:#FF0000;"><strong>九(8)班戴子涵同学继侯君睿同学之后，为学校再添“上海市青少年科学研究院优秀小研究员”荣誉(全市仅10名)。</strong></span><strong>九(7)班刘心予同学荣获“上海市青少年科学研究院优秀小研究员”提名奖(全市仅20名)。</strong><span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);">九(4)班陈彦邦、九(9)黄语萱、九(10)班李轩庾三位同学成功入围市优秀小研究员复评。</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:16px;background-color:#FFFFFF;">&nbsp; &nbsp; &nbsp; &nbsp;上海市青少年科学研究院优秀小研究员评选、上海市青少年科技创新大赛、上海市“明日科技之星”评选是上海科技教育三大重磅活动。</span><strong><span style="color:#FF0000;">2020年、2022年闵行区两名“上海市青少年科学研究院优秀小研究员”均出自七宝鑫都。</span></strong><span style="color:#141414;font-family:&quot;font-size:16px;background-color:#FFFFFF;">一起来听听本次获奖的两位市级小研究员的创新故事吧。</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:16px;background-color:#FFFFFF;"><br />
+</span></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><strong>戴子涵</strong></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#003366;font-family:&quot;font-size:14px;background-color:#FFFFFF;">上海市青少年科学研究院优秀小研究员</span><br />
+</span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120707038.jpg" alt="" style="width:80%;" /><br />
+</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 我在七年级时加入学校科创社。在科创导师的指导下，我开始尝试第一个研究项目——“应用共振原理的家用直冷型电冰箱除冰方法初探”。这个课题源于对我家直冷型电冰箱冷冻室除冰问题的思考：冷冻室易结冰，除冰难度大，能不能研发一种简单、快速、高效、节能的除冰方法？</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 我从弹奏古筝中联想到物理学的共振原理，开始了我的首次研究之旅。在课题研究中，我多次感到迷茫与无助。文献中大篇幅的英文专用术语令我发怵，实验结果一次又一次与预期有偏差让人沮丧……然而，每一次战胜困难，就是往前迈进一小步。最后一次试验表明：当激振频率与试验件的固有频率一致，会产生共振，振动幅度最大，这时激振除冰效果最好，解决了个人家庭里直冷型电冰箱冷冻室长期“顽固”的除冰痛点。</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 加入青少年科学研究院闵行分院后，我又得到了闵行分院老师的指导。关于冰箱除冰我有了进一步的思考：将压电薄膜激振器预埋在直冷型冰箱的栅格、内壁，可以直接促进直冷型电冰箱除冰产业化应用，使用国产零部件将进行更低成本的大规模应用。后期我有计划去冰箱厂家调研沟通产品化的工作。</span><br />
+</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 通过科创课题研究，我不仅掌握了查阅文献、做实验等一系列研究方法，我的动手能力、表达能力，还有对于科学的兴趣和意志力也有了很大的提升。在疫情前后，我主动观察和思考小区邻里关系，开始了我的第二个科创项目——“上海作为国际化大都市邻里关系的现状和改进对策研究”。做科创给我最大的启迪就是：发现问题是研究最重要的工作，问题来源于生活，创新就在我们身边。</span></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120708013.jpg" alt="" style="width:80%;" /></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120708022.jpg" alt="" style="width:80%;" /></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><br />
+</span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><strong>刘心予</strong></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#003366;font-family:&quot;font-size:14px;background-color:#FFFFFF;">上海市青少年科学研究院优秀小研究员提名奖</span></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120708047.jpg" alt="" style="width:80%;" /></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 刚一入校，我便满怀期待地加入学校科创社。2020年，我幸运地加入了上海市青少年科学研究院，先后从事两项课题研究、一项探究培养活动，多次参加科创高端前沿讲座。</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 我的研究课题：《地摊健康码——地摊版的大众点评系统》来源于疫情中的地摊经济。我发现：如果能够评定摊铺的信用等级，可以更好地管理城市经济秩序。我开始收集资料并借助健康二维码的形式，尝试通过客户点评，让摊铺信用一目了然。在这个过程中，我不仅要上网查询，设计实验，还要实地和摊铺主交流，极大地锻炼了我的动手实践和与人沟通的能力。</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 通过学校科创导师指导、参赛竞赛以及讲座培训，我学习到丰富的科创知识，同时也拓宽了视野。参与前沿高端科学技术普及教育讲座，让我进一步了解航天航空技术、深海技术、大数据、人工智能等前沿科技的发展，更加明确我们的征途是星辰大海。</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#141414;font-family:&quot;font-size:13px;background-color:rgba(255, 255, 255, 0.8);">&nbsp; &nbsp; &nbsp; 让我颇感自豪的是，在做科创研究的过程中，我也幸运地成为了一名“学生科创导师”。我的任务是协助同学们完成科创课题，我们小组定期讨论，共同整理课题研究思路，撰写研究日志，一起演练并参加各种答辩活动。在协作研究的过程中，我的逻辑思维能力有所提升，语言表达能力和自信心都增长了不少，我非常享受和小伙伴们在一起合作研究带来的乐趣。</span></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120709023.jpg" alt="" style="width:80%;" /></span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120709033.jpg" alt="" style="width:80%;" /></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><br />
+</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="font-family:&quot;font-size:16px;background-color:#F3DCD7;color:#141414;">&nbsp; &nbsp; &nbsp; 七宝鑫都建校三年以来，已累计培养20位“上海市青少年科学研究院小研究员”，完成102项课题研究，荣获上海市青少年科技创新大赛、“明日科技之星”等含金量较高的科创类竞赛奖项200余项。</span><strong><span style="color:#FF0000;">2022年7月，学校获评“闵行区青少年科学研究院校级分院”，越来越多的科创“鑫”星正在这里冉冉升起。</span></strong></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><br />
+</span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><span style="color:#FFFFFF;font-family:&quot;font-size:16px;background-color:#86D0F1;"><span style="color:#E56600;">七宝鑫都市级小研究员</span>名单</span><br />
+</span> 
+</p>
+<p style="text-align:center;">
+	<span style="color:#141414;font-family:&quot;font-size:16px;background-color:rgba(255, 255, 255, 0.6);"><img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202211/202211120710001.jpg" alt="" style="width:70%;" /><br />
+</span> 
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="270989.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="270989.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="270989.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="270989.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

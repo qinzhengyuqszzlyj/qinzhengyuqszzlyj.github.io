@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都迎来第一届感恩节</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都迎来第一届感恩节
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-09-12</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 金秋九月，七宝鑫都迎来了第一届感恩节。9月9日上午，主题为“感恩有你，相伴前行”的感恩节正式拉开帷幕。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100321018.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 常务副校长黄岳辉致开幕词。黄校长介绍学校设立感恩节的初衷，鼓励同学们常怀感恩之心，做一个知恩、感恩、报恩的人。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100321041.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 六（6）班梁子毅同学发言，讲述进入七宝鑫都后所感受到的关心与鼓励，代表同学们表达对全体老师的感激之情。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100330008.jpg" alt="" /> 
+</p>
+<div>
+</div>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 六年级全体班主任受聘担任中队辅导员，黄岳辉副校长颁发聘书，同学们怀着感恩的心，向班主任老师献上鲜花和贺卡。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100322027.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100322046.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 六（7）班班主任戴佳敏老师作为教师代表发言。戴老师表达了对教师职业的热爱和坚守，以及对莘莘学子健康成长的殷切期望。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100323006.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;">
+	&nbsp; &nbsp; &nbsp; 最后，七宝鑫都合唱队的同学们献唱歌曲《每当我走过老师窗前》，向全体老师表达浓浓的感恩之情。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201910/201910100330029.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:10pt;">
+	<br />
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:12pt;font-weight:bold;">
+	七宝鑫都第一届感恩节开幕式致辞
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;font-size:12pt;">
+	黄岳辉
+</p>
+<p class="MsoNormal" style="font-size:12pt;">
+	各位老师、各位同学：
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	大家上午好！今天是我校第一个主题文化节日----感恩节的开幕式，今年的主题是“感恩有你，相伴前行”。
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	说起感恩节，它其实是一个起源于美国的宗教节日，1620年，著名的“五月花”号船满载不堪忍受英国国内宗教迫害的清教徒102人到达美洲。1620年和1621年之交的冬天，这批移民遇到了难以想象的困难。这时，心地善良的印第安人给移民送来了生活必需品，还特地派人教他们怎样狩猎、捕鱼和种植玉米、南瓜。在印第安人的帮助下，移民终于获得了丰收。在欢庆丰收的日子，按照宗教传统习俗，他们规定了感谢上帝的日子，并决定为感谢印第安人的真诚帮助，邀请他们一同庆祝节日。这就是西方感恩节的起源。
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	当然，今天我们七宝鑫都的感恩节，不是西方的宗教节日。但是，我们仍然可以从中吸取积极的成分，那就是，要乐于把得到好处的感激之情表现出来并且努力回馈他人。在我们的成长过程中，我们的父母、师长无私付出，为我们倾注了大量心血，我们的同学、朋友陪伴我们一路前行。他们就是给予我们真诚帮助的人，就是我们要心存感恩，努力回馈的人。
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	今年的感恩节，正值我国第三十五个教师节。在此，我呼吁我们的同学，和我一起向全体教师致以节日的问候，祝老师们节日快乐、身体健康、工作顺利、万事如意。在我们的教师群体中，班主任又是一个特殊的群体。他们是教师群体中付出最多的人，也是教师群体中压力最大的人，更是教师群体中责任最重的人。一个天下最小的主任，肩上扛起的却是引领学生健康成长，培养祖国未来建设者和接班人的重大责任。在此，我也呼吁我们的同学，真诚地向班主任老师道一声：老师，您辛苦了！
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	今年的感恩节，也正值我们伟大祖国70周年华诞。70年岁月更迭、沧桑巨变，我们的祖国由百废待兴，逐渐走向繁荣富强，走近世界舞台中心。没有祖国的日益强盛，就没有我们今天的幸福生活。同学们，你们去问问你们的父母、爷爷奶奶，就会更真切地感受到，我们今天的幸福生活来之不易，是一代又一代人接续奋斗的结果。所以，我们应该感恩伟大的祖国，感恩我们所生活的这个的伟大的时代。当然，更重要的是，要把这种感恩之情，化作学习的动力，努力学习，练就本领，将来能够担当起建设祖国的重任。
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	同学们，感恩节开幕式只是一个仪式，更重要的是我们的行动。<a target="_blank" href="222168.htm">中国</a>有句古话：滴水之恩，当涌泉相报。愿大家都能常怀感恩之心，做一个知恩、感恩、报恩的人。
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;font-size:12pt;">
+	谢谢大家！
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-indent:21.0000pt;text-align:right;font-size:12pt;">
+	2019年9月9日
+</p>
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="222168.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="222168.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="222168.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="222168.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

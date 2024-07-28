@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>To Do The Most,To Show The Best 七宝鑫都首届英语文化节重磅来袭！</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 To Do The Most,To Show The Best 七宝鑫都首届英语文化节重磅来袭！
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2020-11-19</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250626048.jpg" alt="" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	语言的魅力势不可挡，自信的笑容充满力量！
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	为点燃学生的英语学习兴趣，增强英语学习能力和语言自信，提升思维品质，充分营造勤学、乐学、好学的英语语言文化氛围，酝酿许久的七宝鑫都首届英语文化节终于在这个暖暖的初冬闪亮登场了！
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	作为首次亮相校园的英语文化盛会，都有哪些热点吸引学子们跃跃一试呢？11月16日上午9:35，七宝鑫都首届英语文化节开幕，六位英语老师联袂主持，为即将推出的精彩赛事揭开神秘面纱！
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250627002.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	傅羽平
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250627015.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	陈蕴之
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250627042.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	张倪颖
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250627054.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	肖云贺
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628003.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	顾佳伟
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628012.jpg" alt="" style="width:70%;" /> 
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	杨小妹
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628023.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628033.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628041.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250628051.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250629004.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250629012.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202011/202011250629022.jpg" alt="" style="width:80%;" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	活动具体安排
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;">
+	<table width="100%" style="margin:0px 0px 10px;padding:0px;color:#333333;font-family:-apple-system-font, BlinkMacSystemFont, &quot;font-size:14px;text-align:center;background-color:#FFFFFF;">
+		<tbody>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFE0B2;">
+					<p style="text-align:center;">
+						<strong>名称</strong> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFE0B2;">
+					<p style="text-align:center;">
+						<strong>时间</strong> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFE0B2;">
+					<p style="text-align:center;">
+						<strong>奖项设置</strong> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语翻译大赛
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						11/6
+					</p>
+					<p style="text-align:center;">
+						12:20-13:00
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						由英语辅导报组委会评选并设置奖项
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语朗读者
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						初赛
+					</p>
+					<p style="text-align:center;">
+						11/17&nbsp;<span>12:00-13:00&nbsp;</span> 
+					</p>
+					<p style="text-align:center;">
+						决赛
+					</p>
+					<p style="text-align:center;">
+						11/24&nbsp;<span>12:00-13:00&nbsp;</span> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						各年级评选
+					</p>
+					<p style="text-align:center;">
+						一、二、三等奖
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语TED演讲
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						&nbsp;初赛，复赛
+					</p>
+					<p style="text-align:center;">
+						11/20-27
+					</p>
+					<p style="text-align:center;">
+						决赛
+					</p>
+					<p style="text-align:center;">
+						12/11<span>&nbsp;13:00-15:30&nbsp;</span> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						全校评选
+					</p>
+					<p style="text-align:center;">
+						一、二、三等奖
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语课本剧
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						初赛
+					</p>
+					<p style="text-align:center;">
+						11/16-27&nbsp;
+					</p>
+					<p style="text-align:center;">
+						决赛
+					</p>
+					<p style="text-align:center;">
+						12/4&nbsp;<span>12:00&nbsp;</span> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						全校评选
+					</p>
+					<p style="text-align:center;">
+						一、二、三等奖
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						Spelling Bee英语拼写大赛
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						初赛
+					</p>
+					<p style="text-align:center;">
+						11/23&nbsp;<span>12:20-12:30</span> 
+					</p>
+					<p style="text-align:center;">
+						决赛
+					</p>
+					<p style="text-align:center;">
+						11/25 (六年级)
+					</p>
+					<p style="text-align:center;">
+						11/26(七年级)
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						各年级评选
+					</p>
+					<p style="text-align:center;">
+						一、二、三等奖
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语书写比赛
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						11/20&nbsp;<span>12:30-12:50</span> 
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						各年级评选
+					</p>
+					<p style="text-align:center;">
+						一、二、三等奖
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" width="25.0000%" style="border:1px solid #FFFFFF;background-color:#FFEED3;">
+					<p style="text-align:center;">
+						英语科普论坛
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="35.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						11/16-12/18
+					</p>
+				</td>
+				<td colspan="1" rowspan="1" width="40.0000%" style="border:1px solid #FFFFFF;background-color:#FFFAF1;">
+					<p style="text-align:center;">
+						上海市科技翻译学会评选并设置奖项
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+<br />
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	好戏连台，不容错过！这个十一月注定与众不同！
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="245084.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="245084.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="245084.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="245084.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2020学年第一学期第16周区教研活动通知</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
+    <script src="../../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../../qbxd_mhedu_sh_default.html"><img src="../../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../../index.htm">首页</a> >
+        <a href="../../../info/iIndex_12.htm">通知公告</a> >
+        <a href="../../../info/iList_58.htm">研训通知</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2020学年第一学期第16周区教研活动通知
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2020-12-14</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p>
+	<br />
+</p>
+<p>
+	<table class="MsoNormalTable" style="border-collapse:collapse;border:none;" cellspacing="0" cellpadding="0" border="1">
+		<tbody>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">编号<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">时间<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">学科<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">年级<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">地点<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">内容<span></span></span></b> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<b><span style="font-size:9.0pt;font-family:宋体;">出席与附言<span></span></span></b> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">1</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-16 11:10</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">物理<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">九年级、八年级<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">鹤北初中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">初中物理青师五期研讨活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">内容：初中物理学业质量测评实证研究 <span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">负责人：陶海娟、陈玉萍<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">初中物理青师五期全体成员<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-16 13:30</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">生命科学<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">初中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">云录播平台<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>16</span>周生命科学初中教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动主题：数码显微互动实验教学，提升学生科学探究素养<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动形式：云录播线上平台<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动安排：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">1.</span><span style="font-size:9.0pt;font-family:宋体;">云录播在线观看教学视频：<span>13:30--14:10</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">课题：<span>“</span>怦然心跳<span>”-</span>探究不同因素对水蚤心率的影响（八年级新授课）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">执教：华二双语<span>&nbsp; </span>衡楠楠<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2.</span><span style="font-size:9.0pt;font-family:宋体;">云录播在线评课和校内研讨：<span>14:10-15:30</span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">3</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-16 13:30</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">生命科学<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">高中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">云录播平台<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>16</span>周生命科学高中教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动主题：技术服务智慧课堂 助推核心素养落实<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动形式：云录播线上平台<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动安排：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">1.</span><span style="font-size:9.0pt;font-family:宋体;">云录播在线观看教学视频：<span>13:30--14:10</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">课题：《光合作用和细胞呼吸》（合格考教学复习课）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">执教：华理科高<span>&nbsp; </span>张艳芳<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2.</span><span style="font-size:9.0pt;font-family:宋体;">云录播在线评课和校内研讨：<span>14:10-15:30</span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">4</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-17 13:30</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">信息<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">高一<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">北外田园<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">闵行区高中信息科技学科教研<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">兹定于<span>2020</span>年<span>12</span>月<span>17</span>日（星期四）下午<span>1:30</span>在北外田园开展《基于学科核心素养的项目活动设计与实践》研讨会。请全体学科教师准时参加。<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">5</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-16 13:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">数学<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">初高中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">网络钉钉平台，钉钉号：<span>33609995</span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">数学新课程需要研究的问题<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">闵行区第四届教育学术节紫竹讲堂中学数学专场<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">专家报告：数学新课程需要研究的问题<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">报告人：华东师范大学数学科学学院教授，博士生导师，《数学教学》主编；第<span>11</span>届国际数学教育大会国际程序委员会成员，第<span>14</span>届国际数学教育大会组织委员会联合主席鲍建生先生。<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">请全区初高中数学老师提前登录钉钉平台，搜索钉钉号<span>33609995</span>，进入闵行区第四届教育学术节紫竹讲堂中学数学场<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">6</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-17 13:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">语文<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">七年级、初中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">线上<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">“</span><span style="font-size:9.0pt;font-family:宋体;">设计活动（问题），促进学习<span>”—— </span>七年级语文教研活动（暨闵行区初中语文学科育德培训班教学实践展示一）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">一、公开课观课：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">13</span><span style="font-size:9.0pt;font-family:宋体;">：<span>00——13</span>：<span>40&nbsp; &nbsp; &nbsp;</span>； <span>13</span>：<span>50——14</span>：<span>30</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">每位观课教师选择以下五节课中的两节课观课：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">文来中学<span>&nbsp; &nbsp;</span>青年教师公开课：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">、王琦<span>&nbsp; &nbsp;</span>《猫》（七年级）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">、乐佳颖《狼》（七年级）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">学科育德培训班教学实践课：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">3</span><span style="font-size:9.0pt;font-family:宋体;">、曾丽<span>&nbsp; </span>《盼》（六年级）（康城学校）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">4</span><span style="font-size:9.0pt;font-family:宋体;">、李敏<span>&nbsp; &nbsp;</span>《猫》（七年级）（文绮中学）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">5</span><span style="font-size:9.0pt;font-family:宋体;">、刘晓秋 《杞人忧天》（七年级）（七宝鑫都）<span>&nbsp;&nbsp;</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">二、观课教师评课<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">每位教师用师训号登录<span>“</span>云录播平台<span>”</span>观课，并即看即评。在课的下方的<span>“</span>交流评课<span>”</span>栏内发帖评课。 评课最后署上<span>“ </span>学校名<span>*</span>教师名<span>”</span>，此也为教研活动签到方式。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">三、集中研讨：<span>14</span>：<span>40——16</span>：<span>00</span>（腾讯会议室）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">、评课研讨<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">、《设计活动，促进学习》微讲座<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">3</span><span style="font-size:9.0pt;font-family:宋体;">、七年级教学提示<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">（观课地址和会议室地址，教研当天发教研组长群）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">全体七年级语文教师和学科育德班成员参加；请提前准备好登录。<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">7</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-17 08:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">道德与法治、政治<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">高中、初中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">上海闵行区协和双语教科学校<span>3</span>号会议室（闵行区万源路<span>55</span>号）<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第四届教育学术节<span>“</span>紫竹讲堂<span>”</span>思政专场线下活动的通知<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>17</span>日上午<span>8</span>点在教科实验学校召开中小学第四届教育学术节<span>“</span>紫竹讲堂<span>”</span>思政专场活动，由北京师范大学学术委员会主任、国家教材委员会兼大中小德育一体化专家委员会主任韩震教授主讲。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">本次活动线上线下同步进行，请区全体中小学思政教师准时参加会议。各校教研组长线下参会，除教研组长以外老师按照群号入群后，把昵称修改为<span>“</span>学校<span>+</span>姓名<span>”</span>，准时在线观看直播参与互动。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">具体活动安排：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-indent:18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">在<span>2020</span>年“十四五”开局前夕，闵行区教育局、闵行区教育学院为促进教师专业精进、深化闵行教育内涵建设，特以“素养导向下的教师专业能力建设”为主题，举办第四届教育学术节“紫竹讲堂”活动。现定于<span>2020</span>年<span>12</span>月<span>17</span>日召开中小学思政专场，由北京师范大学学术委员会主任、国家教材委员会兼大中小德育一体化专家委员会主任韩震教授主讲。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-align:center;text-indent:-18.0pt;" align="center">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">主题：大中小德育一体化的理解和推进<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">时间：<span>2020</span>年<span>12</span>月<span>17</span>日上午<span>8</span>：<span>15-11</span>：<span>00</span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">参会方式：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">线下：上海闵行区协和双语教科学校<span>3</span>号会议室（闵行区万源路<span>55</span>号）<span></span></span> 
+					</p>
+					<p class="MsoNormal">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">线上：钉钉群号<span>34725639</span></span> 
+					</p>
+					<p class="MsoNormal">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">参会对象：闵行区全体中小学思政教师<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">参会要求：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">1</span><span style="font-size:9.0pt;line-height:150%;font-family:宋体;">、各中学思政学科教研组长线下参会<span><span>&nbsp; </span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;"><span>&nbsp;</span><span>&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;line-height:150%;font-family:宋体;">请各位教研组长在<span>12</span>月<span>14</span>日下午<span>16</span>：<span>00</span>前扫二维码登记信息（见附件<span>1</span>）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-align:center;text-indent:-18.0pt;" align="center">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">（注：因教科学校无法提供停车位，请把车停在中庚漫游城地下车库，提前<span>15</span>分钟到达学校，进校出示健康码，配合门卫测量体温。给您带来不便，敬请理解，谢谢！）<span></span></span> 
+					</p>
+					<p class="MsoNormal">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">2</span><span style="font-size:9.0pt;line-height:150%;font-family:宋体;">、除教研组长以外老师按照群号入群后，把昵称修改为“学校<span>+</span>姓名”，准时在线观看直播参与互动）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;"><span>&nbsp;</span><span>&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;line-height:150%;font-family:宋体;">活动重要，请勿缺席！<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-align:right;text-indent:-18.0pt;" align="right">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">闵行区教育局<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-align:right;text-indent:-18.0pt;" align="right">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">闵行区教育学院<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="margin-left:18.0pt;text-align:right;text-indent:-18.0pt;" align="right">
+						<span style="font-size:9.0pt;line-height:150%;font-family:宋体;">2020</span><span style="font-size:9.0pt;line-height:150%;font-family:宋体;">年<span>12</span>月<span>11</span>日<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">各校教研组长线下参会，除教研组长以外老师按照群号入群后，把昵称修改为<span>“</span>学校<span>+</span>姓名<span>”</span>，准时在线观看直播参与互动。<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">8</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-16 12:50</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">物理<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">九年级、八年级<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">文绮中学<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">初中物理名师工作室联动研讨活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动主题：单元教学设计导向下的课堂教学<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动承办：上海市民办文绮中学<span>&nbsp;</span>江川东路<span>980</span>号<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">领导专家：上海市物理教研员<span>&nbsp;</span>汤清修<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">奉贤区尚同中学<span> &nbsp;&nbsp;</span>王春燕<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">闵行区物理教研员<span>&nbsp;</span>戴金平<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">主持：莘光学校 高剑英<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">活动流程安排<span></span></span> 
+					</p>
+					<table class="MsoNormalTable" style="border-collapse:collapse;border:none;" width="402" cellspacing="0" cellpadding="0" border="1">
+						<tbody>
+							<tr>
+								<td colspan="2" style="border:solid windowtext 1.0pt;" width="129" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">流程<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">时间<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="84" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">地点<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">内容<span></span></span> 
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="border:solid windowtext 1.0pt;" width="38" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">1</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="90" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">签到<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">12:45-</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">-13:05</span> 
+									</p>
+								</td>
+								<td rowspan="3" style="border:solid windowtext 1.0pt;" width="84" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">六楼<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">云录播<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<br />
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" style="border:solid windowtext 1.0pt;" width="38" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">2</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="90" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">课堂教学<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">研讨课<span>I</span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">13:10-</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">-13:50 </span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">初三物理<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">《电学专题复习》 <span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">文绮中学<span>&nbsp;&nbsp;</span>陈嘉月<span></span></span> 
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="border:solid windowtext 1.0pt;" width="90" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">课堂教学<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">研讨课<span>II</span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">14:05-</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">-14:55 </span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">初二物理《二力平衡》 <span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">奉贤区教育学院附属中学<span>&nbsp;&nbsp;</span>戚梨娜<span></span></span> 
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" style="border:solid windowtext 1.0pt;" width="38" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">3</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="90" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">评课<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">15:00-</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">-15:20</span> 
+									</p>
+								</td>
+								<td rowspan="2" style="border:solid windowtext 1.0pt;" width="84" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">会议室<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">420</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">说课：陈嘉月、戚梨娜<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">评课：王春燕名师工作室代表<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">戴金平名师工作室代表<span></span></span> 
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="border:solid windowtext 1.0pt;" width="90" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">专家点评<span></span></span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="115" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">15:20-</span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">-16:00</span> 
+									</p>
+								</td>
+								<td style="border:solid windowtext 1.0pt;" width="220" valign="top">
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">专家点评：<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">上海市物理教研员<span>&nbsp;</span>汤清修<span></span></span> 
+									</p>
+									<p class="MsoNormal" style="text-align:left;" align="left">
+										<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">说明：请参会教师带好已填写的防疫登记表（见附件）<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">出席：奉贤区王春燕名师工作室全体成员，闵行区戴金平名师工作室全体成员，闵行区初中物理学科指导团。<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">9</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-15 13:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">英语<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">高中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">网络<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>16</span>周高中英语网络教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">本次网络教研活动时间：<span>2020</span>年<span>12</span>月<span>15</span>日～<span>20</span>日<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">具体安排：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">一、观摩教学研讨课视频（云录播平台）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">上外版（高一）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>1</span>节课<span>Friends
+  Reunited&nbsp;(</span>执教：胡妍<span>)</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">上教版（高一）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>2</span>节课：<span>Going
+  global&nbsp;&nbsp;(</span>执教：杨丽君<span>)</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>3</span>节课：<span>A
+  Talk about Phobias (</span>执教：刘晓光<span>)</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">牛津英语（高二）<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">第<span>4</span>节课：<span>Virtual
+  Reality (</span>执教：焦盼<span>)</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">二、点评、分享听课感悟（云录播平台）<span>&nbsp;</span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">全体 高中英语教师 要求<span>: </span>请每位教师在云录播平台上写下自己的观课感言（不少于<span>50</span>字）。 下周二将公布本次网络教研活动各校的参与情况和课后点评的质量。 <span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">10</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-17 08:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">劳技<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">高中、初中、小学<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">各校<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">市级中、小学劳动技术学科网络教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">学年第一学期中、小学劳动技术学科网络教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">一、教研背景<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">今年上半年线上教学的大规模实施给我们带来了许多前所未有的观念和技术挑战，同时也给予了我们改变教学模式、丰富教学资源的实践机会。</span>
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">线上教学不仅是防控疫情期间响应教育部、市教委<span>“</span>停课不停学<span>”</span>要求的切实举措，更是实现教育现代化的重要途径与方式。</span>
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">上海市<span>“</span>空中课堂<span>”</span>成功录制与播放凝聚了无数教师的心血与努力，怎样借助这些优质资源提升劳技教师专业素养？怎样继续探究、优化劳技学科教学方式与方法，完善劳技学科教学体系？</span>
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">本次中小学劳动技术学科网络教研活动的主题将重点围绕<span>“</span>空中课堂<span>”</span>劳技学科的资源，探究讨论如何利用优质网上资源进行线上线下融合，提高课堂教学质量的方式与途径；探索基于单元教学，进一步落实劳技学科核心素养的方法与策略。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">二、教研主题<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">析差异 找融点 探路径<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">——</span><span style="font-size:9.0pt;font-family:宋体;">探索基于<span>“</span>空中课堂<span>”</span>的线上线下教学融合之法 <span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">三、教研时间<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>7</span>日<span>——2020</span>年<span>12</span>月<span>31</span>日<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">四、教研路径<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;https://shanghai.3ren.cn/</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">五、参与对象<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">中小学劳动技术学科专兼职教师<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">六、活动要求<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">参与教师围绕研讨问题发表观点，发帖不少于<span>150</span>字，并能针对他人观点进行二次发言，探讨。也可上传相关活动照片、案例等。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">七、研讨问题<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">（<span>1</span>）基于单元教学设计，如何寻找线上线下教学的差异，利用<span>“</span>空中课堂<span>”</span>的优质资源？<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">（<span>2</span>）基于教学方式改变，如何调整<span>“</span>空中课堂<span>”</span>中的教学内容和形式进行线上线下融合教学，提高教学质量？<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">（<span>3</span>）基于自身的实践感悟，在劳技学科线上线下相融合的教学和教研中，你有什么做法和收获？还有什么意见和建议？<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span> 
+					</p>
+					<p class="MsoNormal" style="text-align:right;" align="right">
+						<span style="font-size:9.0pt;font-family:宋体;">上海市教委教研室<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:right;" align="right">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2020.12.2</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">市级网络教研作为必修教研（学分必修），请全区中小学劳技教师本周完成市级网络教研发帖，谢谢配合！<span></span></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:solid windowtext 1.0pt;" width="28">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">1</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="76">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">2020-12-15 13:00</span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">英语<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="57">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">九年级、初中<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="66">
+					<p class="MsoNormal" style="text-align:center;" align="center">
+						<span style="font-size:9.0pt;font-family:宋体;">闵行区云录播课堂教学评价系统，网址：<span>http://ypk.ct-edu.com.cn/ylb/home/index</span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="387">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">学年第一学期第<span>16</span>周周二初三英语学科网络教研活动<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">一、活动主题：合理利用初三课外阅读素材，提高学生阅读能力<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">二、观课平台：闵行区云录播课堂教学评价系统，网址：</span><span><a href="http://ypk.ct-edu.com.cn/ylb/home/index"><span style="color:windowtext;text-decoration:none;">http://ypk.ct-edu.com.cn/ylb/home/index</span></a></span><span style="font-size:9.0pt;font-family:宋体;"></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">&nbsp;&nbsp; &nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">用户名：进修编号 原始密码<span>Ylb123456</span>，
+  按照学院要求，上学期云录播初始密码已经改为姓拼音首字母大写<span>+</span>名拼音首字母小写<span>+</span>师训号后<span>6</span>位。登入即可。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">三、观课、评课时间：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2020</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>15</span>日（周二）下午<span>13</span>：<span>00—12</span>月<span>31</span>日（周五）下午<span>17</span>：<span>00</span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">四、活动流程及任务要求：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">、观看七宝二中梁丹阳老师（女）的一节初三课外阅读课。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">课题：</span><span><a href="https://raregoldnuggets.com/?p=5657"><span style="color:windowtext;text-decoration:none;">Australian Bushfires Threaten
+  Animals</span></a></span><span style="font-size:9.0pt;font-family:宋体;"></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">(</span><span style="font-size:9.0pt;font-family:宋体;">网上播出时间：线下授课<span>2020/12/15
+  &nbsp;13:00 - 13:40)</span>，在网上完成<span> “</span>量表评课并提交评分<span>”</span>；在网上完成<span>“</span>评论交流并提交评论<span>”</span>。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">、根据这堂课的学习资料和视频，各校英语九年级备课组老师在备课组长的带领下进行观课后研讨、交流，并于<span>12</span>月<span>31</span>日下午<span>17</span>：<span>00</span>前上交一份对这节课的优点及改进意见（可多可少）的观课体会，模版见附件。填写模版内信息，完成后发送邮箱：区学科中心组成员艺琳老师<span>14862550@qq.com, </span>注意截至日期：<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">12</span><span style="font-size:9.0pt;font-family:宋体;">月<span>31</span>日下午<span>17</span>：<span>00</span>前。<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">五、参加对象： 闵行区九年级全体英语老师<span></span></span> 
+					</p>
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">六、观课体会模版（下拉见附件2）<span></span></span> 
+					</p>
+				</td>
+				<td style="border:solid windowtext 1.0pt;" width="104">
+					<p class="MsoNormal" style="text-align:left;" align="left">
+						<span style="font-size:9.0pt;font-family:宋体;">请初中各校初三英语教师按照要求观课并完成作业任务，谢谢配合。<span></span></span> 
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:12.0pt;font-family:黑体;">附件1（道法政治 区教研二维码）：</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:12.0pt;font-family:黑体;"><img src="data:image/jpeg;base64,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" alt="" /><br />
+</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:12.0pt;font-family:黑体;"><br />
+</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:12.0pt;font-family:黑体;">附件2：<span></span></span></b> 
+</p>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<b><span style="font-size:15.0pt;font-family:黑体;">2020</span></b><b><span style="font-size:15.0pt;font-family:黑体;">年第一学期闵行区九年级英语网络在线教研（第二次）<span></span></span></b> 
+</p>
+<p class="MsoNormal" style="text-align:center;" align="center">
+	<b><span style="font-size:15.0pt;font-family:宋体;">观课体会</span></b><b><span style="font-size:15.0pt;color:red;"></span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:12.0pt;color:red;">(</span></b><b><span style="font-size:12.0pt;font-family:宋体;color:red;">截止日期</span></b><b><span style="font-size:12.0pt;color:red;"> 2020</span></b><b><span style="font-size:12.0pt;font-family:宋体;color:red;">年</span></b><b><span style="font-size:12.0pt;color:red;">12</span></b><b><span style="font-size:12.0pt;font-family:宋体;color:red;">月</span></b><b><span style="font-size:12.0pt;color:red;">31</span></b><b><span style="font-size:12.0pt;font-family:宋体;color:red;">日下午</span></b><b><span style="font-size:12.0pt;color:red;">17:00</span></b><b><span style="font-size:12.0pt;font-family:宋体;color:red;">前，完成后发送至区初中英语学科中心组艺琳老师邮箱：</span></b><b><span style="font-size:12.0pt;color:red;">14862550<span>@qq.com)</span></span></b><b><span style="font-size:12.0pt;"></span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:14.0pt;">&nbsp;</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:14.0pt;font-family:宋体;">学校名称</span></b><b><span style="font-size:14.0pt;"> ________________________________________</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:14.0pt;font-family:宋体;">备课组长姓名</span></b><b><span style="font-size:14.0pt;">___________________ </span></b><b><span style="font-size:14.0pt;font-family:宋体;">手机号</span></b><b><span style="font-size:14.0pt;">____________________</span></b> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:14.0pt;">&nbsp;</span></b> 
+</p>
+<p class="MsoNormal" style="text-align:left;background:white;vertical-align:baseline;" align="left">
+	<b><span style="font-size:14.0pt;line-height:150%;font-family:宋体;">九年级阅读课（七宝二中 梁丹阳老师执教，课题：</span></b><span><a href="https://raregoldnuggets.com/?p=5657"><b><span style="font-size:12.0pt;line-height:150%;color:#303030;text-decoration:none;">Australian Bushfires Threaten Animals</span></b></a></span><b><span style="font-size:12.0pt;line-height:150%;font-family:宋体;color:#303030;">）</span></b><b><span style="font-size:14.0pt;line-height:150%;font-family:宋体;">：</span></b><b><span style="font-size:14.0pt;line-height:150%;"></span></b> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;font-family:宋体;">本节课优点：</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">1</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">2</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">3</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">&nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;font-family:宋体;">改进意见</span><span style="font-size:12.0pt;">:</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">1</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">2</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:12.0pt;">3</span><span style="font-size:12.0pt;font-family:宋体;">、</span><span style="font-size:12.0pt;"></span> 
+</p>
+<br />
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="247472.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="247472.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="247472.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="247472.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

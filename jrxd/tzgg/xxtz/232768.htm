@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2019学年第二学期第16周区教研活动通知</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
+    <script src="../../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../../qbxd_mhedu_sh_default.html"><img src="../../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../../index.htm">首页</a> >
+        <a href="../../../info/iIndex_12.htm">通知公告</a> >
+        <a href="../../../info/iList_58.htm">研训通知</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2019学年第二学期第16周区教研活动通知
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2020-06-01</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<table border="1" cellspacing="0" style="width:94.38%;border:none;">
+	<tbody>
+		<tr>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">编号</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="58" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">时间</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">学科</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">年级</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">地点</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="376" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">内容</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="84" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#686868;font-size:9pt;">出席与附言</span><span style="font-family:Tahoma;color:#686868;font-size:9pt;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:10.5pt;">1</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="58" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2020-06-03 13:10</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">物理</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">九年级、八年级</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">各学校</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="376" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p>
+					<span style="font-family:宋体;color:#010101;font-size:9pt;">初中物理南片教研活动</span><span style="font-family:宋体;font-size:9pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">活动主题：复习课专题研讨</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"><br />
+</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">平台：云录播+腾讯会议</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">活动主要内容：</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<table border="1" cellspacing="0" style="width:270.05pt;border:none;">
+					<tbody>
+						<tr>
+							<td width="33" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">研讨课</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="180" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">九年级</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="146" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">八年级</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">主题</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="180" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">《凸透镜成像专题复习》</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="146" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">《热与能单元复习》</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">执教者</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="180" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">华师大二附中 陈凤玲</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="146" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">浦航二中 杨锡芳</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33" valign="top" rowspan="2" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">在线听课途径及时间</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="326" valign="top" colspan="2" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">所有听课老师<span>13:10</span><span>点击进入直播间听课</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="180" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">1<span>、最好用</span><span>“360</span><span>极速浏览器或者谷歌浏览器</span><span>”</span><span>输入以下网址：</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">http://10.107.109.196/ylb/player/living?courseId=78db08913da44636bd8325f5871d5325</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">2<span>、上课时间：</span><span>13:15—13:55</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="146" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">1<span>、最好用</span><span>“360</span><span>极速浏览器或者谷歌浏览器</span><span>”</span><span>输入以下网址：</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">http://10.107.109.196/ylb/player/living?courseId=b3f1b54eb6524e2c82c1dd8fec87566c</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">2<span>、上课时间：</span><span>14:10—14:50</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">在线说课（<span>10</span><span>分钟）</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:12.0000pt;">&nbsp;</span>
+								</p>
+							</td>
+							<td width="326" valign="top" colspan="2" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">一、说课途径：</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">1<span>、点开：腾讯会议</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">2<span>、在屏幕上点击</span><span>“</span><span>加入会议</span><span>”</span><span>，在屏幕上点击输入以下的</span><span>“</span><span>会议</span><span>”</span><span>号，即可进入。</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">会议号：<span>329 749 309 &nbsp;&nbsp;&nbsp;&nbsp;</span><span>密码：当天告知</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">3<span>、进入会议室后，立即点击</span><span>“</span><span>改名</span><span>”</span><span>（学校</span><span>+</span><span>姓名）</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">二、说课过程及注意事项：</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">1<span>、每位开课教师说课时间控制在</span><span>5</span><span>分钟以内；</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">2<span>、</span></span></b><b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">除说课老师外，其他老师进入会议室后立即断开<span>“</span><span>视频</span><span>”</span><span>和</span><span>“</span><span>语音</span><span>”</span><span>。</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="33" valign="top" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<span style="font-family:Calibri;font-size:9.0000pt;">在线评课（<span>10</span><span>分钟）</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+							<td width="326" valign="top" colspan="2" style="border:1.0000pt solid windowtext;">
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">评课流程及要求</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">1<span>、青师班和基地各一名教师代表进行评课发言</span><span>,</span><span>各</span><span>5</span><span>分钟</span><span>;</span></span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+								<p class="p" align="center" style="margin-left:0.0000pt;text-align:center;">
+									<b><span class="16" style="font-family:Calibri;font-size:9pt;">2<span>、</span></span></b><b><span class="16" style="font-family:Calibri;color:#FF0000;font-size:9pt;">其他老师的评课发在腾讯会议的留言中，同时登录完成网上评课。</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="p">
+					<span style="font-family:Calibri;font-size:12.0000pt;">&nbsp;</span>
+				</p>
+			</td>
+			<td width="84" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">初中物理南片全体教师。</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:10.5pt;">2</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="58" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2020-06-03 12:50</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">物理</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">九年级、八年级</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">各学校</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="376" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p>
+					<span style="font-family:宋体;color:#010101;font-size:9pt;">初中物理北片教研活动</span><span style="font-family:宋体;font-size:9pt;"></span>
+				</p>
+				<p class="p">
+					<b><span class="16" style="font-family:Tahoma;color:#010101;font-size:9pt;">一、课堂教学观摩</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">课题1：八年级《热学单元复习》&nbsp;</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">12</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">：</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">55</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">—</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">13</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">：</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">35&nbsp;</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">执教：教科实验 史小亮</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">观课链接：</span><span style="font-family:Tahoma;color:#666666;font-size:9pt;"><a href="https://md.jksz.com/live.html">https://md.jksz.com/live.html</a></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">课题2：九年级《凸透镜成像专题复习》&nbsp;</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">13</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">：</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">50</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">—</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">14</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">：</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">30&nbsp;</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">执教：实验西校 陈琳</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">观课链接：</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">http://10.107.109.196/ylb/player/living?courseId=6a6c564eb0e34a51ba413ec86af93438</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<b><span class="16" style="font-family:Tahoma;color:#010101;font-size:9pt;">二、课堂教学研讨</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">课后研讨：14：</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">35 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">平台：</span><b><span class="16" style="font-family:Tahoma;color:#010101;font-size:9pt;">瞩目会议&nbsp; 主持：蒋红枫</span></b><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Calibri;color:#010101;font-size:9pt;">https://zhumu.me/j/157476367</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">（或输入会议号</span><span style="font-family:Calibri;color:#010101;font-size:9pt;">157 476 367&nbsp;</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;">）</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Calibri;font-size:12.0000pt;">&nbsp;</span>
+				</p>
+			</td>
+			<td width="84" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">出席：初中物理北片全体教师。</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:10.5pt;">3</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="58" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2020-06-04 13:00</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">道德与法治、政治</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">高中、初中</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">本校</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="376" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p>
+					<span style="font-family:宋体;color:#010101;font-size:9pt;">中学思政教师在线培训通知</span><span style="font-family:宋体;font-size:9pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2020年6月4日下午一点举行中学思政教师在线培训活动，活动内容：（1）专家讲座一：顾润生《指向核心素养的思想政治课学业质量评价》；（2）专家讲座二：秦书珩《中学政治命题中的多维细目表编制技术》。请初中道德与法治教师和高中思想政治教师准时参加。具体培训平台和登录密码随后另行通知。</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+			</td>
+			<td width="84" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">&nbsp;</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:10.5pt;">4</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="58" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2020-06-04 08:45</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">物理</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="29" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">九年级、八年级</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="19" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" align="center" style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">七宝实验中学</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+			<td width="376" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p>
+					<span style="font-family:宋体;color:#010101;font-size:9pt;">初中物理名师工作室研讨活动</span><span style="font-family:宋体;font-size:9pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">一、听课《串联电路计算复习》</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">&nbsp;&nbsp;&nbsp;&nbsp;执教老师&nbsp;&nbsp;七宝实验中学&nbsp;&nbsp;袁春莲</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">二、初三复习研讨交流</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p" style="text-indent:10.5pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">1.分组讨论</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p" style="text-indent:10.5pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">2.大组反馈</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p" style="text-indent:10.5pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">3.专家指导</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+				<p class="p">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">上海市特级教师，正高级教师&nbsp;&nbsp;赵谊伶&nbsp;&nbsp;</span><span style="font-family:Calibri;font-size:12.0000pt;"></span>
+				</p>
+			</td>
+			<td width="84" valign="center" style="border:1.0000pt solid windowtext;background:#FFFFFF;">
+				<p class="MsoNormal" style="text-indent:0pt;">
+					<span style="font-family:Tahoma;color:#010101;font-size:9pt;">出席人员：（1）初中物理名师工作室全体成员。（2）初中物理青师5期全体成员。 地点：七宝实验中学。地址：龙茗路2760号。</span><span style="font-family:Tahoma;color:#010101;font-size:9pt;"></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="232768.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="232768.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="232768.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="232768.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

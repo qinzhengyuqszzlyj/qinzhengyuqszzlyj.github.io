@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2020学年第二学期第五周“国旗下的讲话”</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2020学年第二学期第五周“国旗下的讲话”
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-03-22</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103230607040.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:13pt;">
+	语文老师&nbsp; &nbsp;王尤迪
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	亲爱的老师，同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家好！很荣幸有这样的机会与大家分享我在书香班级建设的一些心得。首先要感谢学校在每年寒暑假举办的读书活动，这不仅丰富了同学们的假期，也营造了浓郁的书香氛围。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	阅读，不仅能让我们获取信息，认识世界，还能让我们拥有独特的审美体验。作为一名语文老师，我也格外注重学生的阅读经历，从家访时便开始关注学生的阅读习惯，开学后结合班级实际情况，将阅读渗透于日常教学。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	学到小说单元时，我会根据当天的课文进行阅读推荐，一周下来，很多学生已读完了欧亨利、莫泊桑等作家的作品；家长会上，我积极传递课外阅读对孩子成长的重要性，为学生设计个性化书单，获得了家长们的全力支持，孩子们的书柜被充实起来。我们班的辛紫滢同学在寒假读了整整30多本书，有了榜样的激励，我看到课间有更多的孩子捧着书在读；也有更多的孩子跑来与我交流书中的情节。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	阅读是思考的起点，以读促写，以写带读，才是最终的落脚点。为了让学生们的阅读成果得到集中的展现，我提供了与阅读篇目类似的情境，让学生采用阅读中习得的方法进行创作，并利用寒假反复提供修改意见，学生根据意见不断完善，在我们的共同努力下，这本名为《那些有趣的事儿》的作文集诞生了，当我看到学生们兴高采烈地拿着印有自己文章的作文集的时候，一切疲惫与辛苦都烟消云散。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	最后，我想用《人类群星闪耀时》里面的一句话与大家共勉：人的一生最大的幸运，就是在年富力强时发现了自己的人生使命。亲爱的同学们，为你们庆幸，你们在自己最美好的年华发现了读书的乐趣，愿你们持之以恒，厚积薄发，在书香中体验人生，在阅读中感受快乐！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+<br />
+<br />
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103230608014.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:14pt;font-weight:bold;">
+	让阅读融入生活
+</p>
+<p style="text-align:center;font-size:13pt;">
+	七（10）班&nbsp; &nbsp;朱芷黎
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	亲爱的老师们、同学们，大家早上好！我是来自七（10）中队的朱芷黎。今天我演讲的主题是“让阅读融入生活”。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	常言道：“书中自有黄金屋”阅读的益处是尽人皆知的。书籍能够开拓我们的视野，丰富我们的见闻，提高我们的品味......，从小我便和书籍成为朋友，他们在我的成长道路上陪伴、帮助着我，使我受益匪浅。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我的父亲一直致力于培养我的阅读兴趣和习惯。小学低年级时，我在父亲的引导下先接触了《绿野仙踪》、《长袜子皮皮》一类的故事书，从此我便爱上了阅读。随着年龄的不断增长，我开始阅读各类中外名著，凭借着扎实的基础，我的阅读量不断增加。有时一些晦涩难懂的书籍，我也慢慢地可以“啃”下来。进入初中后，我开始尝试阅读不同种类的小说和诗歌，这对我的写作功底有了一定帮助。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	书籍总是伴我左右。我总是在书包里踹一本杂志，在课余时间读上几页，不论作业做到多晚，都要坚持再阅读几分钟。记得小时候还常常躲在被窝里，伴着手电筒微弱的光读完了厚厚的一本《西游记》......在不知不觉中，阅读便从一种爱好成为了一种习惯。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	根据我多年的读书经验，我想向大家分享一些我自己的读书习惯。第一、学会用不同的方法读不同的书。好书有千千万万，但适合精读，反复读的书却很少。因此，对于那些经典、有内涵的数据，应该吸收其中的精华，将它吃尽、消化掉。第二、养成做标记的习惯。有些人读书时不喜欢做批注，认为影响阅读速度，但我认为在不理解的或有感触的<a target="_blank" href="https://qbxd.mhedu.sh.cn/zjxd/jwfg/1">地方</a>适当地做一些标记更有利于高效阅读一本书。第三，每天坚持读书。读书贵在坚持，每天读几页，不在于多，而是要养成一种阅读习惯。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	读书是一门人生的必修课，我们在书中汲取营养，获得的却不仅仅是知识，而是一种气质、境界与信念。在读书中不断学习，或许会收获一份与众不同的果实。“腹有诗书气自华”。掌握适合自己的读书方法，才能成为一个有水平、有层次、有品位的阅读者。因此，不妨在忙碌的生活中，翻开一本好书，用心品位书籍之美吧。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+<br />
+<br />
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103230608003.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:14pt;font-weight:bold;">
+	红楼梦整本书阅读感想
+</p>
+<p style="text-align:center;font-size:13pt;">
+	高一（4）班&nbsp; &nbsp;王  野
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	“文所以载道也，轮辕饰而人弗庸。”这是宋朝周敦颐在《通书文辞》中对文章作用的阐述。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我相信这句话在《红楼梦》这本四大名著之一上同样适用。相信许多读者在阅读他的同时，也会萌生出和我一样的想法，那即为我们在为曹雪芹文学造诣惊叹的同时，会生发出对那个封建时代的思考，会因小说中人物看似匪夷所思的行为感到疑惑，我呢，今天再次借助这个机会与大家分享一下我阅读《红楼梦》的心得体会。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	第一，毋庸置疑的那便是《红楼梦》在文学史上不可撼动的地位，其格局之大令人张目结舌。《红楼梦》这本小说以当时的封建社会为背景，创造出了四百五十余名人物，以一个相对完整的视角展现了在那个时代，封建专制、思想禁锢，给百姓带来的迫害，以及官僚体制中的黑暗、拉帮结派、贪污腐败，可以以贾家的兴衰知晓朝代的兴替。相比以相同题材“家”为主题的小说，例如《傲慢与偏见》、《飘》亦或是《小妇人》，它们的格局相对与《红楼梦》就要小的多啦，在阅读这些书籍时，读者的视野总是聚焦在那一两个主人公身上，颇有些“管中窥豹”之感。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	第二，我们也可以通过小说中塑造的人物反观自身，意识到自己的不足。如林黛玉和薛宝钗，两人虽然同借住在荣国府，但待人处事之道却不尽相同。未来经历由学生到社会人的身份转变，与人交往不可避免，但，是像黛玉一样坚持自我，不与世俗同流合污，又或是像宝钗一样处事圆滑，八面玲珑，便是我们自己的选择了。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	品读经典，与美同行，《红楼梦》仅仅是一本小说，但它也不只只是一本小说，品读《红楼梦》可以知兴替，明得失，补缺漏。最后希望大家在阅读的过程中可以学有所感，学有所获。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="253037.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="253037.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="253037.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="253037.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

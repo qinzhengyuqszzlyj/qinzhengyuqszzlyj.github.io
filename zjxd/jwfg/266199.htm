@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2021学年第一学期第十一周升旗仪式</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2021学年第一学期第十一周升旗仪式
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-11-08</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210632042.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;">
+	<br />
+</p>
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	校办主任王颖慧为“创建文明校园倡议”宣讲
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210632054.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="font-size:13pt;">
+	尊敬的老师，亲爱的同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家上午好！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	感恩节的情谊历历在目，运动会的激情久久不散，少先队换届选举“小主人”神采飞扬；全员导师撒播爱的种子，英语文化节精彩赛事即将火热登场。七宝鑫都校园里每天都洋溢着青春朝气，充满着创造活力！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	美丽的鑫都校园属于你我他，文明的新风尚呼唤我们学习、弘扬。创文明校园 建美丽鑫都。今天我以一名教师的身份说说七宝鑫都“创建文明校园”这件事儿。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	七宝鑫都创建起点高。七宝鑫都创建于2019年，是七宝中学创办的高起点公办完中，以“平民本色、精英气质”为育人追求。七宝鑫都的校训是：求实；校风是：合作、竞争、求实、创新。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	七宝鑫都创建目标远。2020年，学校荣获在教师和学生培养方面成效显著，成功创建成为：2019-2020年闵行区文明校园。2021年起，学校在去年创建成功的基础，计划再创闵行区文明校园。这次创建时间为期3年，也就是从2021.1月-2023年12月。学校还计划连续两届创建成功后，创建上海市文明校园。我们的创建口号是：创文明校园 建美丽鑫都。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	七宝鑫都创建活动多：目前学校有体育文化节、科技文化节、感恩节、英语文化节 、艺术节五大校园文化节。仅本学期就有：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	★2021年暑期。初高中部学生社会实践、研学与职业体验活动、“我的七宝鑫都梦”作品征集和楼层文化长廊设计、足球场地建设等场关改造工程。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	★2021年9月：开展以文明和谐为主题的家校共育、校园环境美化、教师“文明组室”评选展示活动。开展以“知恩于心，感恩于行”为主题的第三届感恩节活动和秋季田径运动会。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	★2021年10月：开展见习教师规范化培训基地启动仪式，高中学生德育系列课程；开展大队部委员换届选举活动。评选出七宝鑫都时代好少年共16名，其中八7班侯君睿和冯诗窈同学双双入围闵行区新时代好少年“百优名单。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	即将开展：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	★2021年11月：开展学校第二届英语文化节系列活动和教职工体育趣味赛活动。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	★2021年12月：开展学校第三届“艺术节”系列活动：高雅艺术进校园，举办师生共同参与的歌咏、舞蹈、书法、摄影展演活动。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	老师们，同学们，一起行动起来！为创建文明校园添砖加瓦。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	让我们的环境更加洁净优美，让我们的举止文明、得体，彰显君子风范。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	让我们的师生情、同学情暖意融融，一起铸就文明校园，美丽鑫都。
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	高二(2)班谢雨田为“创建文明校园倡议”宣讲
+</p>
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210633010.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-weight:bold;font-size:13pt;">
+	《固全在你我》
+</p>
+<p style="font-size:13pt;">
+	尊敬的老师们，亲爱的同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家上午好！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我是来自高二2班的谢雨田，今天发言的题目是：《固全在你我》。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	今年，是<a target="_blank" href="266199.htm">中国</a>共产党成立100周年，今年，也是闵行区积极响应党的号召，历经六年治理发展而最终被评选为全国文明城区的第二年。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	在过去的六年里，同学们也是为之付出过自己的努力，努力打扫干净教室，不顾脸上是否早已挂上了晶莹汗珠；和同学们友好相处，下课安静文明休息，不不追逐打闹；见到师长积极主动问好，把自己的腼腆放在一边......
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	但是随着时间的推移，我们似乎将我们的劳动成果逐渐抛之脑后，在日常校园生活中，我们渐渐懈怠了，打扫卫生时不复年前那般认真，下课时不经意间的不文明用语，课间休息时日益增多的嘻戏打闹教学楼中日益出现的大声喧哗......
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	不文明的现象还有很多，时时刻刻发生在你我身边，当民众文明不再时，城区又是否能称得上文明呢？因此，巩固我们的劳动成果就显得尤为重要。我校在固全来临之际，积极配合区开展了创全知识背诵活动，督促我们遵守秩序，遵循礼仪，做一个文明鑫都人。除此之外，我们还应当采取自主措施，在同学间，可以在见到不文明现象时加以提醒阻拦；在班级里，可以提高对于日常值日的的要求标准，加强监督管理。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	在上周五的创全记背情况抽查中，我发现还是有部分同学没有很好的掌握其中的要点，其实我们并不是去死记硬背创全中的每一个知识点，而是去理解它，里面的每一点都是我们的亲身经历，在背诵时结合自己的身体力行，一定能更好的掌握它。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	在全国众多城区中脱颖而出固然值得我们欣喜和骄傲，但是这不意味着创全再与我们无关。创全作为要求自己的一套行为准则，与我们每一个人来说，没有完成时，是永远的进行时，我们所追求的也不是一个光荣的称号，而是真正的做到“创全国文明城区，建生态宜居闵行”，不是把“德厚闵行，文进万家”挂在嘴边，而是坚定地落实它。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	在创全固全的过程中，需要每一个人的齐心协力，作为高中学生会主席，我谨代表全体同学提出倡议：让我们汲取创全中所蕴含的文明素质教育丰富自己，提升自己，时刻自我提醒，规范自己，为把文明变成常态贡献自己的一份力量，谢谢大家。
+</p>
+<br />
+<p style="text-align:center;">
+	<span style="font-size:17.3333px;font-weight:700;">七宝鑫都社会实践小队分享</span> 
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210633034.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:12pt;">
+	六（8）中队&nbsp;&nbsp;&nbsp;&nbsp;心鑫向荣小队
+</p>
+<p style="text-align:center;font-weight:bold;font-size:13pt;">
+	《探秘“活化石”》
+</p>
+<p style="font-size:13pt;">
+	尊敬的老师，亲爱的同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家上午好！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我是六（8）班骐骥中队的吴翊凌。金秋十月，学校社会实践活动丰富多彩。我们“心鑫向荣”小队的六名成员幸运地参加了自然博物馆 “活化石”探秘活动，经历了一场古往今来的生命洗礼。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	远古曾经鲜活的生命，偶然间被迅速埋藏在泥土中，经过数亿年的矿化，蜕变成历史清晰的印记-化石。化石是自然界的馈赠，带给人类物种演化的信息。同学们，你想知道这些秘密吗？让化石引导我们去探索这神奇的生物世界吧。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	距今约2亿年的时期，恐龙是当之无愧的霸主，霸王龙的威名令人胆寒；而几万年前冰河时期的猛犸象、剑齿虎可是和人类祖先共同生活过哦。更令人不可思议的是，一些物种具有超乎寻常的环境适应能力，在历史长河中未被湮灭，坚强的存续下来，至今仍然伴随着我们，“活化石”名副其实。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我国生物多样性非常丰富，保存有许多珍稀、特有的生物类群，其中包含许多“活化石”，比如说大熊猫、藏羚羊、中华鲟、银杏等人见人爱的宝贝，堪称“世界活化石博物馆”。研究“活化石”十分重要，了解和掌握他们的演变规律，可以推测和应对未来的变化。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	宇宙悠久浩瀚，自然鬼斧神工。探秘旅程虽短，但我们沉浸在生命演进的长河之中，如痴如醉。同学们来吧，请你接受大自然瑰宝的信息，像“活化石”般坚韧不拔的学习，在求知求真之路上不断进步。
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210633047.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:12pt;">
+	七（3）中队&nbsp;&nbsp;&nbsp;&nbsp;星露小队
+</p>
+<p style="text-align:center;font-weight:bold;font-size:13pt;">
+	《探索海洋世界》
+</p>
+<p style="font-size:13pt;">
+	各位老师，各位同学：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	上午好！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	今天很荣幸代表七（3）班星露小队向大家介绍一下我们10月15日举行的社会实践活动。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	先来介绍一下我们小队印象最深刻的，叛逆的企鹅：斑嘴环企鹅
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	斑嘴环企鹅也被称作非洲企鹅。它们有着黑白的羽毛，眼睛部位有一个粉色的斑。斑嘴环企鹅可以游很远寻找食物，最远纪录曾达到900公里。它们白天寻找食物，夜晚在岸上休息。可以活近三十年。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我们的游玩收获
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	通过此次参观海洋世界社会实践活动，我们小组认为作为人类，应该反思自己以往对动物的所作所为，保护濒危海洋动物，拒绝捕杀、伤害海洋动物，保护大自然就是保护我们的家园。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	社会实践感悟
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	这次的社会实践活动让我们在紧张的学习之余得到放松的同时也拓宽了视野，增强了大家的环保意识。同学们都更明白了保护大自然就是保护我们人类的未来。作为青少年，我们都应该从身边事，从自己做起，保护环境，保护海洋，守护自然！这次不仅增进了同学之间的友谊，更令我们收获了快乐和美好的回忆。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+<br />
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202202/202202210634000.jpg" alt="" /> 
+</p>
+<p style="text-align:center;font-size:12pt;">
+	八（3）中队&nbsp;&nbsp;&nbsp;&nbsp;睿博小队
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	在这次的社会实践活动中，我和小队长张睿带领八3中队的睿博小队参观了位于上海市松江区的广富林历史文化遗址，这是面积约15万平方米的一处新石器时代遗址，被上海市人民政府公布为市级文物保护点。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我们小队在九点左右入园，自朱雀门入，走过集贤坊，骨针广场，眼前透着一片片金灿灿的稻田洋溢着秋日的喜悦。接着我们小队参观了水下博物馆。在那里我们了解到原始人的日常生活方式，以及考古发掘遗址。最后，我们又参观了仿唐建筑富林塔，在秋日的照耀下，塔屋的屋脊金碧辉煌，仿佛让我们小队梦回盛世大唐。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	通过本次广富林遗址的参观游览，使我们小队队员丰富了历史知识，了解了更多关于上海根源的知识。也让我们了解到历史考古学家是如何进行发掘并保护文物的。
+</p>
+<br />
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="266199.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="266199.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="266199.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="266199.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

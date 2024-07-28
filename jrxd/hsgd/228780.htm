@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>品味国学经典，弘扬传统文化</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_35.htm">学生活动</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 品味国学经典，弘扬传统文化
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-12-31</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="font-size:13pt;font-weight:bold;text-align:center;">
+	七宝鑫都2019学年第一学期第十八周升旗仪式
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310342010.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	主 持 人：六（9）班&nbsp; &nbsp;冯秋博 &nbsp; &nbsp; &nbsp; &nbsp;六（7）班&nbsp; &nbsp;沈肖泰来
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310342031.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	荣誉升旗手：六（8）班 &nbsp;&nbsp;&nbsp;&nbsp;林韦宸 &nbsp;&nbsp;&nbsp;&nbsp;赵晨琪
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310343059.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310344014.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310344024.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	周嘉老师宣读获奖名单
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310359015.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	沈勍老师为2019年闵行区第32届上海市中学生作文比赛获奖同学颁奖
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310359035.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	沈勍老师为2019年莘光杯古诗文大赛获奖同学颁奖
+</p>
+<p style="font-size:13pt;font-weight:bold;text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310402042.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	沈勍老师为2019年闵行区第四届中小学生优秀书法作品展评活动、2019年闵行区第八届“莘城杯”中小学生现场书法大赛获奖同学颁奖
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310407026.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	沈勍老师为我爱我的红领巾，争当新时代好队员诗歌征文比赛、2019雏鹰杯国学达人市级赛获奖同学颁奖
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310409034.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	学生获奖名单
+</p>
+<p>
+	<table class="MsoTableGrid" border="1" cellspacing="0" style="width:100%;border:none;">
+		<tbody>
+			<tr>
+				<td width="589" valign="top" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">2</span><span style="font-family:黑体;font-size:14.0000pt;">019</span><span style="font-family:黑体;font-size:14.0000pt;">年闵行区第3</span><span style="font-family:黑体;font-size:14.0000pt;">2</span><span style="font-family:黑体;font-size:14.0000pt;">届上海市中学生作文比赛</span><span style="font-family:黑体;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">班级</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">姓名</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">指导教师</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">等第</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（9）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">王伯懿</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘凌男</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="bottom" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">三等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（8）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">邓陆莹</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘凌男</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="bottom" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">三等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（8）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">陈子璇</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘凌男</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="bottom" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（1</span><span style="font-family:仿宋;font-size:14.0000pt;">0</span><span style="font-family:仿宋;font-size:14.0000pt;">）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">李茗禾</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="bottom" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="589" valign="center" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">2</span><span style="font-family:黑体;font-size:14.0000pt;">019</span><span style="font-family:黑体;font-size:14.0000pt;">年莘光杯古诗文大赛</span><span style="font-family:黑体;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">班级</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">姓名</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">指导教师</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">等第</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">王翌舟</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">三等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">冯诗窈</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（2）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘镇铭</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">柳冬雨</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（1</span><span style="font-family:仿宋;font-size:14.0000pt;">0</span><span style="font-family:仿宋;font-size:14.0000pt;">）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">陆子寒</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（1</span><span style="font-family:仿宋;font-size:14.0000pt;">0</span><span style="font-family:仿宋;font-size:14.0000pt;">）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">陈俊杰</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（1</span><span style="font-family:仿宋;font-size:14.0000pt;">0</span><span style="font-family:仿宋;font-size:14.0000pt;">）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">朱芷黎</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（9）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌则灵</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘凌男</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（8）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘一铭</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘凌男</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">一等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="589" valign="center" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">2019年闵行区第四届中小学生优秀书法作品展评活动获奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">班级</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">姓名</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">指导教师</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">等第</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">王一龙</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">顾曦</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">连子诚</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">顾曦</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="589" valign="center" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">2019年闵行区第八届“莘城杯”中小学生现场书法大赛</span><span style="font-family:仿宋;font-size:14.0000pt;">&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">班级</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">姓名</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">指导教师</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">等第</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">张董乐</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">顾曦</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">二等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（7）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">王一龙</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">顾曦</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">一等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="589" valign="center" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">我爱我的红领巾，争当新时代好队员诗歌征文比赛</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">班级</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">姓名</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">指导教师</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:12.0000pt;">等第</span><span style="font-family:黑体;font-size:12.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（</span><span style="font-family:仿宋;font-size:14.0000pt;">9</span><span style="font-family:仿宋;font-size:14.0000pt;">）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌则灵</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">谌建华</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">三等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="589" valign="center" colspan="4" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:黑体;font-size:14.0000pt;">2019雏鹰杯国学达人市级赛</span><span style="font-family:等线;font-size:10.5000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="147" valign="center" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">六（8）</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">刘一铭</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">顾曦</span> 
+					</p>
+				</td>
+				<td width="147" valign="top" style="border:1.0000pt solid windowtext;">
+					<p class="MsoNormal" align="center" style="text-align:center;">
+						<span style="font-family:仿宋;font-size:14.0000pt;">一等奖</span><span style="font-family:仿宋;font-size:14.0000pt;"></span> 
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	学生代表六（8）班刘一铭同学发言
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310354004.jpg" alt="" /> 
+</p>
+<p style="font-weight:bold;text-align:center;font-size:12pt;">
+	国学经典，你我传承
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	各位敬爱的老师，亲爱的同学们：
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	大家好！我是六8班的刘一铭，很荣幸获得了上海市古诗文阅读大赛和国学达人挑战赛的一等奖，在此也代表获奖的同学们表达对学校和老师们的感激之情。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	回想古诗文阅读大赛的整个历程：9月，我在我校的古诗文预选赛中获得了参赛资格，之后每天在古诗文拓展微信群中打卡学习，终于代表学校参加了古诗文阅读大赛的区赛，并拿到区一等奖，12月，取得市赛一等奖。这不仅是我个人的坚持与努力，还要感谢班主任刘老师送了我的考试指定用书，同时要感谢为我们进行线下拓展、线上指导的谌老师、柳老师，还有热情提供资讯的家长。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	说起国学达人挑战赛，首先要感谢学校给我这个唯一的参赛名额。我尤记得，区赛时间和辰山植物园社会实践恰好是同一天。为了让我既不影响社会实践活动又能顺利参加比赛，大队辅导员顾老师和班主任刘老师一次次跟妈妈沟通接送的时间地点，并且提前帮我办理了学籍证明。比赛前顾老师给我发了许多题库供我参考，但区赛的题目很难，完全拼个人的国学素养。考完后，我的心情并不轻松，担心辜负了学校对我的期望。结果很幸运地冲进了区中学组的前5，经历了区赛，市赛时的我抛开了压力，以平常心对待，最终取得了一等奖的好成绩。比赛还没有结束，在市级的决赛中我将继续准备，再创佳绩！
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	冰冻三尺非一日之寒，水滴石穿非一日之功。今天我获得诗词、国学的奖项，离不开日复一日的点滴积累。而对<a target="_blank" href="228780.htm">中国</a>古典文化的兴趣也一直是我坚持学习的内驱力。暂时没有获奖的同学们不必灰心，获奖不是我们的目标，只是前进道路上的动力，我知道大家都有不同的兴趣爱好，用心积累，相信终有一天会赢得属于你自己的精彩。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	谢谢大家！
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	学生代表六（7）班王一龙同学发言
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310354020.jpg" alt="" /> 
+</p>
+<p style="font-weight:bold;text-align:center;font-size:12pt;">
+	做好<a target="_blank" href="228780.htm">中国</a>人，写好<a target="_blank" href="228780.htm">中国</a>字
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	尊敬的各位老师们，亲爱的同学们：
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	大家早上好！我是六7班的王一龙。我很高兴能在2019年闵行区第八届“莘城杯”中小学生现场书法大赛获得一等奖的成绩。这次书法比赛以“情寄翰墨心  笔颂爱国情”为中心，我书写了一首现代诗“七旬华诞万民欢，华夏腾飞扬满帆。盛世复兴<a target="_blank" href="228780.htm">中国</a>梦，神州奋勇越难关。”这首诗写出了新<a target="_blank" href="228780.htm">中国</a>成立七十周年全国人民的欢喜雀跃，而我认真的用手里的毛笔一笔一划地写出了对祖国的热爱。我们作为新时代的中学生一定要好好学习，长大以后把祖国建设得更加强大。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	记得我二年级的时候妈妈给我报了书法培训班，一开始我就被浓浓的墨香所吸引了，从点横竖撇捺到汉字的结构我都毫不马虎的练习。我每天都会尽快写好作业留出时间练习书法。虽然有时看到小伙伴玩游戏我也很心动，但是我知道既然热爱就得坚持。能获得这个奖项我要感谢我的老师们平时对我的耐心指导和严格要求。从开始练习软笔书法至今，我从没有间断过，书法成了我成长路上的好朋友，四年多来，我从墨色和线条的变化中体会到了书法中的乐趣,从书法的练习中感受到了<a target="_blank" href="228780.htm">中国</a>传统文化的魅力，也学到了古代大书法家勤奋学习的精神和刚正不阿的人品,正如老师常讲的练字练人,练习书法的同时,培养了我的耐心和毅力,提高了我的审美能力。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	尽管练习书法的过程有些辛苦，但我从中收获了更多的乐趣,今天的这份荣誉又给了我更多的鼓励。我将坚持练习书法，再接再厉!
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	谢谢大家！
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:13pt;text-align:center;">
+	教师代表谌建华老师讲话
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/201912/201912310354035.jpg" alt="" /> 
+</p>
+<p style="font-weight:bold;text-align:center;font-size:12pt;">
+	品味国学经典，弘扬传统文化
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	尊敬的老师们，亲爱的同学们：
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	大家上午好！
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	今天我国旗下讲话的主题是《在经典中徜徉》。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	曾在知乎上看到一个问题：“让孩子们背诵古诗词、古文有什么意义？”有个高赞回答大概是，为了之后看到三千美景时，可以脱口而出：“落霞与孤鹜齐飞，秋水共长天一色。”而不是只能拍着大腿说：“哇，好看！”
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	同时，我还可以仿写两句，为了之后看到卑微无助之人时，可以喊出“安得广厦千万间，大庇天下寒士俱欢颜”这样的滚烫诗句。而不是只能无力地说：“他们好可怜！”为了之后听到绕梁余音时，能深情赞叹：“善哉乎鼓琴！皓皓乎若明月！”而不是直白地评论：“真好听！”
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	然而，不知道从什么时候开始，我们对事物的评价、对事情的看法也开始向着简单粗暴迈进：吃到怀念已久的麻辣小龙虾时——“好吃！”寻寻觅觅找到喜欢的衣服——“想要！”直播博主都在重复着洗脑式的口号——“买它！”……连修饰词都好像是矫情造作。明明汉语中有那么多美好又有意境的词。当我们只捡嘴边最轻易最通俗的语言来表达，久而久之，就会形成口头习惯，通常就是我们说的——口头禅。可是，学了那么多年的古文诗词，到头来却一句都用不上。当口头禅只有无聊乏味的形容词时，我们好像忘记了，“出口成章”，曾经是一个读书人的基本素养。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	其实，这些现象，不只是语言的干瘪化，也是思想的贫瘠化，更是情感的沙漠化。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	大家是否还记得精忠报国的岳飞，他力抗金兵，保家卫国，即使皇帝昏庸，奸臣当道，却依然诵出“三十功名尘与土，八千里路云和月”的民族气概！是否还记得一代枭雄曹操，东临碣石，酾酒临江，即使岁月染白了他的须发，仍旧高唱“老骥伏枥，志在千里。烈士暮年，壮心不已。”的壮怀好歌！是否还记得乱世漂泊的李清照，纵然帘卷西风，瘦比黄花，仍旧吟出“生当做人杰，死亦为鬼雄。至今思项羽，不肯过江东”的豪言壮语！
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	同学们，什么是经典？经典并不是只有“之乎者也”，也不是想象中的“曲高和寡”。经典，可以是一句话，一句能让所有人震撼的话；经典，可以是一本书，一本让人温暖一生的书；经典，可以是一首歌，一首传唱至今历久弥新的歌；经典，可以是一种情，一种让人为之肃然起敬的的情。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	宋代黄山谷曾说：三日不读书，便觉言语无味，面目可憎。儿时摇头晃脑背诵“玉不琢，不成器”的《三字经》，“长者先，幼者后”的《弟子规》，培养的是我们持重内敛的气度；少时反复琢磨“德不孤，必有邻“的《论语》，塑造的是我们善良仁爱的品德；而今细细品读“满川风雨看潮生”的《淮中晚泊犊头》，涵养的是我们豁达的人生态度。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	我想，一个出自古诗词中的名字，往往更令人惊艳；一段引经据典的论述，立刻衬得人腹有诗书气自华；而在传统文化浸染中成长的孩子，无形中会比同龄人多一分坦然与通透。
+</p>
+<p style="text-indent:2em;font-size:12pt;">
+	同学们，让我们徜徉在经典中，浸润在传统里，丰盈我们的心灵，匡正我们的言行。
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="228780.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="228780.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="228780.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="228780.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

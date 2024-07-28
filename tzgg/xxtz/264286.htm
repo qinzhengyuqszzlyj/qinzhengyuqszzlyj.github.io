@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2021学年第一学期第17周 区教研活动通知</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_12.htm">通知公告</a> >
+        <a href="../../info/iList_58.htm">研训通知</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2021学年第一学期第17周 区教研活动通知
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-12-20</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<table class="MsoNormalTable" style="width:100.0%;border-collapse:collapse;border:none;" width="100%" cellspacing="0" cellpadding="0" border="1">
+	<tbody>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;" width="3%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">编号<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">时间<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="5%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">学科<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">年级<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">地点<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">内容<span></span></span></b>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<b><span style="font-size:9.0pt;font-family:宋体;">出席与附言<span></span></span></b>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">1</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2021-12-22 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">科学<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">初中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">各初中（区云录播平台、腾讯会议）<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">用科学大观念指引探究教学<span></span></span></b>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">活动内容：<span><br />
+1.</span>主题：用科学大观念指引探究教学<span><br />
+2.</span>内容：<span><br />
+</span>（<span>1</span>）课题：热胀冷缩（</span><span style="font-size:9.0pt;font-family:宋体;color:#010101;background:white;">14</span><span style="font-size:9.0pt;font-family:宋体;color:#010101;background:white;">：<span>00</span>前，区云录播平台完成观课</span><span style="font-size:9.0pt;font-family:宋体;">）<span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>主讲：世外浦江<span>&nbsp; </span>董艺蓓老师<span><br />
+</span>（<span>2</span>）主题研讨与交流（</span><span style="font-size:9.0pt;font-family:宋体;color:#010101;background:white;">14</span><span style="font-size:9.0pt;font-family:宋体;color:#010101;background:white;">：<span>10</span>起，腾讯会议</span><span style="font-size:9.0pt;font-family:宋体;">）<span><br />
+</span>（<span>3</span>）活动主持：君莲学校<span>&nbsp; </span>孟祥阁老师（</span><span style="font-size:9.0pt;font-family:宋体;color:#010101;background:white;">请周永国老师提前在区学科微信群和<span>QQ</span>群通知观课路径和会议地址</span><span style="font-size:9.0pt;font-family:宋体;">）<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">请全体初中科学任课教师准时参加活动。<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2021-12-22 13:00</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">物理<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">九年级、八年级<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">各学校<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">初中物理区网络教研活动<span></span></span></b>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">主题：</span></b><span style="font-size:9.0pt;font-family:宋体;">基于物理学科核心素养的教学<span>——</span>在实验中发展学生思维<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">内容：</span></b><span style="font-size:9.0pt;font-family:宋体;"></span>
+				</p>
+				<p class="MsoNormal" style="margin-left:21.0pt;text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（</span><span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">）视频：上海市初中物理实验教学展示研讨活动<span></span></span>
+				</p>
+				<p class="MsoNormal" style="margin-left:21.0pt;text-align:left;text-indent:21.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（<span>4</span>个视频。视频</span><span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">：研讨课《用电流表、电压表测电阻》；视频</span><span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">：执教教师交流分享展示课中促进学生思维发展的四种方法；视频</span><span style="font-size:9.0pt;font-family:宋体;">3</span><span style="font-size:9.0pt;font-family:宋体;">：微论坛《评价导向实验，实验发展思维》；视频</span><span style="font-size:9.0pt;font-family:宋体;">4</span><span style="font-size:9.0pt;font-family:宋体;">：专家报告《加强实验教学 提升学生实验素养》。）<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">（</span><span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">）文本：《初中物理：评价引导实验 实验发展思维》<span></span></span>
+				</p>
+				<p class="MsoNormal" style="margin-left:10.5pt;text-align:left;text-indent:10.5pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">【活动要求】：观摩、阅读以上活动视频、文本后，在活动讨论区，按以下要求<b><span>“</span>发言<span>”</span></b>：<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:21.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（</span><span style="font-size:9.0pt;font-family:宋体;">1</span><span style="font-size:9.0pt;font-family:宋体;">）通过对以上资源的学习，请结合你的日常教学，谈谈其中你在教学中实践过的在实验中发展学生思维的方法，并请分享你运用该方法的一个小案例。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:21.0pt;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">（</span><span style="font-size:9.0pt;font-family:宋体;">2</span><span style="font-size:9.0pt;font-family:宋体;">）如果你在日常教学中，尝试过其他的在实验中发展学生思维的方法，请分享一种你的方法及你运用该方法培养学生思维的一个小案例。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;text-indent:10.5pt;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">要求在上海市网络教研平台和区教师专业发展平台各发岾一次。</span></b><span style="font-size:9.0pt;font-family:宋体;"></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">教研路径：</span></b><span style="font-size:9.0pt;font-family:宋体;"></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">1.&nbsp;</span></b><span style="font-size:9.0pt;font-family:宋体;">登录<span>&nbsp;<a href="https://jiaoshi.mhedu.sh.cn/"><span style="color:blue;">https://jiaoshi.mhedu.sh.cn</span></a>&nbsp;&nbsp;</span>用户名是师训号，初始密码为<span>mhjy123</span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">成功登陆后，点击上方<span>“</span>业务办公<span>” “</span>协作组<span>” “</span>区初中物理教研组<span>”</span>，发帖即可。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2.&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">市级网络教研平台：<span>shanghai.3ren.cn&nbsp;</span>登录进入，点击<span>“</span>研修中心<span>”</span>，找到<span> “</span>（初中物理）基于物理学科核心素养的教学：在实验中发展学生思维<span>”&nbsp;</span>，点击进入，然后观看<span>4</span>个视频和文本，再按照要求进入讨论发帖。（如果在登录、使用教研在线新平台的过程中，碰到问题，可以点击页面中的<span>“</span>常见问答<span>”</span>，查看解决方法。）<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">出席：初中物理全体教师。<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">3</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2021-12-23 08:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">政治<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">高中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">本校<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">高三政治教研活动通知<span></span></span></b>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2021</span><span style="font-size:9.0pt;font-family:宋体;">年<span>12</span>月<span>23</span>日上午<span>8</span>点<span>30</span>分，举行闵行区崇明区高中政治联合教研活动，主要内容：（<span>1</span>）教师说课：闵行区古美高中褚艳玲老师、崇明区民本中学董红玲老师；（<span>2</span>）专家点评和专题讲座：《逻辑与思维》教材主编王习胜教授。请全体高中政治教师准时参加。具体活动内容请看附件。<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">全体高中政治教师<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">4</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2021-12-22 13:10</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">数学<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">高三<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">上海外国语大学闵行外国语中学（华翔路<span>3260</span>号）<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">闵行区高三年级数学教研活动 <span></span></span></b>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">教研活动主题：《基于单元设计视角的高中数学试卷讲评》</span><span style="font-size:9.0pt;font-family:宋体;"><br />
+</span><span style="font-size:9.0pt;font-family:宋体;">教研活动内容：</span><span style="font-size:9.0pt;font-family:宋体;"><br />
+1. 13</span><span style="font-size:9.0pt;font-family:宋体;">：</span><span style="font-size:9.0pt;font-family:宋体;">10——13:50&nbsp;&nbsp; </span><span style="font-size:9.0pt;font-family:宋体;">观课，课题《基于单元设计视角的高中数学试卷讲评》，授课人：朱凌莉；</span><span style="font-size:9.0pt;font-family:宋体;"><br />
+2. 13</span><span style="font-size:9.0pt;font-family:宋体;">：</span><span style="font-size:9.0pt;font-family:宋体;">50——15:30&nbsp;
+  &nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">教学研讨； 闵行区第</span><span style="font-size:9.0pt;font-family:宋体;">一学期高三年级质量调研考试数学试卷质量分析；高三年级后阶段教学建议。<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">出席人员：闵行区高三年级全体数学教师。由于防疫需要，学校要查验进校人员的<span>“</span>行程卡<span>”</span>和<span>“</span>健康码<span>”</span>，请参会老师进校园时提前截屏<span>“</span>双码<span>”</span>，以便校方查验。 <span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">公交线路：乘<span>189</span>路<span>/</span>天山西路华翔路站下车 乘<span>803</span>路<span>/</span>华翔路北翟路站下车 乘华漕<span>5</span>路<span>/</span>华翔路北青公路站下车 乘<span>197</span>路<span>/</span>华翔路北翟路站下车
+  乘<span>74</span>路区间<span>/</span>招呼站下车 自驾出行：校园围墙外可以免费停车。<span></span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">5</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">2021-12-23 13:30</span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">信息<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="6%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">初中<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="9%">
+				<p class="MsoNormal" style="text-align:center;" align="center">
+					<span style="font-size:9.0pt;font-family:宋体;">见活动安排<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="44%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<b><span style="font-size:9.0pt;font-family:宋体;">初中信息科技教研活动<span></span></span></b>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">一、主要内容<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">1.</span><span style="font-size:9.0pt;font-family:宋体;">以<span>“</span>说课<span>+</span>播放实录切片<span> ”</span>形式，介绍公开课。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2.</span><span style="font-size:9.0pt;font-family:宋体;">互动研讨。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">二、活动安排<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">1.</span><span style="font-size:9.0pt;font-family:宋体;">浦江片：<span>https://meeting.tencent.com/dm/h3AlPGAqwN2Y#</span>腾讯会议：<span>944-720-656(</span>说课教师：浦航实验 刘露丹）。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">2.</span><span style="font-size:9.0pt;font-family:宋体;">莘庄梅陇片：<span>https://meeting.tencent.com/dm/KrS8MZjrVhTQ#</span>腾讯会议：<span>961-353-094(</span>说课教师：莘松春申 沈轶敏）。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">3.</span><span style="font-size:9.0pt;font-family:宋体;">七宝片：<span>https://meeting.tencent.com/dm/MYaJOA3RIDr4#</span>腾讯会议：<span>835-532-443</span>会议密码：<span>1223(</span>说课教师：文来中学 周晔）。<span></span></span>
+				</p>
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">4.</span><span style="font-size:9.0pt;font-family:宋体;">闵行片：<span>https://meeting.tencent.com/dm/EFJm7e9x41Tr#</span>腾讯会议：<span>484-326-009(</span>说课教师：华二紫竹 黄婕）。<span></span></span>
+				</p>
+			</td>
+			<td style="border:solid windowtext 1.0pt;" width="19%">
+				<p class="MsoNormal" style="text-align:left;" align="left">
+					<span style="font-size:9.0pt;font-family:宋体;">请全体初中信息科技任课教师提前<span>5</span>分钟入群。<span></span></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="264286.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="264286.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="264286.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="264286.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

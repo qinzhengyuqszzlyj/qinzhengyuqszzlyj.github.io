@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都课程规划（2019.9-2022.8）</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都课程规划（2019.9-2022.8）
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-08-26</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal" align="center" style="text-align:center;">
+	<strong>建设开放、融合、个性化的未来学校</strong> 
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<b>&nbsp;</b> 
+</p>
+<p class="MsoNormal">
+	一、背景分析
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>上海市七宝中学附属鑫都实验中学于</span>2019年9月正式开办。学校秉承七宝中学“全面发展，人文见长”的教育理念，着力培养学生面向未来的核心素养，特别注重学生的人文精神和人文素养，主张面向全体学生的教育、全方位育人的教育。学校立足当下现实需求，致力于打造开放、融合、个性化的未来学校，注重培养学生面向未来的人文底蕴和科学精神，特别是适应21世纪生活所需的价值观念、必备品格和关键能力，为学生的终身发展和终身幸福奠基。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>聚焦</span>“未来学校”建设，学校努力成为一所具有深厚人文底蕴，浓郁研究氛围，鲜明创新特色，始终面向未来发展，不断引领基础教育改革的一流的公办初中。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>依据《上海市中小学</span>2019学年度课程计划》，学校严格按照各级部委有关深化教育教学改革、深入实施素质教育、进一步规范课程教学工作、减轻学生过重课业负担的要求，加强教育管理，认真执行课程计划，努力提高教育质量，特制订“上海市七宝中学附属鑫都实验中学课程规划”。
+</p>
+<p class="MsoNormal">
+	二、课程目标
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	深入贯彻国务院有关义务教育全面均衡发展要求，学校积极探索学生全面发展与个性发展相统一的育人目标，设置德、智、体、美、劳五育并举的课程规划。优质、全面、均衡完成整体要求。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	办学特色定位：英语基础、拓展、科创拓展、探究；特色科创建设目标
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	部编教材、二期课改课程校本化
+</p>
+<p class="MsoNormal">
+	三、课程实施
+</p>
+<p class="MsoNormal">
+	（一）深入探索<u>培育学科素养</u>的三类课程建设
+</p>
+<p class="MsoNormal">
+	1. 发展目标
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	依据学校高起点、高品质的发展需求，以培育学科核心素养能力为抓手，建立学科素养目标体系；推动课程教学研究，设计指向核心素养的深度学习；营造课程人文环境，精准把握学科育人价值；构建三类课程网络，初建并逐步完善课程评价体系。依据学生心理发展、兴趣爱好、个性特长来设计和构建学校三类课程。
+</p>
+<p class="MsoNormal">
+	2、发展任务与举措
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1）立足课堂，推进基础型课程校本化实施
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	作为一所新成立的公办初中校，仍将立足本校校情、生情、师情，切实执行基础型课程必修内容，严格执行国家课程计划，开足开齐基础课程，确保劳动技术、体育活动、美育艺术等课程的具体落实。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	在新一轮课程改革的引领下，基础型课程校本化实施的重要抓手是深入探究学科素养目标体系，创建各学科核心素养培育目标。立足课堂教学，加强课堂教学内容的结构化研究，规划各学科单元教学设计，在有限的课时内创设必要的学习活动、提供必要的学习经历，助推学生学科核心素养的形成，切实提升基础型课程校本化实施的教学成效。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	通力推进学科备课组编制校本习题，以研制学科单元教学设计为切入点，研究单元教学评价，精编精选分层习题，满足不同学力背景的学生需求，为不同学业水平程度的学生建立有效的逐步完善考试学科题库建设，切实减轻学生过重的课业负担。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2）&nbsp;<span>发展艺体社团，打造学科精品拓展课程</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>在学生和家长层面开展课程调研，发掘学生兴趣专长；在社区和教师层面整合多方优势资源，开发</span>“体育社团”、“艺术社团”、“人文综合”、“数理科创”、“人文阅读”系列课程，确保每周两节走班制社团课、拓展课有序进行。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>聚焦人文、数理、科创、艺体学科核心素养，梳理并完善一系列精品拓展课程目标、实施与评价，力求融主题（</span>Theme）、探究（Research）、跨学科（Interdiscipline）、实践（Practice）于一体，发挥课程优势、发展学生潜能。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3）推进创新能力发展，探索学科项目驱动的研究型课程：
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>学校成立各学科</span>“创新力项目组”，制定具有学科素养特征的研究型项目规划，丰富学生个性化学习内容，发展学生高阶思维，着力培育学科特长，以项目研究激发学生创新意识、提升学科知识的创新运用能力。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	学校课程教学中心整合课内外课程资源，实施研究项目过程性管理，探索研究型课程项目与拓展型课程、基础型课程的互融与互补，切实提升三类课程品质，为学校课程内涵发展建设创造条件。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4）初建并完善课程评价体系
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	学校课程教学中心组织三类课程评价，从课程目标、内容、实施与反馈等维度，制定课程评价标准与实施办法。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	首先，学校将探索并实践三类课程与学生综合素质评价有机结合，使每一阶段的课程学习过程、成果与评价成为学生体现学生综合素质水平的有力证明。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	此外，在优化并统整三类课程的基础上，开展各类学科竞赛，以赛竞学、以赛评课，将竞赛活动与课程评价有机结合，推进课程对学科素养的深入研究，提升学科课程教学思维品质。
+</p>
+<p class="MsoNormal">
+	（二）积极推进<u>提升教学效果</u>的学科发展举措
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、发展目标
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	以深度备课、培优补缺、分层作业为抓手，制定校本研修课程规划，推动学科教学研究纵深发展；通过常规教学视导、备课组教研组教学研究主题项目化管理、学生学力分析与学业过程性评价等举措，初建并逐步完善教学质量监控体系。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、发展任务与举措
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1）研究深度备课，提升学科研修能力
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	制定围绕深度备课的校本研修规划，养成教师深度备课的思维习惯，备学生、备教材、备教法与学法，制定围绕学科核心素养的教学目标、设计具有一定思维品质的课堂教学活动、探索灵活而富有体验价值的作业内容与作业形式、实施实现核心素养培育目标的学科评价。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>学校倡导各学科备课组合力备课，优化备课质量，提升教学效度；各学科围绕学科建设发展规划，深入探讨有效教学，制定学科研修一学年一主题、一学期一项目，逐步达成学科建设目标。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2）落实培优补缺，提升学科教学质量
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	学校课程教学中心开展学生学业能力水平调研，多维度分析学生学业水平，了解学生学科知识、学习能力等方面的差异，进行各学科各自然班学生学业能力水平分析，以学科组为单位制定培优补缺计划。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	学校将探索分层走班补缺与培优。面向学力较弱学生群体开设特需课程，利用家校联系手册加强后进生家校联系；面向资优生群体开设学科竞赛辅导课程、学科素养特色课程，拓展资优生学业发展空间。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3）实施分层作业，提升学科思维品质
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	各学科立足中考改革方案精神、围绕学科核心素养、依据单元教学规划设置分层教学目标，从基础型、拓展型、探究型等作业类型出发，设计灵活而具有体验价值的分层作业，引导学生将课程学习内容与真实生活情境相结合，提高学生解决实际问题的能力。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	各学科积极开展以实践创新素养为目标设计分层作业的研究，丰富作业形式、扩充思维容量，让作业成为展现学生创新能力的舞台。
+</p>
+<p class="MsoNormal">
+	（三）着力培育<u>具备校本化课程实践能力</u>的教师团队
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、发展目标
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	以师徒带教、教学指导团、学科工作室为抓手，推进职初期、成长期、研究型教师专业发展，搭建教学、教研展示与评比平台，营造积极学习、主动反思的校园文化，培育具备校本化课程实践能力的教师团队。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、发展任务与举措
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	以校内研究型教师带教为主，校外聘请为辅，为每一位职初期教师结对师徒，一周一备课，一周一听课，一学期一鉴定，一学期一汇报，以师徒带教引导职初期教师专业成长。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>聘请区内外各学科教学专家成立</span>“七宝鑫都教学指导团”，一周一听课，一学期一展示，一学年一汇报，以教学指导团教学专家引领校本研修、推进成长期教师专业发展、夯实学科教学基本功落到实处。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>由研究型教师领衔</span>“七宝鑫都XX学科工作室”，发挥研究型教师在七宝教育集团乃至区域内专业引领作用，促进研究型教师专业发展。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	<span>每学年组织</span>0-3年职初期教师教学汇报展示活动、教师教育教学创新大赛（班主任班会课、任课教师教学课）等活动，以评促教，展现教师专业魅力，营造积极反思的专业学习氛围，为教师专业成长搭建平台。
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	2019年8月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="239777.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="239777.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="239777.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="239777.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

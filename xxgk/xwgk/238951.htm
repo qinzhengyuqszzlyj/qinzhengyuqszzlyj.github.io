@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>七宝鑫都中学人事档案管理制度</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList_3.htm">信息公开</a> >
+        <a href="../../info/iList_43.htm">法治建校</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 七宝鑫都中学人事档案管理制度
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2019-08-08</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p class="MsoNormal">
+	一、干部人事档案收集
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、严格按照中共中央组织部“关于印发《干部人事档案材料收集归档规定》的通知” （组通字[1996]14号）规定的范围收集干部人事档案材料，及时将全面反映干部德、能、 勤、绩的材料收集归档，充实档案内容。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、形成干部人事档案材料的部门，在形成材料后的一月内，按要求将材料送交主管干部人事档案的部门归档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、干部人事档案管理部门，应掌握形成干部人事档案材料的信息，建立联系制度，及时向有关部门收集新形成的干部人事档案材料。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、干部人事档案管理部门，发现有关部门送交归档的材料不符合要求时，应及时通知形成材料的部门补送或补办手续。形成干部人事档案材料的部门，有责任按规定认真办理。
+</p>
+<p class="MsoNormal">
+	二、干部人事档案查（借）阅
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、查阅干部人事档案者，必须是中共党员，并持有市委组织部统一印制且手续完备的《查阅干部人事档案审批表》。其它如持“调查证明材料介绍信”或“行政介绍信”要求查阅干部人事档案的，一律不予提供。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、干部人事档案是党和国家的机密，查阅者必须严格遵守保密制度和阅档规定。干部人事档案应妥善保管，不得遗失，不得转借他人。档案内容应严格保密。不得在案卷内涂抹、勾画及乱加批注。卷内材料不得拆散，不得任意增删，未经同意不复制。违者视情节轻重予以批评教育直至纪律处分，假公济私者按违反《中华人民共和国档案法》处理。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、外省市欲查阅干部人事档案，应事先联系，征得同意后，按干部人事档案管理权限，凭《查阅干部人事档案审批表》前来查阅。如干部人事档案部分内容反映被了解人的情况，则提供有关部分。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、公安、安全、检察部门、公证处等需查阅干部人事档案，也应持《查阅干部人事档案审批表》。因需要而摘录档案内容的，须征得档案管理人员同意。对其摘录部分，由档案管理人员与原文核对无误后，写明材料出处及日期，加盖部门公章。对摘录复制的材料除必须留作证据外，一律由查阅单位负责销毁。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、查阅干部人事档案，应在阅档室内或指定地点查阅。干部人事档案一般不外借，确因工作需要将档案借出使用，查阅单位应在审批表上说明理由，经档案管理人员同意并严格履行登记手续方可借阅，限期（两周内）归还，逾期须办理续借手续。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、任何个人不得查阅或借阅本人及其亲属的干部人事档案。
+</p>
+<p class="MsoNormal">
+	三、干部人事档案鉴别归档
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、归档的材料必须是正式材料。材料应完整、齐全、真实、文字清楚、对象明确， 有承办单位或个人署名，有形成材料的日期。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、归档的材料，凡规定由组织审查盖章的，须有组织盖章，规定要同本人见面的材料（如审查结论、复查结论、处分决定或意见、组织鉴定等），一般应有本人的签字。特殊情况下，本人见面后未签字的，可由组织注明。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、干部人事档案材料的载体应是（19×26.5厘米）规格的办公用纸，材料左边应留出2~2.5厘米装订边。文字须是铅印、胶印、油印或用蓝黑墨水、黑色墨水、墨汁书写。不得使用圆珠笔、铅笔、红色墨水及纯蓝墨水和复写纸书写。除电传材料需复印存档外，一般不得用复印件代替原件存档。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、对归档材料应逐份登记，并于一个月内归入本人档案袋（盒）内，每年装订入卷一次。
+</p>
+<p class="MsoNormal">
+	四、干部人事档案传递
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、建立干部人事档案转递登记簿，凡进出档案须严格手续，逐一登记。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、转递干部人事档案要通过机要交通或派专人送取，严禁本人携带，对本人携带档案的，档案管理部门应拒绝接收。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、转出档案必须完整齐全，按规定经过认真的整理并装订成卷，不得扣留部分材料或分批转出，凡整理中剔除的待销毁材料不得随干部人事档案同时转递。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、转递干部人事档案必须填写中共上海市委组织部统一印制的《干部人事档案转递通知单》，严密包封并加盖密封章，以机密件寄出。成批移交档案时，可填写移交名册（一式两份），由接交双方签字盖章。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、档案管理部门对外单位转入的档案，要认真清点，经核对无误后，应在回执上签名加盖公章后及时退回寄出单位。逾期一个月未收到回执的，档案转出单位应函、电催问， 以防丢失。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、档案管理部门要主动与干部调配、任免单位（部门）配合，使干部人事档案随着人员调动、职务变动或改变主管单位而及时传递。
+</p>
+<p class="MsoNormal">
+	五、干部人事档案保管保密
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、严格遵守《中华人民共和国档案法》、《中华人民共和国保守秘密法》和《干部档案工作条例》的规定，不得在口头上、通讯中泄露档案内容和其它有关机密事项。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、档案库房必须坚固，配制铁质档案柜，库房内保持清洁、安静，定期检查防火、 防盗、防潮、防蛀、防光、防高温等“六防”设施落实情况，保证档案安全，做到万无一失。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、对保管的干部人事档案应在干部人事档案名册上逐个进行登记。死亡人员档案分开保管。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、严禁个人私自保存任何人的档案材料。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、档案管理人员调动时，必须严格履行交接手续。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	6、非档案管理人员不得进入档案库房。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	7、档案材料不得擅自转移、分散、销毁和丢失。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	8、在工作中形成的废纸需粉碎处理。
+</p>
+<p class="MsoNormal">
+	六、送交档案材料归档
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	1、凡干部任免或接到“催调干部人事档案通知单”后，应按规定将干部人事档案正本（或副本）及时送交干部人事档案的主管（或协管）部门。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	2、送交档案时，应检查核对材料与目录，防止张冠李戴或缺少材料，凡是干部人事材料不齐全或不清楚，要补齐或弄清楚后，再办理有关手续。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	3、送交的档案必须按规定经过整理，对不合理的，可退回原单位重新整理，限期报送。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	4、干部人事档案管理部门在收到档案材料后要逐一登记，并及时办理接收手续。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	5、对送交的档案、档案材料，要按中组部《干部人事档案材料收集归档规定》要求， 认真鉴别，严格审查，防止不符合归档要求的材料进入档案。对伪造档案材料、涂改档案内容的，一经发现，要予以清除，并根据情节轻重，对当事人给予党纪政纪处分，构成犯罪的，要依法追究刑事责任。
+</p>
+<p class="MsoNormal" style="text-indent:24.0000pt;">
+	&nbsp;
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	上海市七宝中学附属鑫都实验中学
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;">
+	2019年8月
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="238951.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="238951.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="238951.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="238951.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

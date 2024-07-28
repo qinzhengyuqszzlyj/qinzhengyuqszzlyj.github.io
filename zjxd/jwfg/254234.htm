@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2020学年第二学期第九周“国旗下的讲话”</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2020学年第二学期第九周“国旗下的讲话”
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-04-19</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202104/202104190555035.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:13pt;">
+	六（4）班&nbsp; &nbsp;梁周梓卉
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	敬爱的老师、亲爱的同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家好！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	我是七宝附属鑫都中学六(4)班的梁周梓卉，今天很荣幸地能站 在鲜艳的五星红旗下，分享我参加红领巾讲党史的心得体会。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	今年，是<a target="_blank" href="254234.htm">中国</a>共产党成立 100 周年。我们伟大的党在国家、民族 最需要的时刻诞生，踏着荆棘丛生的道路在风雨中已走过了百年的征程！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	2021 年 4 月 4 日清明时节，我参加了红领巾讲党史的活动。那 天，我来到闵行区烈士陵园，由长青松柏笼罩的陵园内一片肃然，唧 唧喳喳的小鸟似乎也怕惊扰了这里的先烈们，扇呼着翅膀远离而去。 一座座墓地坐落在陵园西北侧的朝阳坡地上，修饰规整的灌木丛中显 露着一块块由大理石凿塑的墓碑，上面纂刻着一串串鲜红的烈士们的 名字。在这里共计掩埋着四百多名牺牲在各个时期的烈士们，有抗日 战争中牺牲在日本侵略者枪炮下的烈士，有在解放上海的冲锋路上倒 下的年轻战士，也有为保家卫国牺牲在朝鲜战场的上海籍战士，还有 许多无名的墓碑，我默默地巡视着一座座墓碑，站在这些长眠于地下 的先烈们墓碑前，默默地阅读着一个个烈士们的丰功伟绩，似乎在心 中听述着他们那不屈的奋斗故事，瞬间我心中涌起无限的怀念与激情。 正是这千千万万牺牲的烈士，才换来了我们现在的幸福生活！ 能够参加红领巾说党史活动，把先烈们的英雄事迹讲述给更多的人听， 我感到无比光荣与自豪！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	回首岁月，历史不能忘记，也不应该被忘记！作为成长在新 世纪的我们，更不能忘记先烈们的英雄事迹，不能忘记我们的国旗是 他们这些无数的先烈们用鲜血染红的，今天我站在国旗下，追忆那些 峥嵘岁月，必将激励我们今后更加努力学习、奋发图强！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	亲爱的同学们，让我们一起行动起来吧！只争朝夕、勤奋刻苦， 只有现在加倍努力，掌握先进的文化知识和科学技术，未来才能 更好地建设我们的祖国，才能告慰牺牲的烈士！
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	让我们一起铭记历史，用最昂扬的姿态迎接未来！
+</p>
+<br />
+<br />
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202104/202104190555052.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:13pt;font-weight:bold;">
+	同心向党，党的故事我来讲
+</p>
+<p style="text-align:center;font-size:13pt;">
+	高一(2)班&nbsp; &nbsp;施青煜
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	亲爱的同学们，敬爱的老师们，大家早上好。我是来自高一二班的施青煜。很高兴能够站在这里演讲。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	如果有人问我<a target="_blank" href="254234.htm">中国</a>是什么颜色，我一定会毫不犹豫的回答，是红色。是<a target="_blank" href="254234.htm">中国</a>共产党领导的那一分红色。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	回望过去，20世纪初的<a target="_blank" href="254234.htm">中国</a>，甲午战争失败，《辛丑条约》的签订，使<a target="_blank" href="254234.htm">中国</a>一步步走向了般致命半封建社会的深渊。革命先驱孙中山先生领导的辛亥革命即使推翻了长达两千多年的封建专制，却依然无法拯救人民于水生火热之中。直到1921年七月。<a target="_blank" href="254234.htm">中国</a>共产党诞生了。这是一面旗帜，在他们的带领下，中华人民共和国诞生，逐渐走向腾飞。同时，在共产党员身上肩负的责任和担当也多了一份。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	至今，我的脑海里还回响着疫情时期，张文宏医生那句“这种那个情况怎么办，我把所有人员撤下来，党员先上，这种时候党员必须起作用”。我的爷爷也是一名共产党员，每当看见家门口高高挂着的“光荣之家”时，心里便会涌起一股暖流。早已步入古稀之年的老人，却对半个多世纪前的经历念念不忘。午后的阳光里，爷爷还是会时常和我提起他所经历过的文革，改革开放，非典，情到深处不禁也会红了眼眶。还记得武汉疫情刚爆发时，他拿着手机焦急的询问我如何给武汉捐款，“我是党员，这种时候我没法帮上忙，只能这样贡献自己的力量了”。不止在家中，我们校园里也有着一批负责的党员老师们。我的班主任沈晓燕老师，上课严谨认真，对我们的问题总是有问必答。年级主任夏琎老师，对年级每一位同学，关心体贴，细心询问每一位同学的学习亦或是生活状态。校办王颖慧老师，负责认真，讲课详细认真，对党对国家一丝不苟。他们都有一个共同的名字，共产党员，都在各自的岗位上尽职尽责奉献着自己。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	建党一百周年的新<a target="_blank" href="254234.htm">中国</a>，正站在一个历史的转折点。复杂多变的国际形势，国家经济发展的不平衡，微妙紧张的海峡两岸关系。但，即使我们所面对的困难重重，却也不会在逃避。回首过往，我们在党的领导下，收获的是满心喜悦，瞻望未来，我们更是满怀壮志。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	壁立千仞，无欲则刚。长江依然咆哮奔腾，黄河依旧磅礴。可是党领导的中华民族伟大复兴的道路，早已在我们每个人心里都播下一颗种子。这粒种子正在萌芽，成为一棵大树，如一艘巨轮，将要起航，抵达成功的彼岸。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="254234.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="254234.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="254234.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="254234.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

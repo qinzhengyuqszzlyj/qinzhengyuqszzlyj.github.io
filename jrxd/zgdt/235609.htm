@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>科创 筑梦 远航——七宝鑫都首届科技文化节闭幕</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_2.htm">综合动态</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 科创 筑梦 远航——七宝鑫都首届科技文化节闭幕
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2020-06-16</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240913006.jpg" alt="" /> 
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	2020年6月15日，七宝鑫都首届科技文化节圆满闭幕。本届科技文化节自今年3月份从线上开始启动，围绕主题——科创、筑梦、远航，开展了一系列丰富多彩的活动。
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	为迎接首届科技节的到来，学校号召全体学生为科技节口号建言，同学们纷纷贡献智慧，以班级为单位选送科技节口号参加校级评选。
+</p>
+<p style="font-size:12pt;text-align:center;color:#333;font-weight:bold;">
+	部分获奖优秀口号
+</p>
+<p>
+	<table class="MsoNormalTable ke-zeroborder" border="0" cellspacing="0" style="width:100%;border:none;">
+		<tbody>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:12pt;">班级</span><span style="font-family:宋体;font-size:12pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:12pt;">姓名</span><span style="font-family:宋体;font-size:12pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:12pt;">科技节口号</span><span style="font-family:宋体;font-size:12pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（7）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">侯君睿</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">凭创新点亮世界，以科技璀璨人生。</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（8）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">王舟彤</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">创“鑫”无限，启航未来</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（4）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">李昕莹</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">科技点亮校园，创“鑫”成就梦想</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（8）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">戴子涵</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">创“鑫”梦想，驱动未来</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（9）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">冯秋博</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">少年智慧汇聚科技海洋，鑫都雏鹰展翅创新蓝天！</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（10）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">齐禹博</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">创科技之“鑫”，造畅想之“都”。</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（1）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">金宇程</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">用科技点亮生活，让创鑫成就梦想 ！ </span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（5）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">唐贝妮</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">“鑫”科技，“鑫”未来</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（8）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">黄阅迪</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">创意“鑫”思维 &nbsp;科技创未来</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="72" valign="center" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:middle;">
+						<span style="font-family:宋体;font-size:11pt;">六（6）</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="72" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" align="center" style="text-align:center;vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">高琪佳</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+				<td width="334" valign="bottom" style="border:1.0000pt solid #000000;">
+					<p class="MsoNormal" style="vertical-align:bottom;">
+						<span style="font-family:宋体;font-size:11pt;">未来，从“鑫”开始</span><span style="font-family:宋体;font-size:11pt;"></span> 
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+<br />
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	3月14日，科技文化节由线上钉钉联播启动开幕。开幕式上，鲸鱼机器人首席内容官叶飞洪博士，为学生们带来了精彩的人工智能科普讲座。叶博士为学生解释了什么是人工智能、机器学习，为中小学生如何开始学习编程提出建议。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240915024.jpg" alt="" /> 
+</p>
+<br />
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	叶博士的讲座启发了不少学生的创新思维，在之后开展的科幻画创作大赛中，学生们充分发挥想象，利用绘画技能绘制出精美的科幻画。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240915037.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240915048.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	线上科技节活动期间，我校还开展了世界气象日讲座，同学们在认真听讲座的同时写下了气象日活动感想，并绘制了精美的气象日小报。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240916030.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240916041.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	返校复学之后，学校特别邀请了多名上海市著名科创专家， 围绕《初中生怎样做科创》，开展了精彩的科创系列讲座。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240919031.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240919042.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	第一场讲座主讲嘉宾：杨浦区少年科技指导站副站长 周建军
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	周老师从获得全国青少年科技创新大赛一等奖和二等奖的三个案例着手，为同学们诠释了初中生该如何做科创。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240921041.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	第二场讲座主讲嘉宾：长宁区少年科技指导站科技部主任 王海
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	王老师的讲座诙谐幽默，让同学们感觉科创有益又有趣。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240922030.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	第三场讲座主讲嘉宾：上海师范大学生命与环境科学学院生物学系系主任 李利珍教授
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	李教授不但在科学前沿有重大成就，也是中学生科创教育的专家。他以一只水黾为什么能浮在水面上为例，为学生们介绍了如何进一步思考，不断完善科学研究的过程。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240924013.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240924022.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	6月15日，我们迎来了精彩丰富的科技节闭幕式。
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	闭幕式首秀为学生代表与Ebot机器人共同带来的精彩热身舞。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240926038.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	之后，闵行区气象局局长浦佳伟和七宝鑫都常务副校长黄岳辉共同为市青创赛、市创新创业赛、校科幻画和校气象小报获奖学生颁奖。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240928033.jpg" alt="" /> 
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240928046.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	六（9）班黄语萱同学作为获奖学生代表上台发言。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240928058.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	闵行区气象局局长浦佳伟、副局长赵朔、七宝中学气象与大气监测实验室主任沈凯老师充分肯定了我校科技教育成效，授予我校“上海市气象科普教育基地示范校园气象站”的荣誉称号。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240929029.jpg" alt="" /> 
+</p>
+<p>
+	<br />
+</p>
+<p style="font-size:12pt;text-indent:2em;color:#333;">
+	最后，常务副校长黄岳辉为科技节闭幕式致辞，他希望同学们继续发扬“勇于探索、敢于创新”的精神，积极加入到科创活动中来，不断挑战自我、成就自我。
+</p>
+<p>
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202006/202006240929042.jpg" alt="" /> 
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="235609.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="235609.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="235609.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="235609.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

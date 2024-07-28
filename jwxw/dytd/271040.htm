@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>拥抱不确定，积极向未来——来自七宝鑫都心理健康教育中心的暖心提示</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iIndex_11.htm">校园新闻</a> >
+        <a href="../../info/iList_37.htm">德育天地</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 拥抱不确定，积极向未来——来自七宝鑫都心理健康教育中心的暖心提示
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2022-10-14</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-indent:2em;">
+	生活中的不确定性无处不在。疫情给我们的生活带来了一些突如其来的变化。此时，我们能够做些什么，来化解心中的负面情绪呢？<strong>这里有心理健康教育中心专业的指导和同学们热情的经验分享，快来一起了解吧！</strong> 
+</p>
+<p style="text-indent:2em;">
+	<strong><strong>一、从不确定中觅惊喜</strong></strong> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#FBFBFB;">&nbsp; &nbsp; &nbsp; “不确定”将会导致人们的焦虑、烦躁。但其实不确定性对我们而言，也不是一无是处，它也会时不时给我们的生活带来惊喜。比如，收到许久没有联络的好友发来的信息，漫步校园不经意间见到的美景，惆怅时同学、老师伸来的援手……</span> 
+</p>
+<p>
+	<strong>&nbsp; &nbsp; &nbsp; 二、用好奇心代替不理解</strong> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#FBFBFB;">&nbsp; &nbsp; &nbsp; 在这个特殊时期，我们可能会遇到一些自己觉得不理解的事，进而引发愤怒。不妨试着先不评判对错，而是用好奇的心态去探究，当好奇心起来时，负面情绪会减弱。暂停面对事物时的惯性思维、学会区分想法与事实是重获生活掌控感的关键。</span> 
+</p>
+<p>
+	<strong>&nbsp; &nbsp; &nbsp; 三、找到源头，积极应对</strong> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#FBFBFB;">&nbsp; &nbsp; &nbsp; 不确定性来源于人内心深处的不安全感。人们为了避免不安全感，总是愿意选择安逸，可对比起一些敢于拼搏的人，他们依然会产生很深的焦虑，与其焦虑、恐慌，不如主动拥抱人生的不确定性，为自己创造更多可能。</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">&nbsp; &nbsp; &nbsp; 以下是来自七宝鑫都初、高三学子的经验和做法，不妨一起试试看哦！</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;"><br />
+</span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; 面对不确定性大幅增加的情况，我在之前的网课生活中进行反思和总结，找到了一些可行的方法。网课生活的可支配时间增加，我们可以利用碎片时间做些有意义的事：可以记录下某段时间自己在做什么、完成了哪些任务。当晚回顾记录，若有时间可以做总结，这会使网课学习更加有效率。</span>
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; ——<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">刘好&nbsp;&nbsp;</span><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">高三(4)班</span></span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; 如何在后疫情时代的不确定性中找到一份确定。我的秘诀是要为自己的学习确立一个明确的大目标即高考的目标，并将之在每学期分成若干小目标持续坚持。明确的目标让我们拥有努力的动力，也是一份鞭策，给我们一个看得见的彼岸。小目标的达成会让我们产生成就感，激励我们再接再厉，坚定自己所选的方向，付诸更多努力。从高二等级考到明年高三英语春考再到最终的高考，我将继续奋勇前行！</span>
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; ——<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">薛晗冰&nbsp;&nbsp;<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">高三(2)班</span></span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><br />
+</span></span> 
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; 突如其来的疫情打乱了平静的学习和生活，我曾经迷惘，甚至还有一丝恐慌。但班会课上于老师的及时指导让我认识到挑战与机遇并存，我们可以从疫情带来的不确定中寻找新思路、新方法去应对危机。于是我重新审视自我、查漏补缺，提高学习效率和自律性。同时，多阅读，努力保持积极的人生态度。面对不确定，我已不再迷惘，学会了直面挑战、抓住机遇。</span></span></span>
+</p>
+<p>
+	<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; ——<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">曹铮&nbsp;&nbsp;<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">九(9)班</span></span></span></span></span> 
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><br />
+</span></span></span> 
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; 变化突如其来，令我产生了一些担心情绪，同时我也立即意识到自己需要做好调整。尽可能的放松心情，与同伴们多多交流，缓解压力。在家中，利用有限的条件，进行体育锻炼，保证每天的运动量，有效的增加自信心，提升身体素质。做好自己当下能做的事情，以一种乐观积极的态度，规划生活，迎接挑战，我想这也是疫情带来的别样收获。</span></span></span></span>
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">&nbsp; &nbsp; &nbsp; ——<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">付斯咏&nbsp;&nbsp;<span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;">九(5)班</span></span></span></span></span></span> 
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><br />
+</span></span></span></span></span> 
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"> </span></span></span></span></span> 
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	未来如何发展
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	依旧充满了不确定性
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	但人生的支点从来都不只是某一方面
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	而是生活的方方面面
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	<strong>我们能做的就是</strong> 
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	<strong>建立良好的心理免疫力</strong> 
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	<strong>当我们面临每一次危机时</strong> 
+</p>
+<p style="text-align:center;color:#00467E;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#F1F7FF;">
+	<strong>把它当作人生的一个挑战和成长的一次机遇</strong> 
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><br />
+</span></span></span></span></span> 
+</p>
+<strong>拥抱不确定&nbsp; 积极向未来</strong> 
+<p>
+	<br />
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"> </span></span></span></span></span> 
+</p>
+<p style="text-indent:2em;">
+	同学们可以继续在线上预约咨询，七宝鑫都心理健康教育中心将一直在这里，聆听你的心声。可以是困惑，也可以是单纯的倾诉和分享（请关注班级家长群通知）。
+</p>
+<div>
+	<br />
+</div>
+<strong> 
+<div style="text-align:center;">
+	<strong>心 理 资 源</strong> 
+</div>
+</strong> 
+<p>
+	<br />
+</p>
+<p>
+	<span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;color:#54AAEE;"><span style="color:#141414;"><span style="color:#54AAEE;"><span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"><span style="color:#54AAEE;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"> </span></span></span></span></span> 
+</p>
+<p style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;text-align:justify;background-color:#FBFBFB;text-indent:2em;">
+	1、闵行区未成年人心理 24 小时求助热线：4001041990
+</p>
+<p style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;text-align:justify;background-color:#FBFBFB;text-indent:2em;">
+	2、上海心理援助 24 小时热线电话：962525
+</p>
+<p style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;text-align:justify;background-color:#FBFBFB;text-indent:2em;">
+	3、团市委青小聊热线电话：12355
+</p>
+<span style="color:#141414;font-family:system-ui, -apple-system, BlinkMacSystemFont, &quot;font-size:15px;background-color:#E5EDF9;"></span> 
+<p>
+	<br />
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="271040.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="271040.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="271040.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="271040.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2020学年第二学期第一周“国旗下的讲话”</title>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+    <script src="../../wcm.files/js/jqueryN.js"></script>
+    <link rel="icon" href="../../images/logo(1).png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    .page-content img{
+      width: 750px;
+      min-height: 300px;
+    }
+    .page-content{
+      padding-bottom:40px
+    }
+     .page-content span,.page-content p{
+      line-height:2 !important;
+    }
+  </style>
+  <body  style="overflow-x:hidden">
+    <!-- ---- 标签>>--【头部】 -- 标签开始 ---- -->
+<style>
+  .nav-nav > ul li{
+    margin-left:50px
+  }
+</style>
+<script type="text/javascript" src="https://qbxd.mhedu.sh.cn/css/json2.js"></script>
+<script type="text/javascript">
+     function getQueryString(name)
+    { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;                              
+    }  
+ 
+$(function(){
+       $qq=getQueryString("q");
+     if($qq==1)
+         { 
+ $(".1").addClass('select'); 
+         }  
+    else if($qq==2) 
+         {    
+  $(".2").addClass('select'); 
+       }  
+    else if($qq==3) 
+         {    
+  $(".3").addClass('select'); 
+       } 
+    else if($qq==4) 
+         {    
+  $(".4").addClass('select'); 
+       } 
+    else if($qq==5) 
+         {    
+  $(".5").addClass('select'); 
+       } 
+    else if($qq==6) 
+         {    
+  $(".6").addClass('select'); 
+       } 
+   else if($qq==7) 
+         {    
+  $(".7").addClass('select'); 
+       } 
+  else {} 
+
+    })
+  
+  function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将[signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+  
+  
+  //设为首页
+
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+
+//收藏本站
+
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<div class="nav">
+      <div class="nn" style="display:none">
+        <div class="head">
+          <span style="display: inline-block;padding-top: 6px;">欢迎进入上海市七宝中学附属鑫都实验中学</span><img src="../../images/gw_03.png" style="vertical-align: text-top;margin-left: 10px;"/>
+          <a href="../../qbxd_mhedu_sh_default.html" style="position: absolute;left: 246px;color: white;top: 7px;">官网</a>
+          <div class="head-nav">
+            <a href="javascript:void(0)"onclick="SetHome(this,'http://www1.shlmzx.com.cn');" >设为首页</a>&nbsp;|&nbsp;<a href="../../info/iList.htm">联系我们</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="AddFavorite(window.location,document.title)">加入收藏</a>&nbsp;|&nbsp;<a href=http://xdsyzx.mhedu.sh.cn/manager style="color: #CC0F00;">校园办公</a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        
+      </div>
+      
+      <div class="logo">
+        <a href="../../qbxd_mhedu_sh_default.html"><img src="../../images/logo_03.jpg" width="405"/></a>
+        <div class="search" style="display: inline;">
+           <form id="searchform" name="searchform" action="../../search/searchResultGJ.htm" method="get" style="margin-top: 15px;position: relative;float: right;">
+                <input id="q" name="q" type="text" class="search_Text inp" value="" style="border: 1px solid lightgray;width: 275px;height: 30px;">
+                <button type="submit"class="btn" >搜索</button>
+                 <input type="hidden" value="823" name="t_id">
+                <input type="hidden" value="" name="site_id" style="width:0;">
+              </form>
+              <div class="clear:booth"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="nav-nav">
+          <ul>
+            <li style="margin-left: 0px;"><a href="../../qbxd_mhedu_sh_default.html">首&nbsp;页</a></li>            
+            <li style="margin-left:90px"><a href="../../info/iList.htm" >走进鑫都</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_5.htm" >通知公告</a></li>
+            <li style="margin-left:90px" ><a href="../../info/iList_2.htm">校园新闻</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_4.htm">党政建设</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_3.htm">信息公开</a></li>
+            <li style="margin-left:90px"><a href="../../info/iList_6.htm">加入我们</a></li>   
+            <li style="margin-left:90px"><a>文明校园</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- ---- 标签>>--【头部】 -- 标签结束 ---- -->
+
+        <div class="main">
+          <div class="address">
+            
+                  <a href="../../index.htm">首页</a> >
+        <a href="../../info/iList.htm">走进鑫都</a> >
+        <a href="../../info/iList_7.htm">鑫中人物</a> >
+      正文          </div>
+          <div class="connt-con">
+            <div class="con-left">
+              <div class="content-twoo">
+            <div id="" style="margin: auto;">
+              <div class="head-title">
+                 2020学年第二学期第一周“国旗下的讲话”
+              </div>
+              <div class="head-footer">
+                作者(来源)：<span>七宝中学附属鑫都实验中学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2021-02-22</span> 
+              </div>
+              <div class="head-content" >
+                <div  class="page-content" style="font-size: 14px;line-height: 26px;color: #333;">
+                  　　<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103230614008.jpg" alt="" style="width:80%;" />
+</p>
+<p style="text-align:center;font-size:14pt;font-weight:bold;">
+	在学习和实践中提升创新素养
+</p>
+<p style="text-align:center;font-size:13pt;">
+	党支部书记、常务副校长&nbsp; &nbsp;黄岳辉
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	各位老师，各位同学：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家早上好！今天是2020学年第二学期开学的第一天，我谨代表学校向大家致以新学期的问候，衷心祝福七宝鑫都的每一位师生新年新气象，牛年更加牛。过去的2020年，我们学校在认真做好疫情防控的基础上，有条不紊地开展各项工作，学校在课程建设、教师发展、科技创新、主题文化节日等方面成绩突出。在此，我谨代表学校，向全体师生员工表示祝贺和致敬。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	过去的2020年，我们国家虽然面临各种风险和挑战，但仍然取得了令世界瞩目的科技成就：嫦娥五号成功登月带回月壤、九章量子计算机问世、北斗三号全球卫星导航系统建成开通等。这一系列科技成就的取得，让我们倍感骄傲和自豪。同时，也让我们也更加清醒地认识到，基础教育应该为建设科技强国肩负起更大的使命，让更多的中学生成为未来的创新型人才。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	当前，在培养未来创新型人才过程中，培育学生的核心素养早已经成为基础教育改革与发展所关注的热点话题。学生发展核心素养是指学生应具备的，能够适应终身发展和社会发展需要的必备品格、关键能力和价值观念。2016年9月13日，国家正式发布了《<a target="_blank" href="250680.htm">中国</a>学生发展核心素养》。国家制定的学生核心素养的要求和内容，是对学生共同的、普遍的基础性的标准，它是相对宽泛而宏观的，具有共通性和基础性的特征。由于学校类型、办学理念和培养目标的差异，每所学校在办学实践过程中对于核心素养的校本化诠释会有所不同。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	本学期，我们将“促进学生思维能力提升的课堂教学”作为教师校本研修的重要课题，我们希望老师们在课堂中不仅重视知识的传授，更要重视学生思维能力的发展，思维品质的提升，为培养具有“思维力”的创新性人才奠定基础。因此，今天我想从未来创新型人才培养的视角，和同学们谈谈“创新素养培育”这个话题。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	创新素养是在不拘泥于常规的基础上，有强烈的自我否定意识，不断寻找新方法、新思维、新途径，并形成突破自我、追求卓越的能力品格。创新素养的核心在于创新意识、创新思维和创新人格，因此，大家在日常的学习和课题研究要注重从这个三个方面进行培养。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	首先，批判质疑是培养创新意识的起点。同学们在学习与研究时要养成敢于质疑和独立思考的好习惯。在课堂学习中，要基于有效的证据，敢于向老师和同伴表述不同的观点、想法或见解；在阅读时，不仅仅关注知识积累，不简单迷信专家和权威的观点，而是要进行合理的质疑。当然，在质疑批判的时候不是带有个人偏见和负面情绪，而是充满理性与冷静。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	其次，要注重培养创新的思维品质。要培养创造性思维，大家就不能因应试的压力而让自己的思维越来越局限。在七宝鑫都多元的课程学习和丰富的实践活动中，我们鼓励同学们要学会突破思维定势，站在不同的角度思考问题，尝试创造性地解决问题。比如，在课题研究过程中，无论是提出问题、制定研究计划还是创新实验设计、成果表达与交流等，同学们都可以大胆假设，充分想象，形成自己解决问题的新观点、新方法，不断提升思维的广阔性、深刻性和灵活性。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	最后，大家要重视创新人格的培养。创新人格是创新活动顺利开展的良好个性品质，因此，我希望大家在平时要注重保护好自己的好奇心、求知欲，培养自己良好的团结协作精神和健康的身心状态以及献身祖国科学事业的内在动力和坚强意志等。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	2月14日，大年初三，朱越校长做客“世界顶尖科学家论坛一有请校长”节目，畅谈创新教育。朱校长说，每个学生都是灿烂的烟火，每个学生都有创新的潜能。希望七宝鑫都学子能在学校创新的文化氛围中绽放自己的精彩。同学们，新的一年又将开启新的希望与梦想，我衷心期望我们每一位同学在新的一年，始终牢记自己的目标和方向，保持学习的热情和动力，在学习和实践中不断提升自己的创新素养。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	谢谢大家！
+</p>
+<br />
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103110537016.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:14pt;font-weight:bold;">
+	科创研究，你也可以！
+</p>
+<p style="text-align:center;font-size:13pt;">
+	综合理科备课组长&nbsp; &nbsp;吴文英
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	各位老师、同学们：
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	大家早上好！很高兴能够作为教师代表在新学期的开学典礼上做主题发言。我今天发言的题目是《科创研究，你也可以！》
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	自办学之初，学校就将科技创新作为办学特色之一，除了面向同学们开展丰富多彩的科技夏令营、冬令营，举办科技节各项活动之外。学校也为同学们搭建好了各种科创平台，比如，与航空航天研究所、上海自然博物馆等多家单位签约共建，共同开发各种创新类课程。学校有七宝集团强大的科创团队支持，有莘庄工业区各类物质资源的保障，同时我们也组建了专业科创教师团队。这一切不仅因为“综合素质评价系统”是这么要求的，更因为做科创的过程，也是培养学生从形象思维，到逻辑思维、批判性思维，最后拥有创造性思维的一个重要过程。在中学阶段，培养学生拥有这样一种素养将为学生的终身发展奠定重要基础。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	那么科创研究究竟是怎么一回事呢？其实科创研究不是老师告诉你做什么，而是你来告诉老师、专家你想做什么，你能做什么？去年上海市青少年科技创新大赛和上海市百万青少年争创明日科技之星比赛的双料冠军，七7班的侯君睿同学，喜欢新工科，去年做了“基于物联网技术的湿垃圾及时清运的方案研究”，可以有效解决湿垃圾发臭问题，改善小区居住环境。而今年侯君睿同学对科创热情依然不减，他就“针对手机高能短波蓝光对人眼影响的数据化预警系统”，减少长时间使用电子设备对眼睛的造成的伤害开展了探索研究。我相信有了这么多宝贵的科研经历，将来他去参加高中自主招生时，可以对面试官侃侃而谈，也更能适应高中的自主学习和生活；甚至将来去大学面试，他也可以自豪的告诉面试官，在中学时，我有什么想法，而那时我把它们都实现了。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	做科创的过程也在锻炼同学们的信息获取和分析判断能力。在刚过去的寒假中六、七年级及高一年级，共有91位学生申报了80项第36届市青创赛创新成果；61位同学申报了55项第18届区明日科技之星创新成果；已有46项获闵行区青创赛等第奖，其中高一（1）班张羽菡、高一（1）班陆昱尧、七（7）班章西瑜、周墨等同学获一等奖6项。能够完成申报的同学都是优秀的，申报的每个环节都具有挑战。以申报前的3次STEM素质测评为例，90分钟完成100道连各行业专家都觉得十分难的大学学科专业应用题，我们同学成绩最高可达270分，满分300分。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	做科创的过程还可以是一个“很好玩”的过程。比如七10班的薛浩然同学，今年的课题是“咖啡渣对家庭果蔬种植中四种常见虫害的防控作用”。这个课题让薛浩然同学在家养了2个月的蜗牛、菜青虫、鼠妇、蛞蝓（俗称鼻涕虫）。我想薛浩然同学家里一定非常热闹，因为据说后来菜青虫还成功羽化了。如果哪位同学愿意在家里养蟑螂，也许也会有很多好课题产出。再比如七10班的阚儒一同学，周末与父亲的休闲快乐时间，不再只是看风景，还可以低头挖苔藓，做研究。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	做科创还能让全校教职工老师、同学都认识你，让你能够成功“吸粉”。比如七3班刘申昊和七6班高琪佳同学，在教师节前一天亲手将自己制作的植物香包送给了每位老师，在收集到课题数据的同时，还将印有自己名字的香包留在了老师办公室。还有七9班黄语萱，七8班金子硕等同学，在英语论坛比赛中用流利的英语来介绍自己的科创研究内容，惊艳全场。科创课题研究，让每个学生闪现出智慧的火花，收获成长的喜悦。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	本学期，我们的科创教师团队将会走进每个班级，与同学们一起学习、一起探究。在4月份将要开展的第二届校园科技节中，我们还将组织精彩的科创专家讲座，并在全校范围内进行开题答辩赛等活动，也期待能有更多的同学参与其中。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	科创改变生活，科创改变学习，科创改变思维，让我们一起行动起来吧。
+</p>
+<br />
+<p style="text-align:center;">
+	<img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202103/202103110543035.jpg" alt="" style="width:80%;" /> 
+</p>
+<p style="text-align:center;font-size:14pt;font-weight:bold;">
+	我的科创之旅
+</p>
+<p style="text-align:center;font-size:13pt;">
+	高一（1）班&nbsp; &nbsp;黄婧琦
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	同学们，大家好，我是来自高一一班的黄婧琦。今天我想来谈谈一下我的科创之旅。从还未入学的暑假就开始进行课题选择，再到学期中利用周末时间进行课题的研究，以及寒假中也不忘进行第2代垃圾桶的改进，并且最终将研究的成果进行申报。我的科创之旅十分充实，但其实选定题目时，就有不少困难。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	最开始得知要进行科创研究的时候，我内心中十分的激动，因为一想到科技创新，就会让我们想到那些令人热血沸腾的名词，比如人工智能，或者VR，又或是5G技术，这些看起来极度高端且极大程度上改变我们生活的项目。让我对自己的科创研究之旅产生了莫大的憧憬。那段时候真的满脑子都想着应该做什么样的课题，过马路时会想着，能不能设计一个智能人行道，来统计过马路的人数，来判断红绿灯时长的合理性，在便利店时，在看到自热火锅的时候，第1个想到的并不是要去购买，而是能不能用其他加热方式，我的一位同学就提出想做一个手摇加热饭盒的创意，希望能够让人们自行锻炼的方式来加热美食，而且也能够让特殊的职业，比如出租车司机能够享用到热乎的饭菜。科创让我们可以展开想象，积极思考生活中的值得改进的<a target="_blank" href="https://qbxd.mhedu.sh.cn/zjxd/jwfg/1">地方</a>。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	但其实科创方向也不仅仅是需要天马行空的想象，更要注重的是实用性以及可行性。比如我想的那个斑马线的改进方案，就很难进行实施，不论是实业又或者是日后投入使用都有极大的困难。在明白过来这一点后，我也非常不舍却又毅然决然的放弃了这个课题。后来是学校组织的许多有关课题的讲座以及黎老师的耐心指导，让我有了新的想法，才正式开始了自己课题的研究。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	越是深入进行研究，越是能够体会到科创的魅力，也让我不断的对自己的样品进行改进。两代垃圾桶的制作很大程度上的提高了我的动手能力，第1次用实物达到自己想象中的成效，那种成就感与满足感是其他活动无法带给我的。历经大半年，亲眼见证着从一个想法的迸发，再到课题本身的确立，而最后变成了食物，再进行进一步改进，甚至到了可以真正投入使用的地步，这离不开家长，老师以及学校给予我的大力支持。也让我看到自己的一个想法在切实努力与身边人的支持下，究竟会发生如何翻天覆地的变化。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	所以科创带给我的不只是它本身，它让我提高了自己的科学素养，了解了许多以前不会关注的专业论文以及相关文献，在进行素质评定的时候，积极吸收各科不同的知识。最重要的是让我在学习生活中产生了严谨而又专注的科创精神，也相信通过这样精神的不断实践，一定能够切实的改变这个世界。科创，这只是我们迈出的第1步，但它给我们带来了极为正向的精神引领。鼓励大家积极进行科创，不只是为了科技进步本身，也是为了培养同学们的科学素养，为同学们树立通过自己的努力与实践改变世界的信心。这才是科创最大的意义，也是它给予我最丰厚的礼物。
+</p>
+<p style="font-size:13pt;text-indent:2em;">
+	同学们让我们行动起来，积极参与科创研究，在一成不变的人生中，在提升自己的科学素养的同时，用自己实际的努力去改变这个世界！
+</p>
+                </div>
+                
+              </div>
+              
+            </div>
+         
+              </div>
+            </div>
+            
+            <div class="con-right">
+              <div  style="border-bottom: 2px solid lightgray;">
+                <div class="xw-title wz">
+                <a href="250680.htm#" style="font-size: 14px;">最新通知</a>
+                </div>
+              </div>
+              <ul style="min-height: 400px;margin-top: 15px;">
+                
+                <li><a href="../../tzgg/cxtz/271028.htm" target="_blank" title="上海市七宝中学附属鑫都实验中学2023学年教师招聘启事">上海市七宝中学附属鑫都实验中学2023学年教师招聘启事</a></li>
+              
+                <li><a href="../../tzgg/cxtz/272086.htm" target="_blank" title="2022学年第一学期第十六周学生食堂菜单">2022学年第一学期第十六周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271986.htm" target="_blank" title="2022学年第一学期第十五周学生食堂菜单">2022学年第一学期第十五周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271541.htm" target="_blank" title="2022学年第一学期第十四周学生食堂菜单">2022学年第一学期第十四周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/271333.htm" target="_blank" title="2022学年第一学期第十三周学生食堂菜单">2022学年第一学期第十三周学生食堂菜单</a></li>
+              
+                <li><a href="../../tzgg/cxtz/270952.htm" target="_blank" title="2022学年第一学期第十二周学生食堂菜单">2022学年第一学期第十二周学生食堂菜单</a></li>
+                            </ul>
+            </div>
+            </div>  
+         </div>   
+       <!-- ---- 标签>>--【尾部】 -- 标签开始 ---- -->
+ <div class="footer">
+        <div style="width: 1200px;margin: auto;">
+          <div style="padding-top: 20px;display: inline-block;">
+            <span style="font-size: 16px;color: white;">校外链接</span>
+            <div class="link">
+              <table class="link-tab">
+                <tr><td><a href="http://www.mhedu.sh.cn/" target="_blank">闵行区教育局</a></td><td><a target="_blank"  href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action">闵行区教育学院</a></td></tr>
+                <tr><td><a href="http://www.qbhs.icampus.cn/cms/"target="_blank">上海市七宝中学</a></td><td><a href="http://10.108.210.6:8080/" target="_blank">信息科技教学平台</a></td></tr>
+                <tr><td></td><td></td></tr>
+ <tr><td></td><td></td></tr>
+              </table>
+            </div>
+          </div>
+          <div style="display: inline-block;margin-left: 50px;">
+            <span style="font-size: 16px;color: white;">联系方式   </span>
+            <div class="link">
+              <table class="lx-tab">
+                <tr><td><a href="250680.htm#">联系电话：021-33286626</a></td></tr>
+                <tr><td><a href="250680.htm#">联系邮箱：qibaoxindu@163.com</a></td></tr>
+                <tr><td><a href="250680.htm#">联系地址：上海市闵行区联农路626号</a></td></tr>
+              </table>
+            </div>
+          </div>
+         
+          <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;">
+            <img src="../../images/weixin.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都官方公众号</span>
+          </div>
+           <div style="display: inline-block;vertical-align: top;float: right;margin-top: 30px;margin-right:10px;">
+            <img src="../../images/12.jpg" style="width:113px"/><br />
+            <span style="color: #c3c3c3;">七宝鑫都家校平台</span>
+          </div>
+        </div>
+        <div style="width: 100%;border: 1px solid #3e3e3e;margin-top: 15px;margin-bottom: 15px;"></div>
+   <div style="text-align: center;  color: #c3c3c3;line-height: 30px;background:#2f2f2f">
+          版权所有：上海市七宝中学附属鑫都实验中学<br />
+          <a href="http://www.beian.miit.gov.cn" target="_blank" style="text-decoration:underline">沪ICP备05012047号-1</a><br />
+          沪公网安备号：31011202011948          
+        </div>
+      </div>
+<script type="text/javascript" src="../../wcm.files/js/wjdc.js"></script>
+<!-- ---- 标签>>--【尾部】 -- 标签结束 ---- -->
+    <script src="../../js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
